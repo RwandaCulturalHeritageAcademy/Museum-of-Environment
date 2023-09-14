@@ -4,146 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-  <style>
-    #container {
-      display: flex;
-      height: auto;
-    }
-    #content ul{
-      display: flex;
-      justify-content: space-evenly;
-      height: 20px;
-      margin-top: 30px;
-    }
-    #content ul li {
-      list-style-type: none;
-      font-weight: 900;
-      padding-right: 1.5em;
-    }
-    #content ul li a {
-      color: rgb(5, 46, 5);
-    }
-    header {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: xx-large;
-      font-weight: bolder;
-    }
-    nav h1, h2, h3 {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-weight: 900;
-      font-size: 2rem;
-    }
-    h2 {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    #columns {
-      display: flex;
-    }
-    p {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: large;
-    }
-    #stal {
-      width: 70%;
-      margin: 0 auto;
-      background-color: rgb(199, 184, 160);
-      border-radius: 10px;
-    }
-    li {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: large;
-    }
-    .container-fluid {
-      margin: 10px 30px;
-    }
-    #photo-solar img{
-      height: 300px;
-      width: 450px;
-      border-radius: 10px;
-      object-fit: cover;
-      margin: 2em 0 0 0;
-    }
-    figcaption {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    #solar {
-      margin-bottom: 30px;
-      padding-bottom: 35px;
-    }
-    #photo-solar .rotate {
-      transform: rotate(-90deg);
-      height: 450px;
-      width: 300px;
-      margin-left: 74px; 
-      margin-top: -48px;
-    }
-    #photo-solar #fig {
-      margin-top: -73px;
-    }
-    #satellite figure img {
-      object-fit: cover;
-      width: 300px;
-      height: 400px;
-    }
-    #landscape figure img {
-      width: 700px;
-      height: 400px;
-      object-fit: cover;
-    }
-    .row #gishwati {
-      width: 450px;
-      height: 300px;
-      object-fit: cover;
-    }
-    .row .col-xs-6 #gishwati {
-      width: 700px;
-      height: 400px;
-      object-fit: cover;
-      border-radius: 25px;
-      padding: 2em 0 2em 0;
-    }
-    #parks #nyungwe-park {
-      width: 900px;
-      height: 450px;
-      object-fit: cover;
-    }
-    #parks {
-      padding-bottom: 2em;
-    }
-    #solar{
-      margin-bottom: 0px;
-    }
-    #solar #photo-solar {
-      width: 500px;
-      height: 320px;
-      margin-right: -20px;
-      object-fit: cover;
-    }
-    .nyungwe {
-      padding-bottom: 40px;
-    }
-    #medicine .garden {
-      width: 400px;
-      height: 200;
-      object-fit: cover;
-    }
-    #akagera {
-      width: 900px;
-      height: 450px;
-      object-fit: cover;
-    }
-    footer {
-      background-color: rgb(192, 233, 192);
-      height: 16rem;
-    }
-    footer header {
-      padding-bottom: 0px;
-    }
-    footer h1 {
-      font-size: 25px;
-      padding: -5px 0px -5px 0px;
-    }
-  </style>
+  <link rel="stylesheet" href="museum.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+    $(document).ready(function() {
+      $("button").addClass("btn-primary")
+    });
+
+    class MyAdd extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          visibility: true
+        }
+        this.toggleVisibility = this.toggleVisibility.bind(this)
+        }
+        toggleVisibility() {
+          this.setState ((state) => {
+            if(state.visibility === true) {
+              return {visibility: false}
+            }else {
+              return {visibility: true}
+            }
+          })
+        }
+        render() {
+          if(this.state.visibility) {
+          return (
+            <div>
+              <button onClick={this.toggleVisibility}>Add more</button>
+              <p>For more information to add: In case a people needs to ready and fully anderstands the content I have to write this kind of codes.</p>
+            </div>
+          )
+          return (
+            <div>
+              <button onClick={this.toggleVisibility}>Add more</button>  
+            </div>
+          )
+        }
+       }
+      }
+  </script>
+  
   <title>Document</title>
 
 </head>
@@ -162,13 +63,13 @@
         <nav id="content">
           <header class="text-center text-primary">Museum of Environment Exhibition</header>
           <ul>
-            <li><a href="#solar_system">Solar system</a></li>
-            <li><a href="#rwanda_profile">Rwanda profile</a></li>
-            <li><a href="#energy">Energy</a></li>
-            <li><a href="#mitigation">Environmental protection strategies</a></li>
-            <li><a href="#resources">Natural resource</a></li>
-            <li><a href="#medicines">Medicinal plants' botanical garden</a></li>
-            <li><a href="#turtles">East-African Black-Mud Turtles</a></li>
+            <li class="exhibition"><a href="#solar_system">Solar system</a></li>
+            <li class="exhibition"><a href="#rwanda_profile">Rwanda profile</a></li>
+            <li class="exhibition"><a href="#energy">Energy</a></li>
+            <li class="exhibition"><a href="#mitigation">Environmental protection strategies</a></li>
+            <li class="exhibition"><a href="#resources">Natural resource</a></li>
+            <li class="exhibition"><a href="#medicines">Medicinal plants' botanical garden</a></li>
+            <li class="exhibition"><a href="#turtles">East-African Black-Mud Turtles</a></li>
           </ul>
         </nav>
       </div>
@@ -176,9 +77,17 @@
       </header>
       <main>
         <div aria-labelledby="solar_system" role="region" id="solar_system">
+          <h1>First room</h1>
           <h2 class="text-center">Solar system</h2>
-          <p>The solar system refers to the collection of celestial bodies that orbit around the star known as the Sun.
-            The solar system consists of the Sun, eight planets (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune), numerous dwarf planets, asteroids, comets, and other smaller objects.</p>
+          <p>The solar system is a group of eight planets (Mercury, Venus, Earth, Mars,
+            Jupiter, Saturn, Uranus, and Neptune) and other celestial bodies that revolve
+            around the sun. A planet is a celestial body that orbits the sun, has sufficient
+            mass to assume nearly a round shape, illuminated by the light from the sun
+            and cleared the neighborhood around its orbit. Dwarf planet is a planet that
+            has not cleared the neighborhood around its orbit. Among other celestial
+            bodies that revolve around the sun include natural satellites (moons)
+            asteroids, comets and meteoroids.
+            </p>
             <div id="solar" class="row">
               <figure id="photo-solar" class="col-md-4">
                 <img src="https://img.freepik.com/free-vector/solar-system-science-education_1308-89626.jpg?w=2000" alt="image">
@@ -199,43 +108,554 @@
                 <figcaption id="fig"><b>Small rock from Taurus Rithrow Valley</b></figcaption>
             </figure>
             <figure id="photo-solar" class="col-md-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058303/Photos/Rockk_delgqk-min_aryaqi.jpg" alt="image">
-                <figcaption><b>Meteorite which hitted Earth planet in 1976</b></figcaption>
+                <img class="except" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058303/Photos/Rockk_delgqk-min_aryaqi.jpg" alt="image">
+                <figcaption id="meteorite"><b>Meteorite which hitted Earth planet in 1976</b></figcaption>
             </figure>
             <figure id="photo-solar" class="col-md-4">
                 <img class="rotate" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058267/Photos/Sun_Earth_Interaction_lhfklh-min_ollyuq.jpg" alt="image">
                 <figcaption id="fig"><b>Earth and Sun interaction</b></figcaption>
             </figure>
             </div>
-            <p>The eight planets in the solar system are divided into two groups: the inner planets and the outer planets.</h>The inner planets are those closest to the Sun and include Mercury, Venus, Earth, and Mars. These planets are relatively small, rocky, and have few or no moons. The outer planets, on the other hand, are much larger and more massive than the inner planets. They include Jupiter, Saturn, Uranus, and Neptune. But Uranus and Neptune are known as gas giants. They have thick atmospheres, many moons, and are further from the Sun.</p>
-                        <p>The moon is a natural satellite of the Earth, meaning it is a celestial body that orbits around our planet. It is the fifth largest moon in the solar system and is believed to have formed approximately 4.5 billion years ago. The moon's surface is covered with craters, mountains, valleys, and plains, and it has no atmosphere or magnetic field.</p>
-                        <p>An artificial satellite is a human-made object that is placed into orbit around the Earth or another celestial body. Artificial satellites are used for a variety of purposes, including communication, navigation, weather forecasting, and scientific research.</p>
-                        <div id="satellite">
-                          <figure>
-                              <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052510/Photos/Artificial_Satellite_xp1imn-min_fsivua.jpg" alt="image">
-                              <figcaption><b>Artificial satellite</b></figcaption>
-                          </figure>
-                      </div>
-                      <p>The solar system is also home to a number of smaller bodies, such as asteroids and comets. Asteroids are rocky or metallic objects that are smaller than planets, while comets are made up of ice, dust, and rock. These smaller bodies can be found throughout the solar system and can sometimes pose a threat to Earth if they come too close.</p>              
-
+            <div class="text-center" id="satellite">
+              <figure>
+                  <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052510/Photos/Artificial_Satellite_xp1imn-min_fsivua.jpg" alt="image">
+                  <figcaption><b>Artificial satellite</b></figcaption>
+              </figure>
+          </div>
+            <div class="row">
+              <h2 class="text-center">Earth planet</h2>
+              <div class="col-xs-6">
+            <p class="letter">Earth planet is a dense ball about 12,750 km across
+              and it is the third from the Sun (150 million km ).
+              About 71% of its surface is covered by water, the rest
+              by land. The landmass of the Earth is distributed by
+              the following continents: Africa, America, Antarctica,
+              Asia, Europe and Oceania . The planet is orbited by
+              one satellite, the Moon. The Earth’s atmosphere is
+              primarily Nitrogen (N2), 78.08 %; Oxygen (O2), 20.95
+              %; and Argon, 0.93%; with trace amounts of carbon
+              dioxide and water vapor.</p>
+             <h3>Earth structure</h3>
+             <p><b>Earth is made of four main layers</b></p>
+             <ul>
+              <li><strong>The crust:</strong> is a solid layer of rock on the surface of the
+                planet. Land is made of continental crust of 8 km to 70
+                thick and made mostly from granite rock. The layer
+                beneath the ocean bed is made of oceanic crust of
+                about 8 km thick and made mainly from basalt rock.</li>
+              <li><strong>Mantle:</strong> a semi-liquid layer of magma or molten
+                rock(iron, oxygen, silicon, magnesium and aluminium)
+                that moves due to convection currents.</li>
+              <li><strong>Outer core:</strong> The liquid mainly of Iron, Nickel, Sulphur
+                and oxygen. The movement of its metals creates our
+                planet's magnetic field.</li>
+              <li><strong>Inner core:</strong> It is mainly made of Iron and Nickel. It is
+                hot enough to melt but is solid because of the
+                pressure pushing down on it. The temperature
+                reaches 5,500 °C.</li>
+             </ul>
+              </div>
+              <div class="col-xs-6">
+                <h3>Tectonic plate's movement</h3>
+                <p>The earth’s crust is broken into separate pieces called
+                 tectonic plates. Each tectonic plate is free-floating and
+                 can move independently. Earthquakes and volcanoes
+                 are the direct result of the movement of tectonic
+                 plates at fault lines (the boundary between tectonic
+                 plates). The movement of the plates creates three
+                 types of tectonic boundaries: convergent, divergent,
+                 and transform.</p>
+                 <ul>
+                   <li><strong>Convergent boundary (destructive edge):</strong> Plates move
+                     into one another.</li>
+                   <li><strong>Divergent boundary (constructive edge):</strong> Plates move
+                     apart.</li>
+                   <li><strong>Transcurrent boundary or transform edge:</strong> Plates
+                     move sideways in relation to each other.</li>
+                 </ul>
+                 <p>The Congo Nile Ridge, Volcanoes and high mountains
+                   found in Rwanda are the results of these tectonic
+                   plate movements.</p>
+                   <h3>Continental drift</h3>
+                   <p>The separation of the earth continents is attributed to
+                     the result of tectonic plate movement. Earth's
+                     continents are constantly changing, moving and
+                     rearranging themselves over millions of years and this
+                     change overtime affects climate and life on Earth</p>
+              </div>
+            </div>
+            <h2 class="text-center">Climate and habitat</h2>
+            <p>Seen from space, the great habitats of the Earth show 
+              themselves in different colors: the dark blue of the oceans 
+              predominates, the eternal ice shines white. 
+              On the continents, the deserts shimmer in a light brown, the 
+              green band around the equator shows the primeval forests of 
+              Africa and the Amazon in South America.
+              The middle latitudes in the northern as well as southern half 
+              of the globe appear in brown as well as green colors - so in 
+              Europe and northern Asia as well as North America and in 
+              southern Africa and the Philippines.
+              From the equator to the two poles of the earth, the climate 
+              changes and determines the diversity and design of the 
+              habitats of plants, animals and humans.
+              This also applies for the forests and savannahs in the tropics, 
+              the deserts in the arid regions, different seasons in the midlatudes and for the oceans with their huge habitats of animals 
+              and plants.
+              Due to the Earth‘s orbit around the energy giving sun and its 
+              own rotation, the climate changes from the equator to the two 
+              poles in the north and south. 
+              In the individual climate zones, certain temperature and 
+              humidity conditons prevail, which have led to the development 
+              of characteristic communities of plants, animals and humans.
+              The different temperatures of the oceans contribute significantly 
+              to the climac changes, mainly because they are responsible 
+              for many winds that are triggered by different temperatures of 
+              the water surfaces.</p>
+              <h2 class="text-center">Oceans and Climate</h2>
+              <p>71% of the Earth‘s surface is covered by salty seawater, less than only 1% 
+                by drinkable freshwater, 2% by ice and snow and only 26% is dry land and 
+                thus habitable by humans. In the northern hemisphere, the proportions of 
+                land and water are almost equal; in the southern hemisphere, the seas 
+                predominate.
+                The seas or oceans are the earth‘s air conditioning system. Only the 
+                upper two metres of the oceans can store as much heat as the entire 
+                atmosphere. Rain is mainly caused by the evaporation of the water above 
+                the sea.</p>
+                <h3>How do the oceans influence the climate?</h3>
+                <p>The importance of the oceans as an energy store is related to their vast 
+                  expanse and depths of up to 4,000 metres, which can absorb, store and 
+                  release huge amounts of heat. Warming and cooling of water occurs more 
+                  slowly than on land mountains and forests like fields. The air masses 
+                  coming from the sea have a significant influence on the climate of the 
+                  continents: regions near the coast have a balanced climate with mild 
+                  winters and moderately warm summers. Humidity and rainfall are high 
+                  almost all year round. Further, inland on the continents, the temperature 
+                  differences between day and night, between seasons are greater and there 
+                  is less rainfall.</p>
+                  <h3>Ocean currents</h3>
+                  <p>As water temperatures decrease from the equator towards the poles, 
+                    currents occur as a result of the energy balance between cold (lowerenergy) and warm (higher-energy) water. Driven by winds, the surface 
+                    water of the currents towards the poles becomes colder, denser and 
+                    heavier, so that it sinks in the polar regions. Very cold currents at depth 
+                    then flow back towards the equator. The current cycle is closed - the cold 
+                    water warms up, becomes lighter and rises.</p>
+                    <h3>Nutrients of the oceans</h3>
+                    <p>Ocean currents not only influence the climate, they also transport nutrients 
+                      over great distances. The ocean depths are constantly enriched by dead
+                      plants and animals. The cold underwater currents transport these nutrients 
+                      to southern regions, where they gradually rise to upper regions and
+                      contribute significantly to the abundance of fish catches.
+                      In the tropical seas around the equator, however, stable water tends to 
+                      occur throughout the year because of constant solar radiation. Although 
+                      algae growth is stimulated by solar energy, mixing with cold, nutrientrich water hardly takes place, so that this water suffers more quickly from 
+                      overfishing.</p>
+        <h2 class="text-center">The deserts-arid climate</h2>
+        <div class="row">
+          <div class="col-xs-4">
+            <p class="letter">A climate is described as dry or arid when precipitation cannot permanently 
+              compensate for the loss of water through evaporation. Such arid regions 
+              are found on all continents of the earth. Deserts, the driest areas on earth, 
+              cover one third of the entire continental surface.</p>
+            <h3>How do deserts develop? Subtropical west winds</h3>
+            <p><i>Most arid areas lie in a strip on either side of the equator - i.e. around the 
+              Tropic of Cancer.</i>The trade winds move the air masses that have rained down over the equator both northwards and southwards, warming them increasingly. Over land, they to a hot and very dry climate. under these conditions, plants can hardly or not at all develop and the largest desert regions on earth form, such as the Sahara and the Karahari in Africa or the Australian desert.</p>
+          </div>
+          <div class="col-xs-4">
+            <h3>Coastal deserts</h3>
+            <p>Along the west coasts in the tropical and subtropical regions of the 
+              continents, deserts are formed by the rise of cold water masses that meet 
+              hot desire. As a result, cold ground lust is pushed under a warm lust layer, 
+              which prevents rain from forming.
+              Well-known coastal deserts are the Atacama Desert in Chile and Peru 
+              (South America) and the Namibia in southwestern Africa.</p>
+            <h3>Landlocked and relief deserts</h3>
+            <p>Humid air masses become colder as they rise up steep mountain ranges 
+              and rain down. In the rain shadow on the other side of the mountains, the 
+              dry and warm downdrafts create so-called relief deserts. Desert areas 
+              also develop in the interior of large continents, where hardly any moisture 
+              arrives with the air. Examples are the Takla Makan and Gobi deserts in 
+              Asia and the deserts in the interior of Australia</p>
+          </div>
+          <div class="col-xs-4">
+            <h3>Not simply sand!</h3>
+            <p>Deserts do not always consist of sand. Rock deserts occupy much larger 
+              areas worldwide than the well-known sand deserts. The Sahara, for 
+              example, is 70 % rocky desert, characterised by boulders and gravel. 
+              They are the result of the physical weathering of the bedrock by strongly 
+              changing temperatures and the effect of the wind. If the rocks become 
+              smaller and smaller as a result, scree and gravel deserts are formed. Sand 
+              deserts form as a result of progressive weathering.</p>
+            <h3>Hot during the day - cold at night</h3>
+            <p>In both sandy and stony deserts, the surface heats up very quickly - at 
+              night, on the other hand, the surface cools down quickly - partly because 
+              there are no clouds to prevent it from radiating too quickly. This means that 
+              temperature differences of up to 40 degrees can be endured.weathering.</p>
+          </div>
         </div>
+        <div class="row">
+          <h2 class="text-center">Climate of the middle latitudes</h2>
+          <div class="col-xs-4">
+           <p id="letter">The mid-latitudes are the areas between the Arctic Circle and the Tropic 
+            of Cancer in both hemispheres. In the northern hemisphere are countries 
+            such as Canada, the USA, Russia and European countries – in the 
+            southern hemisphere countries such as Chile, Argentina, southern
+            Africa and Australia.Distinctive seasons such as cold winters and warm 
+            summers determine the climate. High and low pressure areas, provide 
+            changeable weather throughout the year. Life in the mid-latitudes is
+            decisively shaped by the seasons. Plants and animals have to survive cold 
+            winters and often dry summers.</br>The climatic diversity of this zone has given rise to different habitats: 
+            coniferous forests, deciduous and mixed forests, steppes, winter-cold 
+            deserts or Mediterranean hardwoods (e.g. olive trees). The cold seas of 
+            the mid-latitudes are important as a climatic factor and because of their 
+            abundance of fish as a source of food for humans.</p>
+          </div>
+          <div class="col-xs-4">
+            <h3>What shapes the mid-latitudes?</h3>
+            <h4 id="little-down"><u>The seasons</u></h4>
+            <p>Due to the oblique position of the earth‘s axis in relation to its orbit around 
+              the sun, both the northern and southern hemispheres are inclined towards 
+              the sun for half of the year. The sun‘s rays hit the earth more steeply and 
+              with more energy, it gets warm, the days get longer and the nights
+              shorter. Due to the flattening of the angle of incidence of the rays in the 
+              second half of the year, they become lower in energy: it gets cooler and 
+              now the nights are longer than the day. The mid-latitudes know four 
+              seasons: Spring, summer, autumn and winter.</p>
+              <h4 id="little-down"><u>The West Winds</u></h4>
+              <p>In the mid-latitudes, warm air from the tropics meets cold air from the 
+                poles. The earth‘s rotation deflects air flowing out from the equator to the 
+                east - this is how the westerly winds are formed. In the course of the year, 
+                these shift both to the north - then warm subtropical air flows e.g. to Europe 
+                - it becomes warm. If it shifts to the south it becomes cold and it is winter. 
+                In South Africa in thesouthern hemisphere it is the opposite.</p>
+          </div>
+          <div class="col-xs-4">
+            <h4 id="europe">The specificity of Europe</h4>
+            <p>Compared to the mid-latitudes of other continents, 
+              Europe has some special features: The ocean current 
+              flowing north along the west coast (Gulf Stream) 
+              carries warm water masses from the subtropics up to 
+              the north of Norway, thus warming the entire coast of 
+              northern Europe. In the south, the Mediterranean Sea, 
+              which is warm all year round, influences the climate of 
+              the surrounding countries. The mountain range of the 
+              Pyrenees and the Alps, which run across from west to 
+              east, protect the north from particularly hot southern 
+              winds and the south of Europe from the cold northern 
+              winds.</p>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="text-center">Tropical climate</h2>
+          <div class="col-xs-6">
+            <p class="letter">Geographically, the tropics are the area between the equator and the 
+              tropics. Here you will find both hot and humid climates (Congo) and very 
+              dry climates. Because of the year-round sunshine, there is no cool season 
+              - so the average temperature remains constant throughout the year.</p>
+              <h3>What characterises the tropics</h3>
+              <h4 id="europe">The sun</h4>
+              <p>Throughout the year, the sun is higher than in the middle and higher 
+                latitudes and twice a year it is even vertical – at the zenith. As a result, the
+                earth‘s surface warms up faster and more strongly than in the north or 
+                south of the globe. Due to the position of the equator in relation to the sun, 
+                the length of the day is always 12 hours. In Rwanda, for example, there is 
+                only a deviation of about 40 minutes – in Germany of about 4-5 hours.
+                In South Africa in thesouthern hemisphere it is the opposite.</p>
+          </div>
+          <div class="col-xs-6">
+            <h4 id="europe" id="little-down">Persistent low pressure and the trade winds</h4>
+            <p>The heat at the equator causes humid air to rise, the air pressure to fall 
+              and so a world-wide area of low pressure stretches along the equator. 
+              The rising air creates winds that generate a cycle: warm air flowing in from 
+              the ground and falling air masses cooling to the north or south: the trade 
+              winds. When these winds blow in from the sea, they bring warm, humid air 
+              with them, which rains down in the mountains and forests – for example, in 
+              Rwanda in the Nyungwe or Birunga Mountains.</p>
+            <h4 id="europe">The tropical rain</h4>
+            <p>Because the warm, humid air masses cool down very quickly as they rise 
+              near the equator, the moisture condenses and clouds form. This is how 
+              the typical cloudbursts with large amounts of water occur regularly in the 
+              afternoon.
+              The tropical belt along the equator is about 5,000km wide. In the inner 
+              and always humid tropics, between 1,000 and 1,500 mm of precipitation 
+              fall in a year – twelve times as much as in the middle latitudes (e.g. North 
+              America or Europe). In these areas are the large rainforest regions such 
+              as the primeval forest in Central Africa (Congo) or in South America at 
+              the Amazon (Brazil). The closer one approaches the tropics, the more the 
+              aridity increases, the transition to a subtropical dry climate such as the 
+              savannahs in Mali, Niger and Chad.</p>
+          </div>
+        </div>    
+        <div class="row">
+          <h2 class="text-center">Habitats of the tropics</h2>
+          <p>In the permanently humid tropical climate near the equator, evergreen rainforests extend 
+            across Africa, South America and Southeast Asia. With increasing distance from the equator, 
+            the frequency and quantity of rainfall decreases and deciduous tree species increase. 
+            Evergreen forests (e.g. Nyungwe) are replaced by rainforests during prolonged drought. 
+            Where lack of rain or unfavourable soil conditions prevent forest growth, savannahs develop - 
+            tropical grasslands with individual trees and shrubs (Akagera National Park and the expanses 
+            in Tanzania).</p>
+          <div class="col-xs-6">
+            <h3>Equatorial rain forest such as the Nyungwe</h3>
+            <p>Permanent moisture and plenty of sunlight enable lush growth and enormous species 
+              richness in tropical forests all year round. The diversity of tree species alone is spectacular, 
+              with hundreds of species per hectare; in the whole of Central Europe, for example, there 
+              are only 40 species. At a height of 30-40 m, a more or less closed canopy forms. Below 
+              this, the various shrub and tree species reach different heights depending on the amount of 
+              light available. Most tree trunks are straight and slender and have few branches below the 
+              crown. The occurrence of flowers and fruits directly on the trunk is widespread, leaves with 
+              elongated leaf tips from which the water film drips off are characteristic.</br>Board roots, stift roots and lianas are conspicuous structures of the rainforest and signs of 
+              its diversity. The branches of the trees are often densely covered with mosses, ferns, orchids 
+              and bromeliads. Hardly any light penetrates through this multi-layered canopy to the ground, 
+              so only a few plants grow there.</p>
+              <h3>Fauna and Flora</h3>
+              <p>This rich and structured forest provides a privileged habitat for many 
+                species of insects, spiders, frogs, reptiles and birds, but larger herbivorous 
+                animals are rare.</p>
+          </div>
+          <div class="col-xs-6">
+            <h3>Luxuriant growth on poor soil</h3>
+            <p>Although this ecosystem is the richest and most complex on the planet, 
+              the rainforest soil is still fragile, thin and poor. The soils are poorly suited 
+              for agriculture. Over a very long period of time, climatic conditions have 
+              profoundly deteriorated the chemistry of the rocks and the vegetation 
+              draws its nutrients by reusing its own decomposed elements. The 
+              ecosystem is highly sensitive to human intervention and change.</p>
+            <h3>A forest – forests</h3>
+            <p>This intertropical forest is not homogeneous according to its geographical 
+              location. There are different types of equatorial forests: deep, flooded 
+              forests along rivers, swamps, mountains and mangroves on the coast 
+              influenced by salt water.</p>
+            <h3>The savannah</h3>
+            <p>The savannah is a plant formation composed mainly of herbaceous plants 
+              more or less scattered with trees or shrubs. The animal and plant diversity 
+              of the savannah is much lower than that of the equatorial forest. In Africa, 
+              these vast expanses of herbaceous plants provide sufficient food for herds, 
+              whereas the much more frugal Brazilian savannah leaves room for very 
+              few mammals.animals are rare.</p>
+          </div>
+        </div>
+        <h2 class="text-center">Australia, a unique continent</h2>
+        <p>Australia, the smallest continent on earth, is located in the 
+          southern hemisphere. Its landscape is marked by desert and 
+          semi-arid regions and dry forests of eucalyptus and acacia.</br>Thanks to its geographical isolation for more than 200 million 
+          years, a particular flora and fauna has developed here.
+          Australia‘s fauna includes a significant number of animals 
+          that only exist on this continent. 83% of mammals, 89% of 
+          reptiles and 93% of amphibians are endemic. Outstanding 
+          representatives are the kangaroos, platypus, frilled lizard and 
+          thorny devil.
+          In the south-eastern and south-western parts of the continent, 
+          the climate is temperate with hot, dry summers and rainy 
+          winters. Here you will find forest and bush landscapes, 
+          productive pastures and arable land.</br>This is where most people live and is home to major cities such 
+          as Sydney, Melbourne and Adelaide.</p>
+          <h2 class="text-center">East African Rift Valley</h2>
+          <div class="row">
+            <div class="col-xs-6">
+              <p>A rift valley is a lowland region that forms where Earth’s tectonic plates
+                move apart or rift. Rift valleys are found both on land and at the bottom
+                of the ocean, where they are created by the process of seafloor
+                spreading. Rift valleys differ from river valleys and glacial valleys in
+                that they are created by tectonic activity and not the process of
+                erosion.</br>The most well-known rift valley on Earth is probably the so-called
+                "Great Rift Valley System" which stretches from the Middle East in the
+                north to Mozambique in the south. The area is geologically active, and
+                features volcanoes, hot springs, geysers, and frequent earthquakes.
+                All of the rift valleys in the “system” are connected, but not part of a
+                single unit.</p>
+            </div>
+            <div class="col-xs-6">
+              <p>The Western Rift includes many of the African Great Lakes. The
+                Western Rift is one of the most biodiverse regions in Africa, featuring a
+                narrow corridor of highland forests, snow-capped mountains,
+                savannas, and chains of lakes and wetlands.</br>The fissure in Kenya's Great Rift
+                Valley, which opened after strong
+                earth movements, is around 15 meters
+                deep and three kilometers long. And
+                the fissure is only the beginning:
+                Researchers believe that a new
+                continent is splitting off in the Horn of
+                Africa, which in the distant future will
+                include the current countries of
+                Somalia, Kenya, Tanzania and half of
+                Ethiopia.</p>
+            </div>
+          </div>
+          <h2 class="text-center">Albertine Rift</h2>
+          <h3>Western part of the East African Rift Valley</h3>
+          <p>The Albertine Rift is the western branch
+            of the East African Rift, covering parts
+            of Uganda, the Democratic Republic of
+            the Congo (DRC), Rwanda, Burundi and
+            Tanzania.
+            It extends from the northern end of
+            Lake Albert to the southern end of Lake
+            Tanganyika.
+            The geographical term includes the
+            valley and the surrounding mountains.</p>
+            <h2 class="text-center">Volcanoes</h2>
+            <p>The Virunga massif refers to an area
+              containing a chain of 8 volcanoes that
+              span across the three countries of
+              Rwanda, Uganda D R Congo and covers
+              3 national parks of Parc National des
+              Virunga (PNV) in the DR Congo,
+              Volcanoes National Park (VNP) in
+              Rwanda and the Mgahinga Gorilla
+              National Park (MGNP) in Uganda. The
+              massif covers an area of over 8000 sqkm
+              and derives its name from the
+              Kinyarwanda word ‘ibirunga’ which
+              literally means the volcanoes. The
+              volcanoes in this chain include
+              Nyiragongo (3,470 meters) and
+              Nyamuragira (3,058 meters) both in the
+              Democratic Republic of Congo, which are
+              the only active ones.</br>Mt. Karisimbi is the highest of all the 8
+              volcanoes at 4,507 meters while Mt.
+              Sabyinyo (3,674 meters) is the oldest of
+              the Virunga volcanoes and forms the
+              border of Uganda, Rwanda and D R
+              Congo. Other volcanoes include Mikeno,
+              Muhabura, Bisoke, and Gahinga.</br>This Volcano chain is a branch of the
+              Albertine Rift Mountains that border the
+              western arm of the East African rift
+              valley.</p>
+        <hr>
+        <h1>Second room</h1>
         <div role="region" aria-labelledby="rwanda_profile" id="rwanda_profile">
           <h2 class="text-center">Rwanda profile</h2>
-          <p>Rwanda is a landlocked country located in East Africa, with a population of over 12 million people. The country has a rich and diverse environment, with a range of ecosystems including rainforests, savannas, and wetlands. In addition to land-based environmental challenges, Rwanda is also vulnerable to climate change impacts such as droughts, floods, and extreme weather events. The country has taken steps to reduce its greenhouse gas emissions and adapt to the impacts of climate change, including through the development of renewable energy sources and climate-smart agriculture practices.</p>
+          <p>Landscapes are subject to constant change over the millennia. Climatic changes in particular, but also tectonic events such as the
+            sinking of earth plates or the eruption of volcanoes can completely change vegetation forms. In the last centuries of the Holocene,
+            however, humans have ushered in a new age: human intervention in nature and its exploitation, e.g. by burning fossil fuels, cutting down
+            forests and interfering with natural river systems, as well as mere mass reproduction, are increasingly showing the negative effects on
+            the natural foundations of their existence. This period of time up to the present day is now new referred to as the Anthropocene.</br>
+            These changes can also be seen very clearly in Rwanda. As in the other regions of Africa, the Great Lakes region also experienced strong
+            climatic changes during the Late Holocene (4000 B.C. to the present day), which caused the landscapes to change considerably. Periods
+            of drought alternated with heavy rainy seasons. By 2,500 BC, Rwanda's forests had almost disappeared - but a thousand years later,
+            thanks to a long wet period, they had recovered. The natural vegetation of Rwanda was largely destroyed or changed by humans. Only in
+            island-like areas of the central highlands and in the three nature reserves (Nyungwe, Virunga and the Akagera National Park) does the
+            country's original flora still exist.</br>
+            The advent of metal processing, the increase in population, the reclamation of swamp valleys into agricultural fields and the increase in
+            livestock farming have changed the forests in the last 2000 years, first in the flatter parts of the country in favor of a savannah and
+            grassland landscape, and later a severe decimation of the original higher altitude forest areas also began. The large forest area stretching
+            from north to south along the rift valley to Lake Kivu has almost disappeared: Remains of it today are the Nyungwe, the Cyamudongo,
+            the Mukura and the Gishwati forest.</br>
+            Thus, in the first pictures of Rwanda at the end of the 19th century, one sees a very barren, almost exclusively grassy landscape. In the
+            last 150 years, the landscape in Rwanda has developed rapidly and in very contrasting ways: On the one hand, agriculture has spread
+            over the hills - 85% of Rwanda's land is now cultivated, the slopes were needed as arable land to feed the rapidly increasing population.
+            This increased erosion, so that in some parts of the country, such as Ruhango district, the rock became visible. At the same time,
+            however, reforestation measures were taken, swamp valleys were cleared of development to protect the water.</br>
+            However, construction and sealing of the area continues to increase steadily, human intervention in water systems, the increase in
+            pollution due to the lack of sewage treatment plants are increasingly burdening the quality of the lakes and rivers. The hilly landscape
+            continues to be exposed to major erosion - agriculture, mineral extraction, road construction and urbanization.</br>
+            The newly emerging global climate change is changing the climate in Rwanda too: rains are becoming heavier but shorter in duration, dry
+            seasons are getting warmer and longer.</p>
           <div id="landscape">
             <figure class="text-center">
                 <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668187/Museum%20Webpage/Landscape_su7hpt.jpg", alt="image">
                 <figcaption><b>Landscape of Rwanda</b></figcaption>
             </figure>
           </div>
-          <p>Rwanda's landscape has undergone significant changes over the past few decades, particularly due to the country's high population density and agricultural practices. Historically, much of Rwanda was covered in dense rainforests and grasslands, but deforestation and conversion of land for farming have resulted in the loss of much of this natural vegetation. In addition, the high population density has led to the cultivation of steep hillsides and other marginal lands, which has contributed to soil erosion, loss of topsoil, and reduced agricultural productivity.
-            To address these challenges, the Rwandan government has implemented a number of programs aimed at reforestation, soil conservation, and sustainable land use practices. These efforts include the planting of millions of trees, terracing of hillsides to reduce erosion, and the promotion of agroforestry practices that combine tree planting with crop production. These efforts have helped to slow the pace of deforestation and erosion, while also improving the livelihoods of rural communities through increased agricultural productivity and income.</p>
-                <p>Overall, while Rwanda faces significant environmental challenges, the country has shown a strong commitment to sustainable development and environmental conservation, with notable progress made in reforestation, soil conservation, and climate change adaptation.</p>
+          <h2 class="text-center">History of Rwanda Hydrology</h2>
+          <p>The history of the drainage system of Rwanda represents that from the miocene period (23.03 to 5.3 million years ago) to the Pliocene period (5.3 to 2.6 million years ago) befor the formation of the rift valley the drainage system flowed towards the northern part of the country. In the middle Pliocene, the formation of central African Rift resulted in the creation of a river system in the area, that resembles the modern picture in structure, but not the direction of drainage. In the Pleistocene (2,6 million years ago), a massive breakdown of the rift shoulder between Bugesera and Kibuye takes place in this phase the Masangano area probably retains its northern drainage, while rivers in the south and in cnetral Rwanda drain into the rift via Kibuye, forming lake Kivu. The rift should at Kibuye rise again by 700-1150m and Rwanda again is drained to the north. During upper Pleistocene, the
+            volcanoes in the north of Rwanda rise
+            further, interrupting the drainage of
+            Lake Kivu to the North inside the rift. In
+            Rwanda, the direction of flow of many
+            rivers reverses, the modern Mukungwa
+            is created and the modern Nyabarongo
+            flows from Masangano to the East,
+            flooding all of the Bugesera. Finally,
+            the Akagera drain into Lake Victoria
+            comes into the existence, which leads
+            to the modern-day state.</p>
+            <hr>
+                
         </div>
         <div role="region" aria-labelledby="energy" id="energy">
+          <h1>Room three</h1>
           <h2 class="text-center">Energy</h2>
-          <p>Energy can be defined as the capacity of a physical system to do work. It is a fundamental concept in physics, and it is measured in joules (J) or other equivalent units. There are many forms of energy, including kinetic energy (energy of motion), potential energy (stored energy), thermal energy (heat energy), electrical energy, chemical energy, and nuclear energy.</p>
-          <p>Energy is essential for the functioning of the universe and all living things. It is constantly being converted from one form to another, and it is conserved in all physical and chemical processes.</p>
+          <h3>Energy and Climate</h3>
+          <p>The fundamental climate driver is the sun.</br>
+            The energy it radiates drives air currents and
+            causes water to evaporate. This results in the
+            distribution of wind, clouds and precipitation.
+            However, it is not only atmospheric processes or
+            the oceans that play a role in climate, but also
+            the parameters of the Earth's orbit. These change
+            over longer periods of time and thus cause the
+            alternation between ice ages and warm periods.
+            In addition, there are other climate factors such
+            as the distribution of land and sea, the chemical
+            composition of the Earth's atmosphere, the
+            latitude of an area, its altitude and position in
+            relation to the sea, volcanic activity (rarely also
+            meteorite impacts) and vegetation.</br>
+            In addition, so-called secondary factors also
+            determine the earth's climate. These include the
+            general atmospheric circulation with the major
+            wind systems, ocean currents and the water
+            cycle, as well as regional weather phenomena
+            such as El Niño and La Niña. These climate
+            factors determine which climate zone a country
+            or region belongs to. Defined by temperature,
+            there are five climate zones in each hemisphere:
+            the polar zone, the subpolar zone, the temperate
+            zone, the subtropics and the tropics. However,
+            the factors are also decisive for regional
+            climates. In this respect, the researchers
+            distinguish between high-altitude, urban,
+            maritime and continental climates.</br>
+            The use of energy resources on Earth play an
+            important role in climate change.</p>
+          <h3>What is Energy</h3>
+          <p>Energy is something like a force that can do
+            something.</br>
+            Expressed vividly, energy is the ability to do
+            work, give off heat or radiate light. It is therefore
+            necessary if something is to be set in motion,
+            accelerated, lifted, heated or illuminated. Energy
+            is vital because it is needed for all natural
+            processes.</p>
+            <p>Energy can be contained in a system in different
+              ways. These possibilities are called forms of
+              energy. Examples of forms of energy are kinetic
+              energy, chemical energy, electrical energy or
+              potential energy.
+              Different forms of energy can be converted into
+              each other, whereby the sum of the amounts of
+              energy over the different forms of energy is
+              always the same before and after the energy
+              conversion.</p>
+            <p>This means: energy is not lost - it is only
+              transformed - but it remains.</p>
+            <div class="row">
+              <div class="col-xs-6">
+                <h4 class="text-center"><b>Types of Energy:</b></h4>
+                <p>There are two types of energy, namely:
+                  <ul>
+                    <li><b>Potential energy:</b>is the stored energy or energy
+                      of an object in its position. This energy depends
+                      essentially on the composition and position of an
+                      object.</li>
+                    <li><b>Kinetic energy:</b>this is obtained when an object
+                      accelerates.</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-xs-6">
+                <h4 class="text-center"><b>Forms of energy:</b></h4>
+                <p>Potential and Kinetic energy exist in various
+                  forms: chemical, thermal, electromagnetic,
+                  radiations, gravitational, electric, nuclear energy,
+                  etc.</br>The transformation or conversion from one form
+                  to another is at the baseline for the various
+                  energy sources that allow us to perform all
+                  mankind activities.</p>
+              </div>
+            </div>
+          
         <div id="landscape">
             <figure class="text-center">
                 <img class="Wimshurst" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668573/Museum%20Webpage/Wimshurst_Machine_myqbgo.jpg", alt="image">
@@ -245,8 +665,71 @@
         <div id="Wimshurst">
             <p><b>The Wimshurst machine is an electrostatic generator that was invented in the late 19th century by British engineer James Wimshurst. It consists of two counter-rotating disks with metal plates attached to their surfaces, which are separated by a small gap. The disks are rotated by a crank, which causes the plates to become charged with static electricity.</b></p>
         </div>
-        <h1>Non-Renewable Energy</h1>
-        <p>Non-renewable energy refers to energy sources that cannot be easily replenished or regenerated, such as fossil fuels (coal, oil, and natural gas) and nuclear energy. These sources of energy are finite and will eventually be depleted, and their use can have negative environmental impacts, such as air and water pollution, greenhouse gas emissions, and the production of hazardous waste. Despite these drawbacks, non-renewable energy sources continue to play a significant role in meeting the world's energy needs, although efforts are being made to transition to cleaner and more sustainable sources of energy.</p>
+        <h2>Source of energy</h2>
+        <p>The Earth receives from the Sun an
+          uninterrupted flow of energy that, as well as
+          supplying all vital processes (both vegetal and
+          animal), melts the ice and supplies the water
+          cycle between the sea and the atmosphere. From
+          those subsequent transformations of solar
+          energy into various manifestations and stores
+          considered as sources of usable energy for
+          human.</p>
+          <p>Energy sources are divided in two groups:
+          Renewable energy and Non-renewable energy</p>
+          <div class="row">
+            <div class="col-xs-6">
+              <p>Non-renewable energy is energy from fossil fuels
+                (coal, crude oil, natural gas) and uranium, which,
+                once used up, no longer grows back and is
+                therefore no longer available.</p>
+            </div>
+            <div class="col-xs-6">
+              <p>Renewable energy is energy extracted from the
+                natural flux and it is provided directly or
+                indirectly by the sun, wind, hydro, biomass and
+                geothermal whose lifetime is beyond our
+                existential needs and challenges.</p>
+            </div>
+          </div>
+          <p>Rwanda energy primary use is dominated by
+            biomass, which accounts for 86.3% of the
+            total. Rwanda has one of the lowest
+            electricity consumption per capita in the
+            region, and generation capacity is low. 83.3%
+            of Rwandan households use wood for their
+            cooking fuel, followed by charcoal (15.2 %), crop
+            waste (0.8%), gas or biogas (0.2%) and other 6%.</br>At national level, the use of electricity for
+            lighting changed from 11% in 2010/11 to 20% in
+            2013/14. Of the 14% of non-biomass primary
+            energy, petroleum products account for 11%
+            (used mainly in the transport sector) and
+            electricity for approximately 3%.</p>
+            <h2>Fossil energy</h2>
+            <p>Fossil energy is obtained from fuels that
+              were formed in geological prehistory
+              from decomposition products of dead
+              plants and animals. These include
+              lignite, hard coal, peat, natural gas and
+              petroleum.</p>
+              <p>Fossil fuels are based on the carbon
+                cycle and thus enable stored (solar)
+                energy of past times to be utilised today.
+                The technical exploitation of fossil fuels,
+                initially almost exclusively coal, has
+                enabled continuous economic growth
+                since the mid-19th century in Europe
+                and North America, and later in Asia.
+                In 2005, 81 % of the world's energy
+                needs were met from fossil sources.
+                The energy content of the fossil fuels
+                listed is based on the carbon content.</p>
+              <p>When burned with oxygen, energy is
+                released in the form of heat and oxides,
+                always including carbon dioxide.
+                Therefore, the combustion of fossil fuels
+                is highly polluting and harmful to the
+                climate, both locally and globally</p>
         <div id="solar" class="row">
             <figure id="photo-solar" class="col-md-4">
                 <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668233/Museum%20Webpage/Peatt_hvxxbp.jpg", alt="image">
@@ -261,16 +744,364 @@
                 <figcaption><b>Gisagara Thermal power plant</b></figcaption>
             </figure>
         </div>
-        <h2>Charcoal and Wood</h2>
-        <p>Charcoal and wood are considered non-renewable energy sources when they are harvested or extracted from natural ecosystems at a rate faster than they can be regenerated. While trees and other plants can be regrown over time, the process of regeneration can take many years, and the rate at which trees are being cut down for charcoal and wood is often faster than the rate of regrowth.</p>
+        <h2>Petroleum</h2>
+        <p>Crude oil is a lipophilic mixture of substances
+          mainly consisting of hydrocarbons (including
+          methane) that is embedded in the earth's crust.
+          With more than 17,000 components, crude
+          petroleum (crude oil) is one of the most complex
+          mixtures of organic substances that occur
+          naturally on earth. Crude oil is formed by the
+          conversion of organic substances such as
+          plants and animals (plankton) through pressure
+          and heat.</p>
+          <p>Separation and conversion processes transform
+            crude oil into a variety of intermediate products
+            that serve as the basis for the production of
+            fuels and as raw materials for industry. The latter
+            include above all starting materials for numerous
+            products of the chemical industry, such as
+            plastics, varnishes, paints and medicines.
+            Petroleum is called "black gold" (because of its
+            enormous economic importance).</p>
+          <p>Vast, underexplored, and now known to be full of
+            petroleum resources, the East African Rift
+            System is one of the most exciting areas for
+            onshore oil and gas investment in the world.
+            These region has a great potential, with 6 billion
+            barrels of oil discovered in Lake Albert in
+            Uganda and 600 million barrels of oil discovered
+            on Kenya’s side of Lake Turkana. Exploration is
+            ongoing in Lake Tanganyika and Lake Malawi.
+            Rwanda is considering partnering with oil and
+            gas companies for the next stage of exploring
+            Lake Kivu for more hydrocarbons – beside
+            extracting Methane gas.</p>
+            <h2>Peat</h2>
+            <p>Peat is an organic sediment that is formed in bogs.
+              In its dried state, peat is combustible. It forms from
+              the accumulation of undecomposed or incompletely
+              decomposed plant matter and represents the first
+              stage of charring.</p>
+              <p>According to a peat master plan developed in
+                2012, the peat-to-power potential is estimated at
+                around 230 MW of peat generation based on
+                estimated reserves of 12.5 million tons (JICA, 2016).
+                About 77% of peat reserves are near Akanyaru,
+                Nyabarongo rivers and the Rwabusoro Plains.</p>
+              <p>However, the negative environmental impacts of
+                draining the wetlands are controversial and a costbenefit calculation is rather negative.
+                Peat wetlands are very often special ecological
+                places that have a distinctive composition of fauna
+                and flora species. Various birds, orchids,
+                carnivorous plants are typical of peat bogs and
+                swamps. Peat extraction or general peat
+                disturbance in those habitants sometimes have
+                high negative impact on this ecology. In Rwanda,
+                the Kamiranzovu swamp in Nyungwe National Park
+                is one biggest and most ancient mountain forest
+                swamp in central Africa.</p>
+              <h2>Nuclear energy</h2>
+              <p>Nuclear or atomic energy is produced by nuclear fission in a
+                process that involves bombarding a uranium atom with neutrons
+                to split it in two. This releases large amounts of heat, which is
+                then used to generate electricity.
+                </p>
+                <p><u><b>Accidents have serious consequences:</b></u></br>The safety systems of nuclear power plants are very high.
+                  However, the human element always has some influence.</p>
+                
+                <p><u><b>Disposal of nuclear waste:</b></u>A major disadvantage is the disposal of nuclear waste. Nuclear
+                  waste takes many, many years to lose its radioactivity and danger.</br></p>
+                
+                <p><u><b>Limited resources:</b></u></br>Unlike other energy options, nuclear energy is not renewable as
+                  uranium has to be mined and is not regenerated.</p>
+                
+                <p><u><b>External dependence:</b></u></br>There is dependence on the outside. Only a few countries have
+                  uranium mines. Furthermore, not all countries have nuclear
+                  technology.</p>
+                <div class="row">
+                  <div class="col-xs-6">
+                     <h3 class="text-center"><strong>Advantage</strong></h3>
+                     <p><strong>1- High energy density:</strong></br>
+                      Uranium is the element commonly used in
+                      nuclear power plants to generate electricity.
+                      This has the ability to store enormous amounts
+                      of energy: Just one gram of uranium is
+                      equivalent to 18 litres of petrol and one kilo
+                      produces about the same energy as 100 tonnes
+                      of coal (Castells, 2012).</p>
+                      <p><strong>2- Cheaper than fossil fuels</strong></br>
+                      
+                      Basically, the cost of uranium appears to be
+                      much more expensive than oil or petrol, but if
+                      we take into account that only small amounts of
+                      this element are required to produce significant
+                      amounts of energy, eventually the cost
+                      becomes even less than that of fossil fuels.</p>
+
+                      <p><strong>3- Availability</strong></br>
+                      
+                      A nuclear power plant has the quality to work
+                      all the time around the clock 365 days a year to
+                      supply a city with electricity. This is due to the
+                      fact that the refuelling period is annual or 6
+                      months, depending on the plant. Other energy
+                      rely on a steady supply of fuel (like coal plants)
+                      or are intermittent and are limited by climate
+                      (like renewable sources).</p>
+
+                      <p><strong>4- It emits less greenhouse gases (GHG) than
+                        fossil fuels.</strong></br>
+                      
+                      The process in the nuclear power plant does
+                      not emit GHGs because it does not require
+                      fossil fuels. However, the emissions that do
+                      occur occur throughout the life cycle of the
+                      plant; construction, operation, extraction and
+                      milling of uranium and dismantling of the
+                      nuclear power plant. (Sovacool, 2008).</p>
+
+                      <p><strong>5- Produces little waste</strong></br>
+                      
+                      The waste produced by a nuclear power plant is
+                      extremely hazardous and harmful to the
+                      environment. However, the amount is relatively
+                      small compared to other activities and
+                      adequate safety measures are applied that can
+                      remain isolated from the environment without
+                      posing a risk.</p>
+                  </div>
+                  <div class="col-xs-6">
+                     <h3 class="text-center"><strong>Disadvantage</strong></h3>
+                     
+                      <p><strong>1 - Uranium is a non-renewable resource.</strong></br>
+                      
+                      Historical data from many countries show that
+                      on average no more than 50-70% of uranium
+                      can be mined. Uranium concentrations of less
+                      than 0.01% are no longer profitable because a
+                      larger amount of rock must be mined and the
+                      energy used is greater than what could be
+                      produced with biomass. (Dittmar, 2013).</p>
+
+                      <p><strong>2- Negative environmental damage to human</strong></br>
+                      
+                      life is effective for generations to come.
+                      Final disposal is necessary today at least over
+                      a historical period of about 500 years. However,
+                      it should be noted that the longevity of
+                      radioactive elements depends on the particular
+                      atom: iodide-131, for example, is very shortlived and has a half-life of 8.02 days. This
+                      means that its radiation intensity is halved after
+                      8.02 days. The situation is different for
+                      caesium-137, which is much more dangerous
+                      for the human organism, because this
+                      radionuclide has a half-life of 30.17 years.
+                      Plutonium-239, on the other hand, only decays
+                      by half after 24,110 years. Uranium-238 has a
+                      half-life of 4.468 billion years.</p>
+
+                      <p><strong>3 - Cannot replace fossil fuels</strong></br>
+                      
+                      Nuclear power alone is not an alternative to oil,
+                      gas and coal fuels, as 10 thousand nuclear
+                      power plants are needed to replace the world's
+                      fossil fuel energy needs. In fact, there are only
+                      486 in the world.
+
+                      <p><strong>4- Dependent on fossil fuels</strong></br>
+                      
+                      Countries concerned with nuclear energy are
+                      dependent on fossil fuels. The nuclear fuel
+                      cycle includes not only the process of
+                      generating electricity at the plant, but also
+                      encompasses a range of activities from the
+                      exploration and use of uranium mines to the
+                      decommissioning and shutdown of the nuclear
+                      power plant.</p>
+                  </div>
+                </div>
+                <h2>Wood/Charcoal</h2>
+                <p>Urushingo: In ancient Rwanda, the fire was
+                  produced with a traditional tool called, ‘urushingo’
+                  that consisted of two wood sticks- a hard and a
+                  tender stick. The hard stick was rotated and twisted
+                  against the soft wood causing friction that
+                  ultimately created ignition, further sustained with
+                  dry materials like grasses, dry fungi or cow dung
+                  for producing fire.</p>
+                  <p>Firewood and charcoal consumption was putting
+                    pressure on the national environment, as it was
+                    increased year by year. In 2009 the consumption
+                    picked 3.2 million tones.</p>
+                  <p>To rectify this, the Government has developed the
+                    public sector forestry programs, licensing for forest
+                    harvesting and promoting alternatives to household
+                    fuels such as rice and coffee husks, as well as
+                    biogas which has been developed together with the
+                    ‘One cow per family’ scheme.</p>
+                  <p>The projects related to technologies for producing
+                    energy saving cooking stoves were also developed
+                    countrywide. This project of improved charcoal
+                    stoves in urban and peri-urban Kigali uses the
+                    power of the Rwandan private commercial sector to
+                    increase the production and purchase of fuelefficient charcoal stoves in a sustainable manner.
+                    While the plan focuses on Kigali as the largest
+                    market with the best potential for significantly
+                    reducing charcoal usage in a sustainable,
+                    commercial way, it is envisioned that some of the
+                    secondary towns likely will be served by the market
+                    linkages created by the project.
+                  </p>
+        
         <div id="satellite">
             <figure>
                 <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052538/Photos/IMG_4152.heic_1_quyxkf-min_lhbtuy.jpg", alt="image">
                 <figcaption><b>Wood consumption</b></figcaption>
             </figure>
         </div>
-        <h1 id="renewable">Renewable Energy</h1>
-        <p>Renewable energy refers to energy sources that are naturally replenished and can be used without depleting them. Some examples of renewable energy sources include solar power, wind power, hydro power, geothermal power, and biomass. These sources of energy are abundant and can be harnessed to generate electricity, heat, and fuel in a sustainable and environmentally friendly manner. The use of renewable energy sources can help reduce greenhouse gas emissions, air and water pollution, and dependence on non-renewable energy sources, such as fossil fuels. As technology advances and costs decrease, renewable energy is becoming increasingly competitive and is expected to play a larger role in meeting global energy needs in the future.</p>
+        <hr>
+        <h1>Room four</h1>
+        <h2 class="text-center">Methan gas</h2>
+        <p>Lake Kivu, with a depth of up to 450 metres, stores huge
+          amounts of methan gas.</p>
+          <p>In the depths of Lake Kivu, different parts of the earth
+            drift apart. As a result, gases such as methane (CH4
+            ) and
+            carbon dioxide (CO₂ ) escape and accumulate in the lake
+            water, just like in active volcanoes. CO₂ is particularly
+            dangerous, as it is odorless and deadly in large
+            concentrations. The methane gas is kept deep in the lake
+            by the water pressure and used by a pumping station to
+            generate energy.</p>
+          <p>Lake Kivu methane gas is extracted and used for the first
+            time in Rwanda by Union chimique de Belge with a gas
+            pilot plant at cape Rubona in 1963 to supply the Bralirwa
+            brewery.</p>
+          <p>The US-based company Contour Global has anchored in
+              2018 a 50 by 30 meter production platform in the middle
+              of the lake, which currently produces around 25 MW of
+              energy.</p>
+          
+          <p>In the process, the water is sucked out of the depths and
+            the gases are extracted. Gas and water separate
+            automatically as soon as the pressure drops on the way
+            to the surface - methane separates at a depth of 120
+            meters, carbon dioxide at 15 meters. The system directs
+            CO₂ back into the water and methane through a pipe to
+            the shore. There it is burned, the hot air drives a turbine
+            to produce electricity.</p>
+          
+          <p>Contour Global plans to increase capacity to 100 MW in
+          the future with three more platforms.
+          Lake Kivu holds enough methane gas to provide 700
+          megawatts for 55 years and could supply all of Rwanda
+          and neighbouring countries with electricity.</p>
+
+          <h3>Biomass</h3>
+          <p>When we talk about "energy from biomass" or
+            "bioenergy", we are referring to energy production
+            from plants or plant residues.</p>
+            <p>Rwanda energy primary use is dominated by
+              biomass, which accounts for 86.3% of the total.</p>
+              <p>There are different types of raw materials that can
+                be used bioenergetically:</p>
+                <ul>
+                  <li>agricultural crops cultivated specifically for this
+                    purpose, such as maize or rapeseed</li>
+                  <li>Fast-growing woody plants</li>
+                  <li>Waste and residual materials from agriculture,
+                    households and industry (e.g. wood chips from
+                    the wood industry, used fat from food
+                    production, but also sewage sludge)</li>
+                </ul>
+                <h3><u><strong>How can we use biomass?</strong></u></h3>
+                <p>The types of use are correspondingly diverse:</p>
+                <ul>
+                  <li> as biogas (mostly methane) to generate
+                    electricity and heat</li>
+                  <li> in liquid form as fuel from vegetable oil
+                    (biodiesel)</li>
+                  <li>solid as pellets or logs, also for heat and
+                    power generation.</li>
+                </ul>
+                <p>70% of Rwandan households use wood for their cooking fuel, followed by charcoal (20%), crop
+                  waste (0.8%), gas or biogas (0.2%) and other 9%. (in
+                  2018)</p>
+                <div class="row">
+                  <div class="col-xs-6">
+                   <p><b><u>Advantages of biomass:</u></b></br>The use of biomass can thus have many
+                    advantages: It offers an alternative to fossil fuels
+                    and, when burned, releases only as much climatedamaging carbon dioxide (CO₂ ) as was bound in
+                    the plant during its growth.</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <p><b><u>Disadvantages of biomass:</u></b></br>Biomass is not available in unlimited quantities -
+                      partly because the land available for growing plants
+                      for energy use is not available for growing food. In
+                      the long term, population growth, rising meat
+                      consumption, climate change and also bioenergy
+                      will very likely lead to price increases for
+                      agricultural commodities.</p>
+                      <p>Biomass is considered by far the most inefficient
+                        form of renewable energy use, as its efficiency - the
+                        amount of energy produced on a given area - is
+                        only 0.5 to 1 percent. By comparison, the efficiency
+                        of solar modules is about 20 per cent.</p>
+                  </div>
+                </div>
+                <h3>Biogas</h3>
+                <p>Biogas is obtained naturally through the
+                  decomposition of organic waste or renewable raw
+                  materials and is therefore not a fossil fuel. In a
+                  fermentation process, organic substances are
+                  microbiologically degraded in a warm, humid
+                  environment and in the absence of air.</p>
+                  <p>In a biogas plant, a controlled, biological
+                    decomposition process (digestion or fermentation)
+                    takes place, which converts the organic biomass
+                    mainly into water, carbon dioxide and methane. The
+                    methane contained in the water-saturated biogas is
+                    about 60 % valuable. The higher the proportion, the
+                    more energy-rich the gas.</p>
+                  <p>However, methane is a powerful greenhouse gas. If
+                    methane, which has a 25 to 30 times stronger heating
+                    effect on the climate than CO₂ , escapes into the
+                    atmosphere during the operation of a biogas plant,
+                    this has negative effects on the environment.</p>
+                  <p>Government has put in place an elaborate program
+                    for disseminating bio digesters in households,
+                    schools and prisons to reduce demand for firewood
+                    and charcoal and reducing household pollution since
+                    2007 (the National Domestic Biogas Program /NDBP).
+                    The government subsidized biogas technologies
+                    with a 50% subsidy and local microfinances provided
+                    assistance in the program. The One cow by the
+                    family is also a program which supported the biogas
+                    project in Rwanda.</p>
+
+                    <h3>Solar energy</h3>
+                    <p>Solar energy is the energy of solar radiation.</p>
+                    <p>In terms of quantity, the largest use of solar energy is to heat
+                      the earth so that biological existence in the known forms is
+                      possible in the near-surface region, followed by
+                      photosynthesis of algae and higher plants.</p>
+                    <p>Most organisms, including humans, depend on solar energy 
+                      either directly (as herbivores) or indirectly (as carnivores). 
+                      Fuel and building materials also come from it. Solar energy is
+                      also responsible for creating air pressure differences in the
+                      atmosphere that lead to wind. The earth's water cycle is also
+                      driven by solar energy.</p>
+                    <p>
+                      The geographical location of Rwanda endows it with sufficient
+                      solar radiation intensity varying between 4.3 and 5.2 kWh
+                      /m2/day and peak sun hours of approximately 5 hours per
+                      day. The government has developed measures to encourage
+                      the use of solar energy in different sectors such as in some
+                      administrative offices, schools and hotels.</p>
+                    
+                    
+
         <div id="solar" class="row">
             <figure id="photo-solar" class="col-md-4">
                 <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058269/Photos/Solar_panel_fwrbye-min_yjk866.jpg", alt="image">
@@ -285,10 +1116,449 @@
                 <figcaption><b>Eorian</b></figcaption>
             </figure>
         </div>
-        </div>
+        <h3>Wind energy</h3>
+        <p>Wind energy is one of the most environmentally friendly, cleanest and safest energy resources. It is considered one of the most promising renewable energy sources due to its worldwide availability, low cost and
+          level of technological development. Meanwhile, it plays a significant role in the expansion of renewable energy. Internationally, wind power plants can now produce energy more cheaply than fossil fuel power
+          plants. Wind energy represents the most economical expansion potential among renewable energy sources. Wind turbines can be used to generate electricity in all climatic zones, at sea and in all land locations
+          (coastal, inland, mountainous).
+          Being located close to the equator, Rwanda’s inherent resource potential for wind energy is low. Nevertheless, there are some sites with high potentiality that have been identified based on preliminary satellite
+          data: Nyamagabe, Ngoma, Kayonza, Rulindo and Nyabihu.</p>
+        <h3>Hydropower</h3>
+        <p>In a hydropower plant, water is dammed at a high level in
+          order to drive a turbine with the falling water, which
+          converts this energy into electricity
+          The advantages of hydropower plants are manifold: By
+          using water as a renewable energy source, fossil fuels are
+          conserved, which contributes to climate protection.
+          Furthermore, hydropower plants are independent of
+          weather and time and can therefore not only produce
+          electricity 24 hours a day, but also store it when needed.</p>
+          <p>The main disadvantages of hydropower plants are their
+            negative impact on the ecology: the construction of
+            hydropower plants alters natural rivers and disturbs the
+            groundwater balance; it interferes with the habitats of fish
+            and aquatic plants.</p>
+            <p>Hydropower plants include both domestic and regional
+              hydropower plants. Domestic hydropower consists of
+              small and medium-size hydropower located in specific
+              sites and Ntaruka hydropower is the first to be
+              constructed in Rwanda in 1957. Due to Rwanda
+              topography and hydrology, there are about 333 potential
+              sites for domestic hydropower countrywide. Regional
+              hydropower refers to joint hydro resources such as
+              Rusizi on the border with DRC and Rusumo Falls on the
+              border with Tanzania.</p>
+              <p><b><u>Nyabarongo I:</u></b></br> The Nyabarongo River hydropower dam,
+                reservoir, surge shaft, tunnel and power house have been
+                built by using the most modern technology to add an
+                additional 30% to Rwanda’s installed generation capacity
+                in 2014</p>
+                <p><b><u>Nyabarongo II (43.5 MW):</u></b></br>is a multipurpose project
+                  expected to cater for water supply, irrigation as well as
+                  electrical power generation. The project also envisages
+                  mitigating the perpetual flooding downstream of the
+                  Nyabarongo River that has proved to be hazardous in
+                  recent years. Nyabarongo – II will be located in Northern
+                  province, Gakenke District ( Between Gakenke and
+                  Kamonyi Districts)</p>
+                  <p><b><u>Rusizi III:</u></b></br>
+                    Hydropower plant situated in Rusizi District.
+                    The project was developed under the CEPGL umbrella for
+                    Rwanda, Burundi, and DRC. Rusizi III hydropower project
+                    planned to generate 147MW and the power output will be
+                    shared among the three partner states with Rwanda
+                    getting 47MW and the rest being shared between Burundi
+                    and DRC.</p>
+                    <p><b><u>Rusumo Falls Hydro Power Plant:</u></b></br>
+                      The project was funded by the World Bank and the target
+                      is to generate 80 MW and the power output will be shared
+                      equally by three countries (Rwanda, Burundi, and
+                      Tanzania).</p>
+             <h3>Geothermal Energy</h3>
+                <p>Geothermal energy refers to thermal energy (heat)
+                  stored within the earth. It is therefore also known as
+                  geothermal energy. The centre of the Earth has a
+                  similar temperature to the surface of the Sun (circa
+                  5000-6000 °C). The planet cools down towards the
+                  surface. Hot springs and geothermal power plants
+                  reach depths where there is a high temperature
+                  difference from the Earth's surface and make the
+                  heat of the Earth's interior usable for humans.
+                  Near-surface geothermal energy refers to the use of
+                  geothermal energy up to a depth of approx. 400 m,
+                  which can be used directly.</p>
+                  <p>
+                  Deep geothermal energy is the use of deposits that
+                  are tapped at depths greater than 400 m below
+                  ground level and can be used as electricity after
+                  conversion by a geothermal power plant.
+                  A geothermal power plant does not emit carbon
+                  dioxide during electricity production. For this
+                  reason alone, this type of energy generation is
+                  environmentally friendly.</p>
+                  <p>
+                  The geothermal processes in the earth's interior run
+                  permanently, so electricity generation can be
+                  described as regenerative. However, the boreholes
+                  can be problematic, as they reach over kilometres
+                  into the depths and can trigger earth tremors such
+                  as faults.</p>
+                  <p>
+                  Rwanda has geothermal potential, which is
+                  manifested in the form of hot springs. Some
+                  prospect areas have been identified for potential
+                  exploration: Kinigi, Kalisimbi, Rubavu and
+                  Bugarama.</p>
+                  <p>
+                  However, the impacts on the environment in the
+                  Virunga region have not yet been properly
+                  researched - for example, on the population of
+                  gorillas.</p>
+                  <h3>Hydrogen</h3>
+                  <p>Hydrogen is a chemical element and, with a share
+                    of around 75 percent, a large part of the mass of
+                    our solar system consists of this gas. It is part of
+                    almost every organic compound on earth and is
+                    traded by many experts as the raw material of the
+                    future. As an energy storage device, it can be
+                    obtained from renewable energies, for example,
+                    and used in almost all energy-consuming areas -
+                    i.e. mobility, heat and electricity.</p>
+                    <p>
+                    Compared to fossil fuels, but also to some
+                    renewable energies, hydrogen offers many
+                    advantages. With the help of hydrogen, excess
+                    electrical energy from solar or wind power plants 
+                    can be stored well for times when the sun is not 
+                    shining and the wind is not blowing. Tied to gas, 
+                    electricity from renewable energies is also
+                    transportable in this way and can be used
+                    anywhere with a time delay.</p>
+                    <p>
+                    Another advantage of hydrogen is that when it 
+                    "burns", that is, when it reacts with oxygen, 
+                    predominantly water is produced. This results in 
+                    fewer CO₂ emissions and fewer fossil fuels being 
+                    used
+                    Another possibility for producing hydrogen is 
+                    electrolysis with the help of electricity. For 
+                    example, electricity from solar or wind power 
+                    plants is used to split water into hydrogen and 
+                    oxygen. In this way, the electricity can be stored 
+                    effectively and for a long time
+                    Alternatives to the reforming process and 
+                    electrolysis are fermentation of biomass, e.g. 
+                    extraction from green algae. An example of this is 
+                    Lake Victoria, which is suffering from a massive 
+                    glut of algae. The gasification of biomass, i.e. the 
+                    addition of oxygen, is the most cost-effective way 
+                    of producing hydrogen to date</p>
+                  <hr>
+                  <h1>Room 5</h1>
+                  <h2 class="text-center">Pollution</h2>
+                  <fieldset class="text-center text-primary">
+                    <p>Nature does not need man,</br>But man needs nature to live</p>
+                  </fieldset>
+                  <h3>Environental pollution</h3>
+                  <p>Pollution is generally understood to be the
+                    contamination of the environment by the
+                    action and presence of humans.</br> This
+                    includes
+                    Water pollution, air pollution and soil
+                    pollution (see also contaminated sites and
+                    soil degradation) as well as pollution of
+                    land areas and water bodies through waste
+                    but also noise and, in the world's major
+                    cities, light pollution.</br>
+                    However, environmental pollution must be
+                    distinguished from direct environmental
+                    destruction and other types of
+                    environmental pollution, such as through
+                    raw material extraction, landscape
+                    consumption (as building land, etc.) or
+                    excessive use by agriculture with
+                    fertilisers.
+                    Here, a permanent destruction of
+                    the ecological balance so important for
+                    humans can take place.</p>
+                    <p>
+                    The large industrialised nations, especially 
+                    in the northern hemisphere, consume most 
+                    of the world's resources and are largely 
+                    responsible for environmental pollution. 
+                    In the poorest countries of the world, living 
+                    conditions for people are deteriorating 
+                    dramatically. Not only do they have to cope 
+                    with the direct effects of global warming, 
+                    they also lack the financial means to adapt 
+                    to the changing climate conditions. 
+                    A resident of the northern industrialised
+                    nations today consumes an average of 25 
+                    tonnes of raw materials and other material 
+                    resources per year, while an African 
+                    manages with less than 3 tonnes annually.</p>
+
+                    <h3>Greenhouse gas</h3>
+                    <h4>Global warming</h4>
+                    <p>Greenhouse gases are those gases in the
+                      atmosphere that influence the energy balance of the
+                      earth. They thus cause the so-called greenhouse
+                      effect.</p>
+                      <p><u><b>What is a greenhouse effect?</b></u></br>Explained schematically, the earth's surface is
+                        heated by solar radiation. The earth's surface
+                        reflects the incident radiation as long-wave thermal
+                        radiation, which is partially absorbed by the
+                        atmospheric greenhouse gases. By subsequently
+                        releasing the absorbed energy, part of the radiation
+                        is radiated back to the earth and the earth's surface
+                        and lower atmospheric layer are warmed. This
+                        overall process is called the greenhouse effect.</p>
+                      
+                        <p><u><b>The human-made greenhouse effect</b></u></br>However, the natural balance between radiation in
+                          and radiation out is disturbed by man-made
+                          greenhouse gases. Since the beginning of
+                          industrialization, emissions of climate-affecting
+                          gases such as carbon dioxide (CO₂), methane and
+                          nitrous oxide have risen dramatically Today, 40%
+                          more CO₂ is measured than at the beginning of the
+                          industrial age. As a result, the earth's surface has
+                          warmed globally by 0.85°C since the beginning of
+                          the 20th century</p>
+                          <p>However, the combustion of fossil fuels directly
+                            releases large amounts of carbon that have been
+                            bound in fossil fuels for millions of years as carbon
+                            dioxide (CO₂) into the atmosphere, thus increasing
+                            the natural greenhouse effect of the atmosphere.</p>
+
+                            <p><u><b>Effect of the greenhouse effect:</b></u></br>The current weather system in the different parts of
+                              the world may change massively. An increase in
+                              precipitation is expected in the humid tropics.</p>
+
+                          <div class="row">
+                            <div class="col-xs-6">
+                              <p><u><b>2. higher wind speeds, more storms and heavy
+                                precipitation.</b></u></br>
+                                Higher temperatures cause more water to
+                                evaporate. The condensation energy released in the
+                                troposphere causes an increase in the air pressure
+                                gradient and thus in the wind currents.</p>
+                                <p><u><b>3. increase in weather extremes</b></u></br>The variability of weather will increase, with heavy
+                                  precipitation and periods of drought, heat and cold
+                                  periods increasing in duration, extent and
+                                  frequency. Due to the accumulation of extreme
+                                  weather events, tropical regions will experience
+                                  increased heavy rainfall and associated massive
+                                  flooding.</p>
+                            </div>
+                            <div class="col-xs-6">
+                              <p><u><b>4. existential threat to forests</b></u></br>
+                                A temperature increase of several °C within a
+                                century would, after the large-scale destruction of
+                                forests in the tropics (for land reclamation), also
+                                threaten forests in temperate and northern latitudes.
+                                The trees, which are already endangered by
+                                increased UV and pollutant exposure, would not
+                                survive the climate stress and the emerging strong
+                                winds.</p>
+                                <p><u><b>5. increase in migration</b></u></br>
+                                  People would have to leave ancestral settlement
+                                  areas, as they can no longer be cultivated. Loss of
+                                  arable land.
+                                  </p> 
+                            </div>
+                          </div>
+                          <h3>Ocean pollution</h3>
+                          <fieldset class="text-center text-primary">
+                            <p>By 2050, the total amount of plastic waste will exceed the 
+                              total weight of all living 
+                              creatures in the Earth's 
+                              oceans.</p>
+                          </fieldset>
+                          <p>Marine pollution is a global problem. Ocean
+                            currents swirl rubbish into giant rubbish
+                            patches – the largest of which floats
+                            halfway between Hawaii and California and
+                            is twice the size of the US state of Texas,
+                            according to a 2018 study by the Ocean
+                            Cleanup Foundation.</p>
+
+                            <p>In the 1950s, just under 1.5 million tonnes
+                              of plastic were produced per year; today it
+                              is almost 400 million tonnes. And far too
+                              much of it ends up in the sea.</br>About 75 per cent of all marine litter
+                              consists of plastics. According to the
+                              United Nations Environment Programme
+                              (UNEP), there are now up to 18,000 pieces
+                              of plastic of various sizes floating on every
+                              square kilometre of ocean surface. Every
+                              year, about 8 million tonnes of plastic end
+                              up in the sea. Plastic does not dissolve on
+                              its own, but is mechanically broken down
+                              by wave action and crushed into
+                              microplastic under the stress of UV
+                              radiation. This slowly sinks to the seabed.
+                              Most of the plastic (up to 99 per cent) is 
+                              below the surface of the sea.</p>
+                              <p>This makes it impossible to estimate the 
+                                actual amount of waste.</p>
+
+                             <p>Most plastic enters the sea and ocean via 
+                              Asia's longest rivers, the Yangtze and 
+                              Yellow Rivers in China and Pakistan's 
+                              second largest river, the Indus.</p>
+                              
+                            <p>The ocean has become one of the dirtiest 
+                              places in the world. Plastic bags, plastic 
+                              bottles, straws and toothbrushes are 
+                              floating in five large rubbish patches. If we 
+                              do nothing about it, by 2050 there will be 
+                              more plastic swimming in the sea than fish.</p>
+                          <hr>
+
         <div role="region" aria-labelledby="mitigation" id="mitigation">
-          <h2 class="text-center">Environmental protection strategies</h2>
-          <p>Environmental protection strategies are a set of approaches and actions aimed at conserving and safeguarding the natural environment and its resources for present and future generations. These strategies are designed to address various environmental challenges such as pollution, habitat destruction, climate change, resource depletion, and biodiversity loss. Here are some key environmental protection strategies:</p>
+          <h1>Room 6</h1>
+          <h2 class="text-center">Mitigation against environmental degradation</h2>
+          <h3>Waste management</h3>
+          <p>All materials drawn out of the environment end up as
+            waste either directly (from the production sector) or
+            indirectly (from the recycling sector). The modern
+            principles of waste management are based on the
+            assumption that all consumption waste flows back to
+            the recycling sector either for recycling and/or for
+            disposal.</p>
+            <p>The following are main principals of waste
+              management:</p>
+            <ul>
+              <li><b>A Polluter pays:</b> The party responsible for producing
+                waste (pollution) pays for the damage done to the
+                environment.</li>
+              <li><b>B Resource Efficiency:</b>Using the Earth's limited
+                resources in a sustainable manner while minimizing
+                environmental impact.</li>
+              <li><b>C Extended Producer Responsibility (EPR):</b>A policy
+                approach under which producers are given a
+                significant responsibility – financial and/or physical –
+                for the treatment or disposal of post-consumer
+                products (waste)</li>
+            </ul>
+            <p>Life cycle of a product: The product life cycle
+              illustrates a process in which raw materials are turned
+              into products and consumed. Once their useful life
+              expires, they are discarded as waste. Thereafter waste
+              can be reused, recycled or disposed of.
+              </p>
+              <p>The waste management hierarchy makes preventing waste a top priority. However, when waste is produced,
+                priority is given to preparing it for re-use, then recycling and then recovery. The least desirable option is waste
+                disposal.</p>
+              
+            <h4 class="text-center"><strong>Waste disposal options</strong></h4>
+            <div class="row">
+              <div class="col-xs-6">
+                <p><b>A - Open dumping:</b>Still in practice in many
+                  countries, dumping of waste in open spaces is
+                  the worst disposal option. It consumes lots of
+                  lands, pollutes the air with greenhouse gases
+                  and contaminates the groundwater.</p>
+                <p><b>B - Waste to energy:</b>The process turns the nonrecyclable waste into secure energy. It is an
+                  alternative to landfills as the trash is used to
+                  provide electricity, heat or biogas.</p>
+              </div>
+              <div class="col-xs-6">
+                <p><b>C - Sanitary landfills:</b>waste is buried either
+                  underground or in large piles and sealed in with
+                  impermeable synthetic botton liners to prevent
+                  groundwater pollution. The landfill is organized
+                  in compacted layers, the layers alternate
+                  between waste and soil. This alternation of
+                  materials reduces odors and allows for more
+                  rapid decomposition, which is the breakdown of
+                  materials. When a landfill is full, it is sealed and
+                  covered in a thick layer of soil or clay. Once the
+                  landfill has been evaluated and considered safe,
+                  it can be converted into a park or open space for
+                  human use.
+                  </p>
+              </div>
+            </div>
+            <h3>Green Policy in Rwanda</h3>
+            <p>The climate variations observed in Rwanda come to
+              add to the major socio-ecological disruptions taking
+              place, such as deforestation, desertification,
+              overuse of land and natural resources. The
+              dependency on natural resources in Rwanda makes
+              economic activities directly dependent on climate
+              conditions. However, the population growth rate act
+              as drivers of environmental pressures as it tends to
+              grow beyond the ecosystem’s carrying capacity</p>
+              <p>Adaptation to climate change effects is of high
+                priority for Rwanda ‘due to its vulnerability to the
+                impacts of climate change including but not limited
+                to flooding, landslide, erosion, and drought which
+                cause great damages and losses of human lives.</p>
+             <p>In 2011, Rwanda adopted a Green Growth and
+              Climate Resilience Strategy to become a developed,
+              climate-resilient and low-carbon economy by 2050.
+              To achieve this goal, the government and its
+              stakeholders are working to reduce emissions and
+              foster climate resilience. Rwanda adopted the new
+              policy called “Environment and climate change”
+              and the law to implement it. It is in this umbrella on
+              13th August 2018, Rwanda adopted the new law on
+              environment repealing and complementing the
+              Organic Law N° 04/2005 of 08/04/2005 determining
+              the modalities of protection, conservation, and
+              promotion of the environment.</p> 
+              <p>The policy goal is for “Rwanda to have a clean and
+                healthy environment resilient to climate variability
+                and change that supports a high quality of life for its
+                society.</p>  
+            <p>The seven objectives of the policy are:</p>
+            <p>
+              (1) Greening economic transformation</br>(2) Enhancing functional natural ecosystems and
+              managing biosafety,</br>(3) Strengthening meteorological and early warning
+              services</br>(4) Promoting climate change adaptation, mitigation
+              and response</br>(5) Improving environmental well-being for
+              Rwandans</br>(6) Strengthening environment and climate change
+              governance</br>(7) Promoting green foreign and domestic direct
+              investment and other capita in flows.
+            </p>
+            <h3>Prohibition of plastic items and single-use plastics</h3>
+            <p>The government of Rwanda wants to
+              protect the environment and the health
+              of the people from throwaway plastics
+              that is why it was adopted the policy
+              imposing restrictions on plastic bags
+              and single-use plastic items such as
+              straws, soda and water bottles, plastic
+              cutlery, and almost all food packaging.</p>
+              <p>Some scientific reports blame plastic to
+                be the cause of flooding and low
+                agricultural productivity because this
+                can prevent rainwater from penetrating
+                into the soil. Moreover, tiny bits of
+                plastic are in drinking water, the air we
+                breathe, and often enter the food chain
+                and could expose us to harmful
+                chemicals when we ingest them.</p>
+            <p>For this reason, in 2008 the law relating
+              to the prohibition of manufacturing,
+              importation, use and sale of polythene
+              bags in Rwanda was adopted. In
+              addition, in 2019, the law relating to the
+              prohibition, manufacturing,
+              importation, use and sale of plastic
+              carry bags and single-use plastic items
+              was adopted. However, for exceptional
+              cases where the prohibited items may
+              be required, the law provides for the
+              possibility to apply for special
+              authorization, in accordance with the
+              guidelines issued by the institution in
+              charge of environmental protection.</p>
+              <p>According to this law, manufacturers or
+                retailers, for example, are required to
+                put mechanisms in place to collect and
+                segregate used plastics for recycling.</p>
           <div class="row">
             <div class="col-md-4">
               <ul>
@@ -440,7 +1710,7 @@
              <p>Another precious gemstone that has been found in Rwanda is ruby. Rubies have been discovered in the Musanze district in the northwest region of the country. However, the ruby deposits are small and are not currently being exploited on a large scale.</p>
         <p>It's worth noting that the gemstone mining industry in Rwanda is still in its early stages of development, and there is a lot of potential for further exploration and discovery of gemstones in the country. The government of Rwanda is working to promote sustainable mining practices and increase investment in the industry to help it grow and become more competitive on the global market.</p>
         <h2>Tin minerals</h2>
-        <p>Rwanda is known to have significant deposits of tin minerals, particularly cassiterite. Cassiterite is a tin oxide mineral that is the primary ore for tin. The mineral is found in several locations throughout Rwanda, including the province of Northern and Southern Province.</p>
+        <p>Rwanda is known to have significant deposits of tin minerals, particularly cassiterite. Cassiterite is a tin oxide mineral that is the primary ore for tin. The mineral is found in a number of locations throughout Rwanda, including the province of Northern and Southern Province.</p>
         <p>Mining of tin minerals in Rwanda has a long history, with the country being one of the largest producers of tin in Africa. The mining of tin minerals is mainly carried out by artisanal and small-scale miners who operate in various parts of the country.</p>
         <p>The primary tin mineral found in Rwanda is cassiterite, which is a tin oxide mineral. Cassiterite is the main commercial ore of tin and can occur in various geological settings, including granitic rocks and alluvial deposits.</p>
     
@@ -459,7 +1729,7 @@
                 </figure>
         </div>
         <h2>Lithium minerals</h2>
-        <p>Rwanda is also known to have significant deposits of lithium minerals, particularly in the mineral-rich region of the Northern Province. Lithium is a key component in the manufacturing of batteries for electric vehicles and energy storage systems, making it a critical mineral in the transition toward clean energy.</p>
+        <p>Rwanda is also known to have significant deposits of lithium minerals, particularly in the mineral-rich region of the Northern Province. Lithium is a key component in the manufacturing of batteries for electric vehicles and energy storage systems, making it a critical mineral in the transition towards clean energy.</p>
         <p>The primary lithium mineral found in Rwanda is spodumene, which is a lithium aluminum inosilicate mineral. Spodumene is typically found in pegmatites, which are coarse-grained igneous rocks that are formed from magma that cools slowly in the Earth's crust.</p>
         <div id="solar" class="row">
             <figure id="photo-solar" class="col-xs-4">
@@ -562,14 +1832,14 @@
     </ul>
     <p>Overall, the evolution of humans is a complex and ongoing process that involves the development of various adaptations, including the use of tools, the evolution of larger brains, and the emergence of advanced social behaviors. The study of human evolution helps us understand our origins and how we have become the species that we are today.</p>
     <h1>Nyungwe National Park</h1>
-    <p>Nyungwe National Park is a protected area in southwestern Rwanda, located on the border with Burundi and the Democratic Republic of Congo. The park covers an area of over 1,000 square kilometers and is characterized by high-altitude rainforests, grasslands, swamps, and bamboo forests. It is one of the oldest and most biologically diverse rainforests in Africa, with over 1,000 plant species, 13 primate species, and over 300 bird species.</p>
+    <p>Nyungwe National Park is a protected area in southwestern Rwanda, located on the border with Burundi and the Democratic Republic of Congo. The park covers an area of over 1,000 square kilometers and is characterized by high altitude rainforest, grasslands, swamps, and bamboo forests. It is one of the oldest and most biologically diverse rainforests in Africa, with over 1,000 plant species, 13 primate species, and over 300 bird species.</p>
     <div id="parks" class="row">
       <figure id="Nyungwe-park" class="text-center figure inline-block">
           <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684750797/Museum%20Webpage/Nyungwe_National_park_hwt2ct.jpg", alt="image">
           <figcaption><b>Nyungwe National Park</b></figcaption>
       </figure>
   </div>
-  <p>One of the main attractions of Nyungwe National Park is its population of chimpanzees, which are critically endangered species. Visitors can go on guided treks to observe these primates in their natural habitat. The park is also home to over 300 species of birds, making it a popular destination for birdwatchers.</p>
+  <p>One of the main attractions of Nyungwe National Park is its population of chimpanzees, which are a critically endangered species. Visitors can go on guided treks to observe these primates in their natural habitat. The park is also home to over 300 species of birds, making it a popular destination for birdwatchers.</p>
   <div id="birds">
     <div id="solar" class="row">
     <figure id="photo-solar" class="col-xs-4">
@@ -702,7 +1972,7 @@
 
         <div role="region" aria-labelledby="medicines" id="medicines">
           <h2 class="text-center">Medicinal plants' botanical garden</h2>
-          <p>Rwanda has a long history of traditional medicine, and many indigenous plants have been used for their medicinal properties by Rwandans for generations. The Museum of Environment exhibits 120 herbal native plants in Rwanda which were widely used as medicines by the influence of traditional healers. Here are a few examples of traditional medicinal plants in Rwanda:</p>
+          <p>Rwanda has a long history of traditional medicine, and many indigenous plants have been used for their medicinal properties by Rwandans for generations. The Museum of Environment exhibits 120 herbal native plants in Rwanda which were widely used as medicines by influence of traditional healers. Here are a few examples of traditional medicinal plants in Rwanda:</p>
           </div>
         <div id="text-center">
             <figure id="akagera">
@@ -712,12 +1982,12 @@
         </div>
         <div>
           <ul>
-            <li><b>Igisura <i>(Urtica massaica)</i></b>: The leaves of Urtica massaica have been used to treat a variety of ailments, including arthritis, rheumatism, and joint pain. In addition, the leaves of Urtica massaica have been used to treat anemia and boost the immune system.</li>
+            <li><b>Igisura <i>(Urtica massaica)</i></b>: The leaves of Urtica massaica have been used to treat a variety of ailments, including arthritis, rheumatism, and joint pain. In addition, the leaves of Urtica massaica have been used to treat anemia and to boost the immune system.</li>
             <li><b>Umuravumba<i>(Tetradenia liparia)</i></b>: This plant is used to treat fever and other conditions, including coughs and respiratory problems.</li>
             <li><b>Umwicanzoka<i>(Senna occidentalis)</i></b>: This plant is used to treat a variety of conditions, including stomach problems, malaria, and skin infections.</li>
             <li><b>Umukunde<i>(Cajanus cajan)</i></b>: Cajanus cajan, commonly known as pigeon pea, is a perennial legume that is cultivated in many tropical and subtropical regions around the world, particularly in Africa and Asia. It is an important food crop, but it also has a long history of traditional medicinal use.<br><br>Various parts of the pigeon pea plant have been used in traditional medicine to treat a variety of ailments. The leaves, roots, and seeds of the plant have been used to treat digestive problems, such as diarrhea and dysentery, as well as respiratory problems, such as coughs and bronchitis.</li>
-            <li><b>Gutwi kumwe <i>(Centella asiatica)</i></b>: One of the most well-known medicinal uses of Centella asiatica is its ability to improve cognitive function and memory. It is believed to enhance blood circulation to the brain and may have a protective effect on brain cells. It has been used to treat conditions such as anxiety, depression, and dementia.</li>
-            <li><b>Igikakarubamba<i>(Aloe lateritia)</i></b>: The gel and sap of Aloe lateritia are believed to have anti-inflammatory and analgesic properties and have been used to treat skin conditions such as burns, cuts, and wounds. It is also believed to have antibacterial properties, which may make it useful in treating infections.</li>
+            <li><b>Gutwi kumwe <i>(Centella asiatica)</i></b>: One of the most well-known medicinal uses of Centella asiatica is its ability to improve cognitive function and memory. It is believed to enhance blood circulation to the brain, and may have a protective effect on brain cells. It has been used to treat conditions such as anxiety, depression, and dementia.</li>
+            <li><b>Igikakarubamba<i>(Aloe lateritia)</i></b>: The gel and sap of Aloe lateritia are believed to have anti-inflammatory and analgesic properties, and has been used to treat skin conditions such as burns, cuts, and wounds. It is also believed to have antibacterial properties, which may make it useful in treating infections.</li>
         </ul>
         </div>
         
@@ -732,7 +2002,7 @@
         </div>
         <p>As their name suggests, black mud turtles have a dark black or brown shell and skin, which helps them blend into the muddy waters where they live. They are primarily aquatic, spending most of their time in slow-moving streams, ponds, and swamps. They are omnivores, feeding on a variety of plant and animal matter, including insects, small fish, and aquatic vegetation.</p>
         <p>Like many species of turtles, black mud turtles are threatened by habitat destruction and over-collection for the pet trade. However, due to their widespread distribution, they are not currently considered to be a conservation concern.</p>
-        </div>
+      </div>
       </main>  
       <div class="text-center">
         <footer>
@@ -744,6 +2014,6 @@
       </div>
       
   </div>
-  
+
 </body>
 </html>
