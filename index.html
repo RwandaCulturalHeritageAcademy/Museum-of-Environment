@@ -4,7 +4,363 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="styles.CSS">
+  <style>
+    body {
+  background-color: rgb(216, 226, 207)
+}
+#container {
+  display:flex;
+  height: 180px;
+  margin-top: -20px;
+  z-index: 1;
+}
+#container nav h1 {
+  margin-bottom: -15px;
+}
+#container nav h2 {
+  margin-bottom: -15px;
+}
+
+#content ul{
+  display: flex;
+  justify-content: space-evenly;
+  height: 20px;
+  margin-top: 20px;
+}
+#content ul li {
+  list-style-type: none;
+  font-weight: 900;
+  padding-right: 1.5em;
+}
+#content ul li a {
+  color: rgb(5, 46, 5);
+  text-decoration: none;
+}
+#content ul li a:hover {
+  color: rgb(12, 38, 2);
+}
+
+header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+nav h1, h2, h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+}
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: green;
+}
+h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3em;
+}
+#titlee {
+  font-size: 22px;
+}
+#columns {
+  display: flex;
+}
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
+#stal {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(199, 184, 160);
+  border-radius: 10px;
+}
+li {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+}
+.container-fluid {
+  margin: 10px 30px;
+}
+
+#photo-solar img{
+  height: 320px;
+  width: 480px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 2em 0 0 0;
+}
+.letter::first-letter {
+  font-size: 30px;
+}
+.letter{
+  margin-top: 20px;
+}
+#letter {
+  margin-top: 20px;
+}
+#little-down {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+#europe {
+  margin-top: 22px;
+}
+figcaption {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#solar {
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+  display: flex;
+}
+#solar > #photo-solar {
+  padding-right: -15px;
+}
+
+#weather {
+  background-color: rgb(30, 1, 1);
+  color: white;
+  font-size: 2.5rem;
+  width: 50%;
+  border-radius: 30%;
+  height: relative;
+}
+#font {
+  font-size: 3rem;
+}
+h7 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+}
+#minerology {
+  background-color: rgb(62, 46, 6);
+  width: 70%;
+}
+#jewerly {
+  color: white;
+}
+#center {
+  margin: 0 30px 0 30em;
+}
+#overview {
+  background-color: rgba(0, 128, 0, 0.327);
+  border-radius: 10px;
+}
+
+#photo-solar .rotate {
+  transform: rotate(-90deg);
+  height: 480px;
+  width: 320px;
+  margin-left: 79px; 
+  margin-top: -48px;
+}
+#photo-solar #fig {
+  margin-top: -73px;
+}
+#satellite figure img {
+  object-fit: cover;
+  width: 300px;
+  height: 400px;
+  margin-top: 30px;
+}
+#landscape figure img {
+  width: 800px;
+  height: 440px;
+  object-fit: cover;
+}
+#landscape-1 figure img {
+  width: 800px;
+  height: 430px;
+  object-fit: cover;
+}
+.waste {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#waste-recycle {
+  height: 250px;
+  width: 400px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 30px;
+}
+.row #gishwati {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+}
+.row .col-xs-6 #gishwati {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 25px;
+  padding: 2em 0 2em 0;
+}
+#parks #nyungwe-park {
+  width: 900px;
+  height: 450px;
+  object-fit: cover;
+}
+#parks {
+  padding-bottom: 2em;
+}
+#solar{
+  margin-bottom: 0px;
+}
+#solar #photo-solar {
+  width: 500px;
+  height: 320px;
+  margin: 0px 0px 0px 50px;
+  object-fit: cover;
+}
+.nyungwe {
+  padding-bottom: 40px;
+}
+#medicine .garden {
+  width: 400px;
+  height: 200;
+  object-fit: cover;
+}
+#akagera {
+  width: 900px;
+  height: 450px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: rgb(13, 34, 13);
+  height: 12rem;
+  margin: 0px -45px -10px -45px;
+  
+}
+footer header {
+  margin-bottom: -20px;
+}
+footer h1 {
+  font-size: 25px;
+  margin-bottom: -5px;
+}
+footer p{
+  margin-bottom: -5px;
+}
+@media only screen and (max-width: 600px) {
+  #container {
+    display: block;
+    width: 400px;
+    margin-bottom: 60px;
+  }
+  #first-header {
+    width: 400px;
+    display: flex;
+    margin-bottom: -20px;
+  }
+  #first-header nav h1{
+    font-size: 18px;
+  }
+  #first-header nav h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+  #first-header nav h2 {
+    text-align: center;
+  }
+  
+  main {
+    max-width: 370px;
+    margin-left: 15px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  #solar {
+    display: flex;
+  }
+  #photo-solar img{
+    height: 70px;
+    width: 120px;
+    margin-left: -50px;
+    padding-right: 0px;
+  }
+  #solar #photo-solar {
+    margin-right: -30px;
+  }
+  figcaption {
+    font-size: 10px;
+  }
+  #solar #photo-solar .rotate {
+    margin-right: -18px;
+    margin-left: -26px;
+  }
+  #solar #photo-solar .except {
+    margin-left: -50px;
+  }
+  #satellite {
+    margin-top: -33em;
+  }
+  #landscape-1 .Wimshurst {
+    width: 25em;
+    height: 20em;
+  }
+  #satellite #stlt {
+    padding-top: 33em;
+  }
+  
+
+
+
+  
+  .well nav .text-primary, .well nav h2, .well nav h3 {
+    font-size: 0.3em;
+  }
+  .well #content header {
+    font-size: 15px;
+    margin-left: -35px;
+  }
+  .well #content ul {
+    display: flex;
+    margin-left: -55px;
+  }
+  .well #content ul li {
+    font-size: 8px;
+    margin-left: 5px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .row {
+    display: flex;
+  }
+  
+  #photo-solar .rotate {
+    width: 70px;
+    height: 120px;
+    margin: -400px 0 0 25px;
+  }
+  #photo-solar #fig {
+    margin: -170px 0 0 0px;
+    margin-bottom: -100px;
+  }
+  #photo-solar .except {
+    width: 120px;
+    height: 70px;
+    margin: -400px 0 0 0px;
+  }
+  #photo-solar #meteorite {
+    margin: -180px 0 0 0px;
+    width: 80px;
+    margin-bottom: -100px;
+  }
+  #landscape figure img {
+    width: 25em;
+    height: 20em;
+  }
+}
+  </style>
   <title>Document</title>
 
 </head>
