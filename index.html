@@ -4,244 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-  <style>
-    body {
-  background-color:rgb(216, 226, 207);
-}
-
-#container {
-  display: flex;
-  height: auto;
-}
-#content ul{
-  display: flex;
-  justify-content: space-evenly;
-  height: 20px;
-  margin-top: 30px;
-}
-#content ul li {
-  list-style-type: none;
-  font-weight: 900;
-  padding-right: 1.5em;
-}
-#content ul li a {
-  color: rgb(5, 46, 5);
-}
-header {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: xx-large;
-  font-weight: bolder;
-}
-nav h1, h2, h3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 900;
-  font-size: 2rem;
-}
-h1 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  color: green;
-}
-h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 3em;
-}
-#titlee {
-  font-size: 22px;
-}
-#columns {
-  display: flex;
-}
-p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: large;
-}
-#stal {
-  width: 70%;
-  margin: 0 auto;
-  background-color: rgb(199, 184, 160);
-  border-radius: 10px;
-}
-li {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: large;
-}
-.container-fluid {
-  margin: 10px 30px;
-}
-#photo-solar img{
-  height: 300px;
-  width: 450px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin: 2em 0 0 0;
-}
-.letter::first-letter {
-  font-size: 30px;
-}
-.letter{
-  margin-top: 20px;
-}
-#letter {
-  margin-top: 20px;
-}
-#little-down {
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-#europe {
-  margin-top: 22px;
-}
-figcaption {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-#solar {
-  margin-bottom: 30px;
-  padding-bottom: 35px;
-}
-#photo-solar .rotate {
-  transform: rotate(-90deg);
-  height: 450px;
-  width: 300px;
-  margin-left: 74px; 
-  margin-top: -48px;
-}
-#photo-solar #fig {
-  margin-top: -73px;
-}
-#satellite figure img {
-  object-fit: cover;
-  width: 300px;
-  height: 400px;
-}
-#landscape figure img {
-  width: 700px;
-  height: 400px;
-  object-fit: cover;
-}
-.row #gishwati {
-  width: 450px;
-  height: 300px;
-  object-fit: cover;
-}
-.row .col-xs-6 #gishwati {
-  width: 700px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 25px;
-  padding: 2em 0 2em 0;
-}
-#parks #nyungwe-park {
-  width: 900px;
-  height: 450px;
-  object-fit: cover;
-}
-#parks {
-  padding-bottom: 2em;
-}
-#solar{
-  margin-bottom: 0px;
-}
-#solar #photo-solar {
-  width: 500px;
-  height: 320px;
-  margin-right: -20px;
-  object-fit: cover;
-}
-.nyungwe {
-  padding-bottom: 40px;
-}
-#medicine .garden {
-  width: 400px;
-  height: 200;
-  object-fit: cover;
-}
-#akagera {
-  width: 900px;
-  height: 450px;
-  object-fit: cover;
-}
-
-footer {
-  background-color: rgb(13, 34, 13);
-  height: 12rem;
-  margin: 0px -45px -10px -45px;
-  
-}
-footer header {
-  margin-bottom: -20px;
-}
-footer h1 {
-  font-size: 25px;
-  margin-bottom: -5px;
-}
-footer p{
-  margin-bottom: -5px;
-}
-@media (max-width: 768px) {
-  #container {
-    display: flex;
-  }
-  .well nav .text-primary, .well nav h2, .well nav h3 {
-    font-size: 0.3em;
-  }
-  .well #content header {
-    font-size: 15px;
-    margin-left: -35px;
-  }
-  .well #content ul {
-    display: flex;
-    margin-left: -55px;
-  }
-  .well #content ul li {
-    font-size: 8px;
-    margin-left: 5px;
-  }
-  p {
-    font-size: 15px;
-  }
-  .row {
-    display: flex;
-  }
-  #photo-solar img {
-    height: 70px;
-    width: 120px;
-    
-  }
-  #photo-solar .rotate {
-    width: 70px;
-    height: 120px;
-    margin: -400px 0 0 25px;
-  }
-  #photo-solar #fig {
-    margin: -170px 0 0 0px;
-    margin-bottom: -100px;
-  }
-  #photo-solar .except {
-    width: 120px;
-    height: 70px;
-    margin: -400px 0 0 0px;
-  }
-  #photo-solar #meteorite {
-    margin: -180px 0 0 0px;
-    width: 80px;
-    margin-bottom: -100px;
-  }
-  #landscape figure img {
-    width: 25em;
-    height: 20em;
-  }
-}
-
-  </style>
-  
+  <link rel="stylesheet" href="museum.css">
   <title>Document</title>
 
 </head>
 <body>
   <div class="container-fluid">
     <header id="container">
-      <div class="well">
+      <div id="first-header" class="well">
         <nav>
           <h1 class="text-primary">Rwanda Cultural Heritage Academy</h1>
           <h2 id="titlee">Museum of Environment</h2>
@@ -259,7 +29,7 @@ footer p{
             <li class="exhibition"><a href="#mitigation">Environmental protection strategies</a></li>
             <li class="exhibition"><a href="#resources">Natural resource</a></li>
             <li class="exhibition"><a href="#medicines">Medicinal plants' botanical garden</a></li>
-            <li class="exhibition"><a href="#turtles">East-African Black-Mud Turtles</a></li>
+            <li class="exhibition"><a href="#Turtles">East-African Black-Mud Turtles</a></li>
           </ul>
         </nav>
       </div>
@@ -297,7 +67,7 @@ footer p{
                 <img class="rotate" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058308/Photos/Rock_Moon_n1kmls-min_ipp7oq.jpg" alt="image">
                 <figcaption id="fig"><b>Small rock from Taurus Rithrow Valley</b></figcaption>
             </figure>
-            <figure id="photo-solar" class="col-md-4">
+            <figure id="photo-solar" id="photo-solar1" class="col-md-4">
                 <img class="except" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058303/Photos/Rockk_delgqk-min_aryaqi.jpg" alt="image">
                 <figcaption id="meteorite"><b>Meteorite which hitted Earth planet in 1976</b></figcaption>
             </figure>
@@ -312,8 +82,8 @@ footer p{
                   <figcaption><b>Artificial satellite</b></figcaption>
               </figure>
           </div>
+          <h3 class="text-center inline-block">Earth planet</h3>
             <div class="row">
-              <h3 class="text-center">Earth planet</h3>
               <div class="col-xs-6">
             <p class="letter">Earth planet is a dense ball about 12,750 km across
               and it is the third from the Sun (150 million km ).
@@ -482,8 +252,8 @@ footer p{
               temperature differences of up to 40 degrees can be endured.weathering.</p>
           </div>
         </div>
+        <h3 class="text-center">Climate of the middle latitudes</h3>
         <div class="row">
-          <h3 class="text-center">Climate of the middle latitudes</h3>
           <div class="col-xs-4">
            <p id="letter">The mid-latitudes are the areas between the Arctic Circle and the Tropic 
             of Cancer in both hemispheres. In the northern hemisphere are countries 
@@ -534,8 +304,8 @@ footer p{
               winds.</p>
           </div>
         </div>
+        <h3 class="text-center">Tropical climate</h3>
         <div class="row">
-          <h3 class="text-center">Tropical climate</h3>
           <div class="col-xs-6">
             <p class="letter">Geographically, the tropics are the area between the equator and the 
               tropics. Here you will find both hot and humid climates (Congo) and very 
@@ -575,8 +345,8 @@ footer p{
               savannahs in Mali, Niger and Chad.</p>
           </div>
         </div>    
+        <h3 class="text-center">Habitats of the tropics</h3>
         <div class="row">
-          <h3 class="text-center">Habitats of the tropics</h3>
           <p>In the permanently humid tropical climate near the equator, evergreen rainforests extend 
             across Africa, South America and Southeast Asia. With increasing distance from the equator, 
             the frequency and quantity of rainfall decreases and deciduous tree species increase. 
@@ -846,11 +616,22 @@ footer p{
               </div>
             </div>
           
-        <div id="landscape">
-            <figure class="text-center">
-                <img class="Wimshurst" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668573/Museum%20Webpage/Wimshurst_Machine_myqbgo.jpg", alt="image">
-                <figcaption><b>Wimshurst Machine</b></figcaption>
-            </figure>
+        <div id="landscape-1" class="row">
+          <div class="col-md-6">
+            <figure>
+              <img class="Wimshurst" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668573/Museum%20Webpage/Wimshurst_Machine_myqbgo.jpg", alt="image">
+              <figcaption><b>Wimshurst Machine</b></figcaption>
+          </figure>
+          </div>
+
+          <div class="col-md-6">
+            <figure>
+              <img class="Wimshurst" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700484565/Photos/1a1a3480_53181098380_o_w7eutr_Sharpened_ipnnrf.jpg", alt="image">
+              <figcaption><b>Bicycle that converts potential energy into light energy</b></figcaption>
+          </figure>
+          </div>
+          </div>
+            
         </div>
         <div id="Wimshurst">
             <p><b>The Wimshurst machine is an electrostatic generator that was invented in the late 19th century by British engineer James Wimshurst. It consists of two counter-rotating disks with metal plates attached to their surfaces, which are separated by a small gap. The disks are rotated by a crank, which causes the plates to become charged with static electricity.</b></p>
@@ -922,7 +703,7 @@ footer p{
                 climate, both locally and globally</p>
         <div id="solar" class="row">
             <figure id="photo-solar" class="col-md-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668233/Museum%20Webpage/Peatt_hvxxbp.jpg", alt="image">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700472557/Photos/dsc03446_53179965062_o_fuhga1.jpg", alt="image">
                 <figcaption><b>Peat</b></figcaption>
             </figure>
             <figure id="photo-solar" class="col-md-4">
@@ -980,7 +761,7 @@ footer p{
                 About 77% of peat reserves are near Akanyaru,
                 Nyabarongo rivers and the Rwabusoro Plains.</p>
               <p>However, the negative environmental impacts of
-                draining the wetlands are controversial and a costbenefit calculation is rather negative.
+                draining the wetlands are controversial and a cost benefit calculation is rather negative.
                 Peat wetlands are very often special ecological
                 places that have a distinctive composition of fauna
                 and flora species. Various birds, orchids,
@@ -1081,7 +862,7 @@ footer p{
                       a historical period of about 500 years. However,
                       it should be noted that the longevity of
                       radioactive elements depends on the particular
-                      atom: iodide-131, for example, is very shortlived and has a half-life of 8.02 days. This
+                      atom: iodide-131, for example, is very short lived and has a half-life of 8.02 days. This
                       means that its radiation intensity is halved after
                       8.02 days. The situation is different for
                       caesium-137, which is much more dangerous
@@ -1135,7 +916,7 @@ footer p{
                     countrywide. This project of improved charcoal
                     stoves in urban and peri-urban Kigali uses the
                     power of the Rwandan private commercial sector to
-                    increase the production and purchase of fuelefficient charcoal stoves in a sustainable manner.
+                    increase the production and purchase of fuel efficient charcoal stoves in a sustainable manner.
                     While the plan focuses on Kigali as the largest
                     market with the best potential for significantly
                     reducing charcoal usage in a sustainable,
@@ -1144,11 +925,30 @@ footer p{
                     linkages created by the project.
                   </p>
         
-        <div id="satellite">
-            <figure>
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052538/Photos/IMG_4152.heic_1_quyxkf-min_lhbtuy.jpg", alt="image">
-                <figcaption><b>Wood consumption</b></figcaption>
-            </figure>
+        <div id="satellite" class="row">
+          <div class="col-xs-3">
+            <figure id="stlt">
+            <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052538/Photos/IMG_4152.heic_1_quyxkf-min_lhbtuy.jpg", alt="image">
+            <figcaption><b>Wood consumption</b></figcaption>
+        </figure></div>
+        <div class="col-xs-3">
+          <figure id="stlt">
+          <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700472705/Photos/dsc03461_53181053928_o_dpluzu.jpg", alt="image">
+          <figcaption><b>Petroleum lamp</b></figcaption>
+      </figure>
+    </div>
+    <div class="col-xs-3">
+      <figure id="stlt">
+      <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700472697/Photos/dsc03459_53181054353_o_tkhesj.jpg", alt="image">
+      <figcaption><b>Modern stoove</b></figcaption>
+  </figure>
+</div>
+<div class="col-xs-3">
+  <figure id="stlt">
+  <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700472223/Photos/1a1a3469_53180659906_o_jmdgan.jpg", alt="image">
+  <figcaption><b>Petroleum light</b></figcaption>
+</figure></div>
+            
         </div>
         <hr>
         <h1>Room four</h1>
@@ -1295,15 +1095,15 @@ footer p{
 
         <div id="solar" class="row">
             <figure id="photo-solar" class="col-md-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058269/Photos/Solar_panel_fwrbye-min_yjk866.jpg", alt="image">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700472878/Photos/dsc03639_53180725044_o_fx8ohv.jpg", alt="image">
                 <figcaption><b>Solar Panel</b></figcaption>
             </figure>
             <figure id="photo-solar" class="col-md-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058308/Photos/Solar_and_Wind_Energy_n5va6t-min_ebxeaz.jpg", alt="image">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700472722/Photos/dsc03630_53179943937_o_i2bhfi.jpg", alt="image">
                 <figcaption><b>Solar and Wind Energy</b></figcaption>
             </figure>
             <figure id="photo-solar" class="col-md-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052531/Photos/Eorian_m3yebf-min_m2m16r.jpg", alt="image">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700472714/Photos/dsc03622_53179945247_o_ztuiuw.jpg", alt="image">
                 <figcaption><b>Eorian</b></figcaption>
             </figure>
         </div>
@@ -1655,90 +1455,53 @@ footer p{
                   provide electricity, heat or biogas.</p>
               </div>
               <div class="col-xs-6">
-                <p><b>C - Sanitary landfills:</b>waste is buried either
-                  underground or in large piles and sealed in with
-                  impermeable synthetic botton liners to prevent
-                  groundwater pollution. The landfill is organized
-                  in compacted layers, the layers alternate
-                  between waste and soil. This alternation of
-                  materials reduces odors and allows for more
-                  rapid decomposition, which is the breakdown of
-                  materials. When a landfill is full, it is sealed and
-                  covered in a thick layer of soil or clay. Once the
-                  landfill has been evaluated and considered safe,
-                  it can be converted into a park or open space for
-                  human use.
+                <p><b>C - Sanitary landfills:</b>waste is buried either underground or in large piles and sealed in with impermeable synthetic botton liners to prevent
+                  groundwater pollution. The landfill is organized in compacted layers, the layers alternate
+                  between waste and soil. This alternation of materials reduces odors and allows for more
+                  rapid decomposition, which is the breakdown of materials. When a landfill is full, it is sealed and
+                  covered in a thick layer of soil or clay. Once the landfill has been evaluated and considered safe,
+                  it can be converted into a park or open space for human use.
                   </p>
               </div>
             </div>
             <h3>Green Policy in Rwanda</h3>
-            <p>The climate variations observed in Rwanda come to
-              add to the major socio-ecological disruptions taking
-              place, such as deforestation, desertification,
-              overuse of land and natural resources. The
-              dependency on natural resources in Rwanda makes
-              economic activities directly dependent on climate
-              conditions. However, the population growth rate act
-              as drivers of environmental pressures as it tends to
+            <p>The climate variations observed in Rwanda come to add to the major socio-ecological disruptions taking
+              place, such as deforestation, desertification, overuse of land and natural resources. The
+              dependency on natural resources in Rwanda makes economic activities directly dependent on climate
+              conditions. However, the population growth rate act as drivers of environmental pressures as it tends to
               grow beyond the ecosystem’s carrying capacity</p>
-              <p>Adaptation to climate change effects is of high
-                priority for Rwanda ‘due to its vulnerability to the
-                impacts of climate change including but not limited
-                to flooding, landslide, erosion, and drought which
+              <p>Adaptation to climate change effects is of high priority for Rwanda ‘due to its vulnerability to the
+                impacts of climate change including but not limited to flooding, landslide, erosion, and drought which
                 cause great damages and losses of human lives.</p>
-             <p>In 2011, Rwanda adopted a Green Growth and
-              Climate Resilience Strategy to become a developed,
-              climate-resilient and low-carbon economy by 2050.
-              To achieve this goal, the government and its
-              stakeholders are working to reduce emissions and
-              foster climate resilience. Rwanda adopted the new
-              policy called “Environment and climate change”
-              and the law to implement it. It is in this umbrella on
-              13th August 2018, Rwanda adopted the new law on
-              environment repealing and complementing the
-              Organic Law N° 04/2005 of 08/04/2005 determining
-              the modalities of protection, conservation, and
+             <p>In 2011, Rwanda adopted a Green Growth and Climate Resilience Strategy to become a developed,
+              climate-resilient and low-carbon economy by 2050. To achieve this goal, the government and its
+              stakeholders are working to reduce emissions and foster climate resilience. Rwanda adopted the new
+              policy called “Environment and climate change” and the law to implement it. It is in this umbrella on
+              13th August 2018, Rwanda adopted the new law on environment repealing and complementing the
+              Organic Law N° 04/2005 of 08/04/2005 determining the modalities of protection, conservation, and
               promotion of the environment.</p> 
-              <p>The policy goal is for “Rwanda to have a clean and
-                healthy environment resilient to climate variability
-                and change that supports a high quality of life for its
-                society.</p>  
+              <p>The policy goal is for “Rwanda to have a clean and healthy environment resilient to climate variability
+                and change that supports a high quality of life for its society.</p>  
             <p>The seven objectives of the policy are:</p>
             <p>
-              (1) Greening economic transformation</br>(2) Enhancing functional natural ecosystems and
-              managing biosafety,</br>(3) Strengthening meteorological and early warning
-              services</br>(4) Promoting climate change adaptation, mitigation
-              and response</br>(5) Improving environmental well-being for
-              Rwandans</br>(6) Strengthening environment and climate change
-              governance</br>(7) Promoting green foreign and domestic direct
+              (1) Greening economic transformation</br>(2) Enhancing functional natural ecosystems and managing biosafety,</br>(3) Strengthening meteorological and early warning
+              services</br>(4) Promoting climate change adaptation, mitigation and response</br>(5) Improving environmental well-being for
+              Rwandans</br>(6) Strengthening environment and climate change governance</br>(7) Promoting green foreign and domestic direct
               investment and other capita in flows.
             </p>
             <h3>Prohibition of plastic items and single-use plastics</h3>
-            <p>The government of Rwanda wants to
-              protect the environment and the health
-              of the people from throwaway plastics
-              that is why it was adopted the policy
-              imposing restrictions on plastic bags
-              and single-use plastic items such as
-              straws, soda and water bottles, plastic
-              cutlery, and almost all food packaging.</p>
-              <p>Some scientific reports blame plastic to
-                be the cause of flooding and low
-                agricultural productivity because this
-                can prevent rainwater from penetrating
-                into the soil. Moreover, tiny bits of
-                plastic are in drinking water, the air we
-                breathe, and often enter the food chain
-                and could expose us to harmful
-                chemicals when we ingest them.</p>
-            <p>For this reason, in 2008 the law relating
-              to the prohibition of manufacturing,
-              importation, use and sale of polythene
-              bags in Rwanda was adopted. In
-              addition, in 2019, the law relating to the
-              prohibition, manufacturing,
-              importation, use and sale of plastic
-              carry bags and single-use plastic items
+            <p>The government of Rwanda wants to protect the environment and the health
+              of the people from throwaway plastics that is why it was adopted the policy
+              imposing restrictions on plastic bags and single-use plastic items such as
+              straws, soda and water bottles, plastic cutlery, and almost all food packaging.</p>
+              <p>Some scientific reports blame plastic to be the cause of flooding and low agricultural productivity because this
+                can prevent rainwater from penetrating into the soil. Moreover, tiny bits of
+                plastic are in drinking water, the air we breathe, and often enter the food chain
+                and could expose us to harmful chemicals when we ingest them.</p>
+            <p>For this reason, in 2008 the law relating to the prohibition of manufacturing,
+              importation, use and sale of polythene bags in Rwanda was adopted. In
+              addition, in 2019, the law relating to the prohibition, manufacturing,
+              importation, use and sale of plastic carry bags and single-use plastic items
               was adopted. However, for exceptional
               cases where the prohibited items may
               be required, the law provides for the
@@ -1757,7 +1520,39 @@ footer p{
                       <figcaption><b>Recycling</b></figcaption>
                   </figure>
               </div>
-            
+            <div class="waste">
+                <figure>
+                  <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700473174/Photos/dsc03697_53180525386_o_az00vn.jpg" alt="image">
+                  <figcaption><b></b></figcaption> 
+                </figure>
+              
+              
+                <figure>
+                  <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700473098/Photos/dsc03690_53181026743_o_zbqkuv.jpg" alt="image">
+                  <figcaption><b></b></figcaption> 
+                </figure>
+              
+              
+                <figure>
+                  <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700473257/Photos/dsc03709_53179933892_o_ondsff.jpg" alt="image">
+                  <figcaption><b></b></figcaption> 
+                </figure>
+              
+              
+                <figure>
+                  <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700473203/Photos/dsc03700_53180525131_o_li1gzk.jpg" alt="image">
+                  <figcaption><b></b></figcaption> 
+                </figure>
+            </div>
+            <div class="waste">
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700472882/Photos/dsc03681_53181027998_o_xqu65v.jpg" alt="image">
+                <figcaption><b></b></figcaption> 
+              </figure>
+
+            </div>
+
+
             <h3>Urbanization</h3>
             <p>Until the beginning of the 20th century, Rwanda
               was a country characterized by small to very small
@@ -1797,7 +1592,7 @@ footer p{
             economic, social and environmental.</p>
             <p>The Green City Kigali Policy has the vision that
               green housing must be for all, especially for the
-              poor. It will provide much-needed homes for lowto middle-income inhabitants. One of the project
+              poor. It will provide much-needed homes for low to middle-income inhabitants. One of the project
               objectives is to design well-accepted, low-carbon
               footprint and efficient housing types for various
               sites and density conditions respecting the
@@ -1904,7 +1699,7 @@ footer p{
               fauna. Drainage also affects the
               downstream water regime. A drained
               wetland evacuates water more quickly
-              and thus loses its natural waterregulating power during heavy rains.
+              and thus loses its natural water regulating power during heavy rains.
               </p>  
 
           <h3 class="text-center"><strong>What can you do?</strong></h3>
@@ -1925,7 +1720,7 @@ footer p{
               <li>You can shift to those improved stoves to 
                 reduce charcoal production, deforestation 
                 and soil erosion.</li>
-              <li>You can invest in renewable energy – for 
+              <li>You can invest in renewable energy for 
                 example using solar panels on the roof.</li>
               <li>You can invest in E-Technolgy</li>
               <li>You can use public transport</li>
@@ -1950,7 +1745,7 @@ footer p{
                 treatment systems your hotels, in hospitals, 
                 in new real estate developments and also as 
                 entrepreneur in industries.</li>
-              <li>You can invest in installation of the stormwater drainage systems, which limit flooding 
+              <li>You can invest in installation of the storm water drainage systems, which limit flooding 
                 during heavy rainfall events, especially in 
                 most urban areas.</li>
               <li>You can shift to electric vehicles in order to 
@@ -1967,330 +1762,1189 @@ footer p{
         
         <div role="region" aria-labelledby="resources" id="resources">
           <h2 class="text-center">Natural resource</h2>
-          <h3 class="text-center">Geology</h3>
-          <p>Rwanda is located in the East African Rift System, a region characterized by volcanic and tectonic activity. The country has a complex geology, with rocks ranging in age from Precambrian to Quaternary. The geology of Rwanda is dominated by Precambrian basement rocks, which consist of granites, gneisses, and schists. In the western part of the country, there are volcanic rocks, including basaltic lavas, tuffs, and agglomerates. The region also has several mineral deposits, including tin, tungsten, tantalum, and gold, which are associated with the granitic rocks. Additionally, there are hot springs and geothermal areas in the western part of the country, indicating the presence of geothermal resources that can be harnessed for energy.</p>
-          <p><strong>Igneous Rocks:</strong> Formed from the cooling and solidification of molten magma. Classified into intrusive (cooled below the surface, e.g., granite) and extrusive (cooled at the surface, e.g., basalt) types. They provide insights into Earth's internal processes.</p>
-          <p><strong>Sedimentary Rocks:</strong> Created by the accumulation, compression, and cementation of sediments (fragments of older rocks, minerals, and organic material). They preserve clues about Earth's past environments, fossils, and changing landscapes. Examples include limestone (formed from marine shells), sandstone, and shale.</p>
-          <p><strong>Metamorphic Rocks:</strong> Arise from the alteration of existing rocks due to heat and pressure, often deep within Earth's crust. Original minerals recrystallize into new forms, creating a range of textures. Examples include marble (from limestone) and slate (from shale). Metamorphism reveals the tectonic forces shaping the planet.</p>
-          <div id="solar" class="row">
-            <figure id="photo-solar" class="col-md-4">
-              <img src="https://www.larousse.fr/encyclopedie/data/images/1313247-Gneiss.jpg", alt="image">
-              <figcaption><b>Gneiss rock</b></figcaption>
-          </figure>
-          <figure id="photo-solar" class="col-md-4">
-              <img src="https://live.staticflickr.com/65535/49201189712_bd2fab9fc5_b.jpg", alt="image">
-              <figcaption><b>Granite rock</b></figcaption>
-          </figure>
-          <figure id="photo-solar" class="col-md-4">
-              <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668276/Museum%20Webpage/Lacustre_qim1yt.jpg", alt="image">
-              <figcaption><b>Lake sediment</b></figcaption>
-          </figure>
+          <h2>Topographic Map</h2>
+          <p>Known as the “land of a thousand hills,” Rwanda's landscape is mostly grassy uplands, hills, and mountainous with altitude declining from west to east. To the west of the Congo Nile Divide, the altitude declines sharply to Lake Kivu in the Great Rift Valley; to the east, the altitude  falls gradually across the central plateau to the eastern lowlands with swamps and lakes in the country's eastern region.  The highest point in the country is Mount Karisimbi, (4 507m) while the lowest part is Bugarama plain with an altitude of 950 m.</p>
+          <p>The country is split into two hydrographic basins by the Congo-Nile divide. To the east of the Congo-Nile divide lies the Nile basin which covers 67 percent of the total national territory and drains 90 percent of Rwandan waters through two main rivers (Nyabarongo and Akagera) to the Akagera river, Lake Victoria and the Nile River. On the West of the divide, there is the Congo Basin which drains water into Lake Kivu and then into the Rusizi River, Lake Tanganyika and the Congo River. </p>
+          <h3 class="text-center">Geology and Mineralogy</h3>
+          <p>Geology is the study of earth, the materials that made it (Rocks, Minerals, Soil etc.…) how they change over time and the processes acting upon them.</p>
+          <h4 class="text-center">Rocks</h4>
+          <p>Rock are solid material made up of one or more minerals, there are three types of rocks (Igneous, Sedimentary and Metamorphic rocks) and they all differ according to their way of formation.</p>
+          <p class="text-center"><strong>Types of rocks with their relative way of formation</strong></p>
+          <div class="row">
+            
+            <div class="col-xs-4">
+              <p class="text-center text-primary">Igneous rock</p>
+              <p>Forms when melted rock from deep below earth’s surface cools and harden.</p>
+            </div>
+            <div class="col-xs-4">
+              <p class="text-center text-primary">Sedimentary rock</p>
+              <p>Forms when sand, particles of rock bits of soil and remains of once living things are pressed together by heat and pressure beneath the ground and hardens.</p>
+            </div>
+            <div class="col-xs-4">
+              <p class="text-center text-primary">Metamorphic rock</p>
+              <p>Forms when existing rocks are changed by extreme heat and pressure.</p>
+            </div>
           </div>
-          <div id="solar" class="row">
-            <figure id="photo-solar" class="col-md-4">
-              <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668250/Museum%20Webpage/Micaschist_h0s8v2.jpg", alt="image">
-              <figcaption><b>Micaschist</b></figcaption>
-          </figure>
-          <figure id="photo-solar" class="col-md-4">
-              <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668495/Museum%20Webpage/Volcanic_bomb_refrgv.jpg", alt="image">
-              <figcaption><b>Volcanic bomb</b></figcaption>
-          </figure>
-          <figure id="photo-solar" class="col-md-4">
-              <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052520/Photos/Clasted_consolidated_segment_xcusto-min_sghhie.jpg", alt="image">
-              <figcaption><b>Clastic consolidated sediment</b></figcaption>
-          </figure>
+          <h3 class="text-center"><b>Sedimentary Rocks</b></h3>
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755094/Photos/dsc03964_53180935895_oa_hmxjuw.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755105/Photos/dsc03985_53180997873_ox_d6higt.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755098/Photos/dsc03959_53180936210_ol_jkypik.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755100/Photos/dsc03974_53179908387_oo_kp0y3q.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
           </div>
-         <fieldset id="stal">
-          <h3 class="text-center">Stalagmite and Stalactite</h3>
-          <p class="text-center">A stalagmite is a type of mineral deposit that forms on the floor of a cave or cavern through the process of mineral precipitation. Stalagmites grow upwards from the cave floor and are often associated with stalactites, which hang down from the cave ceiling. Both stalagmites and stalactites are examples of speleothems, which are mineral formations that develop in caves over long periods of time.</p>
-         </fieldset>
-         <h1>Minerology</h1>
-         <h3>Gemstone</h3>
-             <p>Gemstones are naturally occurring minerals that have been cut and polished for use in jewelry and other decorative objects. They are prized for their beauty, rarity, and durability. Some of the most popular gemstones include diamonds, rubies, sapphires, emeralds, and amethysts, but there are many other gemstones with their unique colors, characteristics, and properties.</p>
-             <p>Gemstones have been used for thousands of years for their beauty and perceived healing properties. Different cultures and traditions have associated different meanings and uses with various gemstones. For example, ancient Egyptians believed that emeralds symbolized fertility and rebirth, while ancient Greeks believed that amethysts could protect them from drunkenness. Today, gemstones are still highly valued and are used in a variety of ways, such as in jewelry, in alternative healing practices, and in the manufacturing of high-tech equipment.</p>
-             <h3>Precious gemstone</h3>
-             <p>Rwanda is not known for producing precious gemstones on a large scale. However, there have been some small-scale discoveries of precious gemstones in the country, particularly in the western region.</p>
-             <p>One precious gemstone found in Rwanda is sapphire. The sapphires found in Rwanda are typically blue and are mainly mined in the Gatumba area in the northern part of the country. These sapphires are known for their high quality and have been gaining recognition in the global gemstone market.</p>
-             <div id="solar" class="row">
-                 <figure id="photo-solar" class="col-xs-4">
-                     <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052538/Photos/Gold_ylgv5m-min_kakxun.jpg", alt="image">
-                     <figcaption><b>Gold</b></figcaption>
-                 </figure>
-                 <figure id="photo-solar" class="col-xs-4">
-                     <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058280/Photos/Topaze_bbdt2i-min_iv6dss.jpg", alt="image">
-                     <figcaption><b>Topaze</b></figcaption>
-                 </figure>
-                 <figure id="photo-solar" class="col-xs-4">
-                     <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052526/Photos/Cristaux_de_quartz_mpyang-min_iowcsr.jpg", alt="image">
-                     <figcaption><b>Cristaux de quartz</b></figcaption>
-                 </figure>
-             </div>
-             <div id="solar" class="row">
 
-             </div>
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755089/Photos/dsc03967_53180498871_ok_q29h94.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755088/Photos/dsc03981_53180935115_oo_skijis.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755067/Photos/dsc03976_53180998323_ot_w7lye0.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755058/Photos/dsc03960_53180691479_ok_pbqphe.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
 
-             <p>Another precious gemstone that has been found in Rwanda is ruby. Rubies have been discovered in the Musanze district in the northwest region of the country. However, the ruby deposits are small and are not currently being exploited on a large scale.</p>
-        <p>It's worth noting that the gemstone mining industry in Rwanda is still in its early stages of development, and there is a lot of potential for further exploration and discovery of gemstones in the country. The government of Rwanda is working to promote sustainable mining practices and increase investment in the industry to help it grow and become more competitive on the global market.</p>
-        <h3>Tin minerals</h3>
-        <p>Rwanda is known to have significant deposits of tin minerals, particularly cassiterite. Cassiterite is a tin oxide mineral that is the primary ore for tin. The mineral is found in a number of locations throughout Rwanda, including the province of Northern and Southern Province.</p>
-        <p>Mining of tin minerals in Rwanda has a long history, with the country being one of the largest producers of tin in Africa. The mining of tin minerals is mainly carried out by artisanal and small-scale miners who operate in various parts of the country.</p>
-        <p>The primary tin mineral found in Rwanda is cassiterite, which is a tin oxide mineral. Cassiterite is the main commercial ore of tin and can occur in various geological settings, including granitic rocks and alluvial deposits.</p>
-    
-        <div id="solar" class="row">
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052523/Photos/Cassiterite_shjl7a-min_sbtjtl.jpg", alt="image">
-                <figcaption><b>Cassiterite</b></figcaption>
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755052/Photos/dsc03956_53179909207_ok_z7hy0c.jpg" alt="image">
+              <figcaption></figcaption>
             </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052518/Photos/Cassiterite_3_djvml5-min_uaqahv.jpg", alt="image">
-                <figcaption><b>Cassiterite</b></figcaption>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
             </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                    <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052516/Photos/Cassiterite_2_rwdnk5-min_c20qgq.jpg", alt="image">
-                    <figcaption><b>Cassiterite</b></figcaption>
-                </figure>
-        </div>
-        <h3>Lithium minerals</h3>
-        <p>Rwanda is also known to have significant deposits of lithium minerals, particularly in the mineral-rich region of the Northern Province. Lithium is a key component in the manufacturing of batteries for electric vehicles and energy storage systems, making it a critical mineral in the transition towards clean energy.</p>
-        <p>The primary lithium mineral found in Rwanda is spodumene, which is a lithium aluminum inosilicate mineral. Spodumene is typically found in pegmatites, which are coarse-grained igneous rocks that are formed from magma that cools slowly in the Earth's crust.</p>
-        <div id="solar" class="row">
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzgo_RnldnoFt2amwHNY9xDuODnqm_RN8kNw&usqp=CAU", alt="image">
-                <figcaption><b>Spodumene</b></figcaption>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
             </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058275/Photos/Spodumene_wwslp4-min_ccs61w.jpg", alt="image">
-                <figcaption><b>Spodumene</b></figcaption>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
             </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052544/Photos/Lepidolite_uxslzm-min_e7s5bk.jpg", alt="image">
-                <figcaption><b>Lepidolite</b></figcaption>
+          </div>
+
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
             </figure>
-        </div>
-        <h3>Tungstene minerals</h3>
-        <p>Rwanda is known to have significant deposits of tungsten, a hard, dense, steel-gray metal that is widely used in various industries such as aerospace, automotive, electronics, and mining. The main tungsten minerals found in Rwanda include wolframite and scheelite.</p>
-        <div id="solar" class="row">
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Wolframiteportugal3.jpg/1200px-Wolframiteportugal3.jpg", alt="image">
-                <figcaption><b>Wolframite</b></figcaption>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
             </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058306/Photos/Scheelite_2_k6jfnx-min_d03tme.jpg", alt="image">
-                <figcaption><b>Scheelite</b></figcaption>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
             </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058369/Photos/Wolframite_with_Quartz_tz6lm8-min_iyqc3p.jpg", alt="image">
-                <figcaption><b>Wolframite</b></figcaption>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
             </figure>
-        </div>
-        <div id="solar" class="row">
-            <figure id="photo-solar" class="text-center figure inline-block">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668566/Museum%20Webpage/Wolframite_with_Quartz_tz6lm8.jpg", alt="image">
-                <figcaption><b>Wolframite with quartz</b></figcaption>
+          </div>
+          <h3 class="text-center"><b>Metamorphic Rocks</b></h3>
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755339/Photos/dsc04068_53180653269_oY_kclh4m.jpg" alt="image">
+              <figcaption></figcaption>
             </figure>
-        </div>
-        <h3>Coltan(Tantalite and Columbite)</h3>
-        <p>Rwanda is one of the countries in Africa that has significant tantalite deposits. Tantalite mining in Rwanda began in the 1930s, and it has been an important export for the country, particularly in the 1990s and early 2000s.</p>
-        <p></p>
-        <div id="solar">
-            <figure class="text-center">
-                <img src="https://i0.wp.com/startuptipsdaily.com/wp-content/uploads/2018/06/tantalite-ore-minerals-suppliers-tantalite-concentrates.jpg?fit=609%2C361&ssl=1", alt="image">
-                <figcaption><b>Tantalite</b></figcaption>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755333/Photos/dsc04059_53179873007_oz_pod4m5.jpg" alt="image">
+              <figcaption></figcaption>
             </figure>
-        </div>
-        <p>Columbite, which is a mineral containing niobium and tantalum, is also found in Rwanda. In fact, Rwanda is known to have some of the world's largest reserves of columbite.</p>
-        <div id="solar" class="row">
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052534/Photos/Columbite_2_kr1yfd-min_irjveb.jpg", alt="image">
-                <figcaption><b>Columbite</b></figcaption>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755324/Photos/dsc04050_53180657494_ow_p966ga.jpg" alt="image">
+              <figcaption></figcaption>
             </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058267/Photos/Tantalite_kdle0j-min_ueq3yi.jpg", alt="image">
-                <figcaption><b>Columbite</b></figcaption>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755311/Photos/dsc04053_53180964018_oq_rnbphn.jpg" alt="image">
+              <figcaption></figcaption>
             </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052534/Photos/Columbite_2_kr1yfd-min_irjveb.jpg", alt="image">
-                <figcaption><b>Columbite</b></figcaption>
+            </div>
+            <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755311/Photos/dsc04053_53180964018_oq_rnbphn.jpg" alt="image">
+              <figcaption></figcaption>
             </figure>
-        </div>
-        <h1>Evolution</h1>
-        <h3>Animal evolution</h3>
-        <p>Animal evolution refers to the process by which living organisms that belong to the animal kingdom have changed over time through successive generations. Evolutionary changes can result from various mechanisms, such as genetic mutations, natural selection, genetic drift, gene flow, and other factors.</p>
-        <p>There have been several different periods of evolution throughout the history of life on Earth. Here are some of the major periods of evolution:</p>
-        <p>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755303/Photos/dsc04057_53180463071_oe_smglrm.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755300/Photos/dsc04046_53180658479_oq_cw77lj.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755296/Photos/dsc04043_53180966643_ow_rau5o7.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            </div>
+
+            <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755271/Photos/dsc04037_53180660914_ow_cxnqbe.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755263/Photos/dsc04035_53180661219_op_fpcisb.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755248/Photos/dsc04017_53180995523_oa_y9l32b.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755247/Photos/dsc04020_53179904637_oa_gpg58o.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            </div>
+
+            <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755235/Photos/dsc04009_53180496741_on_aveqzq.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755222/Photos/dsc04006_53180842273_ol_zdr35t.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+          </div>
+          
+          <h3 class="text-center"><b>Intrusive igneous rock</b></h3>
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816194/Photos/dsc04102_53180628719_ov_tvzplo.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816176/Photos/dsc04093_53180636349_om_jdaspi.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816177/Photos/dsc04082_53180455346_oq_gyarcs.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816174/Photos/dsc04076_53180957058_ov_twf3tk.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816161/Photos/dsc04085_53179862917_or_sglaba.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816146/Photos/dsc04096_53180632374_ou_yvlkib.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816251/Photos/dsc04089_53180447366_ok_bistlb.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <h3 class="text-center"><b>Extrusive igneous rock</b></h3>
+
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816532/Photos/dsc04600_53181117690_oq_cqnqsm.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816531/Photos/dsc04618_53180871079_oq_xdkj5g.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816520/Photos/dsc04597_53180088307_os_mdebrp.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816519/Photos/dsc04622_53181117215_oq_mvsffw.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816515/Photos/dsc04615_53181178773_oe_jto5zk.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816507/Photos/dsc04611_53180871219_ow_vswqqv.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816491/Photos/dsc04608_53180088157_oq_ydz5ht.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816491/Photos/dsc04589_53181179463_ox_odqxwx.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816491/Photos/dsc04604_53180348826_ow_ypuyib.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816464/Photos/dsc04594_53181179293_ox_lvnimg.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816458/Photos/dsc04573_53180872149_oW_b0nigk.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816456/Photos/dsc04577_53181179733_oe_nrjfk8.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816454/Photos/dsc04585_53180871809_oX_lvj3vg.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816453/Photos/dsc04564_53181180013_on_s6vl9a.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816451/Photos/dsc04581_53181118210_ox_e01zep.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816445/Photos/dsc04561_53180872339_ov_in5xre.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <p class="text-center"><strong>Importance of Rocks</strong></p>
+          <fieldset>
+            <div class="row">
+              <fieldset class="well">
+                <div class="col-xs-3"><strong>Name</strong></div>
+                <div class="col-xs-3"><strong>Types of Rock</strong></div>
+                <div class="col-xs-6"><strong>Use</strong></div>
+              </fieldset>
+              
+
+              <fieldset class="well">
+                <div class="col-xs-3">Basalt</div>
+                <div class="col-xs-3">Igneous</div>
+                <div class="col-xs-6">Used in road building aggregate and cement materials.</div>
+              </fieldset>
+              
+              <fieldset class="well">
+                <div class="col-xs-3">Granite</div>
+                <div class="col-xs-3">Igneous</div>
+                <div class="col-xs-6">Used for building, monuments, tiles and tombstone.</div>
+              </fieldset>
+              
+              <fieldset class="well">
+                <div class="col-xs-3">Pumice</div>
+                <div class="col-xs-3">Igneous</div>
+                <div class="col-xs-6">Used for scouring, scrubbing, abrasive and polishing materials.</div>
+              </fieldset>
+              
+              <fieldset class="well">
+                <div class="col-xs-3">Pegmatite</div>
+                <div class="col-xs-3">Igneous</div>
+                <div class="col-xs-6">Used in architecture as a building block, it also contains gemstones.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Peat</div>
+                <div class="col-xs-3">Sedimentary</div>
+                <div class="col-xs-6">Used as a source of energy in power plants to produce electricity.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Schist</div>
+                <div class="col-xs-3">Sedimentary</div>
+                <div class="col-xs-6">Used as building stone.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Limestone</div>
+                <div class="col-xs-3">Sedimentary</div>
+                <div class="col-xs-6">Used in manufacturing of cement, paper, floors insecticides etc.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Travertin</div>
+                <div class="col-xs-3">Sedimentary</div>
+                <div class="col-xs-6">Used in flooring, wall cladding, locally used as a fertilizer to reduce soil toxicity, also used as paints in villages.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Quartzite</div>
+                <div class="col-xs-3">Sedimentary</div>
+                <div class="col-xs-6">Used in construction.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Poudingue</div>
+                <div class="col-xs-3">Sedimentary</div>
+                <div class="col-xs-6">Used in construction as a decorative.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Conglomerate</div>
+                <div class="col-xs-3">Sedimentary</div>
+                <div class="col-xs-6">Used in construction industry.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Gneiss</div>
+                <div class="col-xs-3">Metamorphic</div>
+                <div class="col-xs-6">Used as building stone and structural purposes.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Migmatite</div>
+                <div class="col-xs-3">Metamorphic</div>
+                <div class="col-xs-6">Used as building stone and polished for ornament.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Micaschist</div>
+                <div class="col-xs-3">Metamorphic</div>
+                <div class="col-xs-6">Used as a construction materials.</div>
+              </fieldset>
+
+              <fieldset class="well">
+                <div class="col-xs-3">Tourmalinite</div>
+                <div class="col-xs-3">Metamorphic</div>
+                <div class="col-xs-6">Used as a gemstone and an ornament when polished also beleive to have some healing properties.</div>
+              </fieldset>   
+          </fieldset>
+
+          <h4><strong>Soil formation</strong></h4>
+          <p>Millions years ago action of rain, frost, heat and wind broke rocks into smaller pieces, slowly tiny plants grew on broken rocks remains of the dead plants got added overtime, sun, water, wind and living creatures help transform parent materials into soil.</p>
+
+          <h4 class="text-center" id="weather">Weathering and Soil Formation - How Soil Forms</h4>
+          <h4><strong>The Process of Soil Formation</strong></h4>
+          <ul>
+            <li>Soil forms when rock is broken down by weathering and mixes with other materials on the surface.</li>
+            <li>Soil is constantly being formed wherever bedrock is exposed.</li>
+          </ul>
+
+          <h4><strong>Major factors that influences soil formation are:</strong></h4>
+          <ul>
+            <li>Climate</li>
+            <li>Temperature</li>
+            <li>Relief</li>
+            <li>Organisms</li>
+            <li>Parent material (Rocks)</li>
+            <li>Time</li>
+          </ul>
+
+          <fieldset class="text-center">
+            <h4 class="text-center"><strong>Minerals</strong></h4>
+            <p id="font">Mineral is a naturally occurring, inorganic, solid, crystalline substance which has a fixed structure and a chemical composition which is either fixed or which may vary within certain defined limits.</p>
+          </fieldset>
+          
             <ul>
-                <li><strong>Pre-Cambrian Era (4.6 billion years ago to 541 million years ago):</strong> This period covers most of the Earth's history, and it saw the emergence of the first prokaryotic organisms, followed by the evolution of eukaryotic cells and multicellular life.</li>
-                <li><strong>Paleozoic Era (541 million years ago to 252 million years ago):</strong> This era saw the Cambrian explosion, the rapid diversification of animal life, and the emergence of many new body plans and adaptations. The Paleozoic Era also saw the evolution of plants, the colonization of land by vertebrates, and the development of amphibians and reptiles.</li>
-                <li><strong>Mesozoic Era (252 million years ago to 66 million years ago):</strong> The Mesozoic Era saw the evolution of dinosaurs, birds, and many other reptilian and mammalian groups. This era also saw the emergence of flowering plants, which became dominant on land.</li>
-                <li><strong>Cenozoic Era (66 million years ago to present):</strong> This era saw the diversification of mammals, the emergence of primates, and the evolution of humans. The Cenozoic Era also saw the evolution of birds and the continued diversification of flowering plants.</li>
-                <li><strong>Paleogene Period (66 million years ago to 23 million years ago):</strong> This period saw the recovery and diversification of life after the mass extinction event that wiped out the dinosaurs. Mammals, including primates, underwent significant evolutionary diversification during this period.</li>
-                <li><strong>Neogene Period (23 million years ago to 2.6 million years ago):</strong> The Neogene period saw the emergence of many modern groups of mammals, including apes, elephants, and cats. The climate also underwent significant cooling, leading to the evolution of grasslands and the diversification of grazing animals.</li>
-                <li><strong>Quaternary Period (2.6 million years ago to present):</strong> The Quaternary period saw the emergence and diversification of hominins, including the evolution of modern humans. It also saw the evolution and extinction of many large mammals, such as mammoths and saber-toothed cats, and the emergence of modern ecosystems.</li>
+              <li>Minerals collections (samples)</li>
             </ul>
-        </p>
+          
+            <h3 class="text-center"><b>Gemstone</b></h3>
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816337/Photos/dsc04171_53180799615_oq_mcniv8.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816320/Photos/dsc04174_53180799410_of_pqwkmp.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816308/Photos/dsc04145_53180821185_oc_l3xpu7.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816308/Photos/dsc04192_53180358616_om_zln0xw.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>  
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816306/Photos/dsc04182_53180860568_oe_olrsd4.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816290/Photos/dsc04168_53180800315_ok_hnutry.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816266/Photos/dsc04162_53180864108_od_qnf1vb.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816266/Photos/dsc04153_53180813545_oq_jhzoxc.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>  
+
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816261/Photos/dsc04139_53180583309_oc_ylzw5z.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816260/Photos/dsc04165_53180779105_ok_zuem1c.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816249/Photos/dsc04159_53180556899_ow_fdiitd.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816241/Photos/dsc04135_53180900053_on_m5jyq5.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816236/Photos/dsc04131_53180906218_ol_k9f5fn.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816230/Photos/dsc04126_53180848720_ox_thmaky.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816214/Photos/dsc04115_53179832187_of_no5uof.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816205/Photos/dsc04121_53180607799_or_iwpckf.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+          
+
+          <h3 class="text-center"><b>Cassiterite</b></h3>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <h3 class="text-center"><b>Lithium</b></h3>
+          <div class="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816371/Photos/dsc04446_53180852973_ow_tnfxt5.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816380/Photos/dsc04223_53180544944_or_pgfswr.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <h3 class="text-center"><b>Tungsten minerals</b></h3>
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816380/Photos/dsc04459_53180351836_oe_yfl3bv.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816381/Photos/dsc04462_53180852003_ow_d5dvra.jpg" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+          <div id="waste">
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+            <figure>
+              <img id="waste-recycle" src="" alt="image">
+              <figcaption></figcaption>
+            </figure>
+          </div>
+
+            <fieldset id="center">
+              <div class="row" id="minerology">
+                <h4 class="text-center" id="jewerly"><strong>Different types of local minerals and their importance</strong></h4>
+                <fieldset class="well">
+                  <div class="col-xs-4"><b>Mineral name</b></div>
+                  <div class="col-xs-8"><b>Mineral use</b></div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Gold</div>
+                  <div class="col-xs-8">Used for jewelry, electronics and used in malleable of other metals.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Quartz</div>
+                  <div class="col-xs-8">Used in manufacture of watches, silicon semiconductors, glass, and scientific instruments.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Beryl</div>
+                  <div class="col-xs-8">Used in manufacture of electrical connectors and wires.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">amethyst</div>
+                  <div class="col-xs-8">Used as ornamental stone for jewelry.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Opal</div>
+                  <div class="col-xs-8">Used in insulator, pharmaceuticals, ceramic and as jewelry.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Corindon</div>
+                  <div class="col-xs-8">Used as abrasive on everything from sandpaper, metals, plastics and wood, windows for electronic instruments.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Tin (Cassiterite)</div>
+                  <div class="col-xs-8">Used to coat other metals to prevent corrosion, used to manufacture mobile phone circuit boards.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Uranium</div>
+                  <div class="col-xs-8">Used to produce electricity, nuclear weapon, and fuel for spacecraft.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Lithium</div>
+                  <div class="col-xs-8">Used in manufacture of electronic batteries.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Beryllium</div>
+                  <div class="col-xs-8">Used in X-ray technology and in manufacture of fluorescent lights.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Columbite-Tantalite (Coltan)</div>
+                  <div class="col-xs-8">Used in electronics, automotive system, pacemaker to operate need this.</div>
+                </fieldset>
+  
+                <fieldset class="well">
+                  <div class="col-xs-4">Tungsten</div>
+                  <div class="col-xs-8">Used in manufacture sticks, light bulbs, saw blades.</div>
+                </fieldset>
+  
+              </div>
+            </fieldset>
+
+            <h4><b>Negative environmental impact of mining</b></h4>
+            <p>Mining is the extraction of minerals and other geological materials of economic values from the earth; mining operations have responsibilities to protect the environment but present some environmental impacts and most of them are observed when the mining process has ceased such as:</p>
+
+            <ul>
+              <li>Loss of biodiversity</li>
+              <li>Soil erosion</li>
+              <li>Formation of sinkholes on abandoned sites</li>
+              <li>Pollution (air, water, soil, noise, etc.)</li>
+            </ul>
+            <p>Mining activities effects affects also human and animals living in adjacent areas of mining either by direct or indirect poisoning that may cause respiratory diseases and other forms of diseases.</p>
+
+            <h4><b>Mining rehabilitation efforts</b></h4>
+            <p>Mine rehabilitation is the process of restoring the affected areas so that the area is left in a safe and stable condition, which is consistent with the surrounding environment. 
+              Mining operators in Rwanda have the obligation to rehabilitate in any possible way in order to restore the beauty of the landscape or the natural systems modified by human activity. <i>(Source: office of the auditor general 2012-2015).</i> Mining company in Rwanda are requested to carry out an Environmental Impact Assessment study before any activities of excavation is done.</p>
+
+              <fieldset class="text-center">
+                <h4 class="text-center"><strong>Traditional Metallurgy and Pottery in Rwanda</strong></h4>
+                <p id="font">In Rwanda, the use of minerals through metallurgy has begun long ago by the extraction of iron to forge different objects such as head of spears they used to hunt and for battles, hoe blades used for cultivating, etc. they forged objects by the use of traditional bellows forge.</p>
+
+                <p>The act of <b>Pottery</b> is one of the oldest actions in the world. In Rwanda it has begun more than two thousand years ago and it is being practiced till today. The pottery was and is at some point used for fabrication of traditional and modern objects serving for cooking, fetching water, storing food (pots), ceramics, etc…</p>
+              </fieldset>
+              
+            <div class="waste">
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816438/Photos/dsc04545_53180872764_od_zmungf.jpg" alt="image">
+                <figcaption></figcaption> 
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816429/Photos/dsc04527_53180090012_ok_wbzt6v.jpg" alt="image">
+                <figcaption></figcaption> 
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816428/Photos/dsc04520_53180090212_of_itlm1e.jpg" alt="image">
+                <figcaption></figcaption> 
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="" alt="image">
+                <figcaption></figcaption> 
+              </figure>
+            </div>  
+            <h3 class="text-center"><b>Masangano Fossil Collection</b></h3>
+            <div class="waste">
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816445/Photos/dsc04478_53179760932_oj_ojpr3s.jpg" alt="image">
+                <figcaption></figcaption> 
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816432/Photos/dsc04513_53180339941_of_jipd2z.jpg" alt="image">
+                <figcaption></figcaption> 
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816425/Photos/dsc04504_53180541069_on_prhojn.jpg" alt="image">
+                <figcaption></figcaption> 
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816423/Photos/dsc04502_53180786705_ov_mqtua2.jpg" alt="image">
+                <figcaption></figcaption> 
+              </figure>
+            </div>  
+
+            <div class="waste">
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816423/Photos/dsc04507_53180540954_oh_yvdfki.jpg" alt="image">
+                <figcaption></figcaption>
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816421/Photos/dsc04493_53180787015_on_tg7is8.jpg" alt="image">
+                <figcaption></figcaption>
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816416/Photos/dsc04491_53180349866_oi_vrjsnl.jpg" alt="image">
+                <figcaption></figcaption>
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816414/Photos/dsc04496_53180849943_on_xc77gq.jpg" alt="image">
+                <figcaption></figcaption>
+              </figure>
+            </div>
+
+            <div class="waste">
+              <figure>
+                <img id="waste-recycle" src="" alt="image">
+                <figcaption></figcaption>
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="" alt="image">
+                <figcaption></figcaption>
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="" alt="image">
+                <figcaption></figcaption>
+              </figure>
+              <figure>
+                <img id="waste-recycle" src="" alt="image">
+                <figcaption></figcaption>
+              </figure>
+            </div>
+              
+              <fieldset class="text-center">
+                <h4 class="text-center"><strong>BIODIVERSITY</strong></h4>
+                <p id="font">Biodiversity is all variety of living organisms in a particular environment. Biodiversity provides a large number of goods and services that sustain our lives. The biodiversity we see today is the fruit of billions of years of evolution, shaped by natural processes and, increasingly, by the influence of humans.</p>
+              </fieldset>
+
+              <h5><storng>The origin of life and theory of evolution</storng></h5>
+              <p><b>Evolution:</b> is a gradual change in the characteristics of a population of living organisms over successive generations accounting for the origin of existing species diverging from a common ancestor in the past. Evolution occurs from natural selection and natural selection is a process in which living thing with beneficial traits produce more offspring than others and this results in changes in the traits of living things over time. The theory of evolution is based on the idea that all species are related and gradually change over time.
+                According to science life has evolved in 3.7 billion years ago. Many theories of the origin of life have been proposed, but since it's hard to prove or disprove them, no fully accepted theory exists.</p>
+            <h5><b>Human Evolution</b></h5>
+            <p>Human beings and our nearest ape have been following separate courses of evolution for the past 5 to 8 million years.  When people think about human evolution, they generally associate the idea with the notion that human beings evolved from apes or monkeys. But this is incorrect. Rather, modern day humans and modern-day gorillas and chimpanzees evolved from a common ancestor. The distinction is critical. Not only is it biologically inaccurate to say that humans evolved from apes or monkeys, but it also leads to a misunderstanding of evolution. Saying that humans evolved from gorillas or chimpanzees suggests that humans are more evolved than these animals. However, no creature can be any more evolved than another.</p>
+
+            <h5><b>Biodiversity of Rwanda</b></h5>
+            <p>The Rwandan territory is covered with diverse ecosystems which include; natural ecosystems (consisting of mountain rainforests, savannah land, wetlands and aquatic forests), Forested area and agro ecosystems. Protected areas are mainly of 4 National Parks, <b>Volcanoes, Nyungwe,  Akagera, and Gishwati- Mukura</b> national park.</p>
+          <p><b><i>Volcanoes National Park:</i></b>the park is famous worldwide due to the presence of mountain gorillas (Gorilla beringei beringei) the park covers an area of 16 000 ha and the area host 245 species of plants of which 17 are predominant, including 13 orchid internationally protected, 15 (to check from RDB) species of mammals such as bush diker, buffalo, hyenas, elephant, 187 recorded species of birds some of them endemic to the rift valley such as Rwenzori turaco, handsome francolin, 27 species of reptiles and amphibians and 33 species of arthropods. </p>
+          <div id="parks" class="row">
+            <figure class="text-center figure inline-block">
+                <img id="nyungwe-park" src="https://www.visitrwanda.com/wp-content/uploads/fly-images/1650/Visit-Rwanda-Crater-Lake-Volcanoes-e1533416621808-1920x1267.jpg", alt="image">
+                <figcaption><b>Volcanoes National Park</b></figcaption>
+            </figure>
+          </div>
+
+        <h6><storng>History</storng></h6>
+        <ul>
+          <li>1925: Gazetted to protect the Gorillas between Kalisimbi, Bisoke and Mikeno.</li>
+          <li>1929: The park had extended to form Albert National Park with an area of  8090 km2.</li>
+          <li>1958: 700 ha of the forest were cleared for a human settlement.</li>
+          <li>1967: Dian Fossey arrived and set up the Karisoke Research Centre between Kalisimbi and Bisoke.</li>
+          <li>1969- 1973: 1050 hectares were cleared to grow pyrethrum.</li>
+          <li>1985: Dian Fossey was killed by unknown assailants at her home.</li>
+          <li>1992-1999 Tourism and research activities stopped due to war in the region.</li>
+        </ul>
+
         <div id="solar" class="row">
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052544/Photos/Megaceros_t8lxmu-min_afzjlr.jpg", alt="image">
-                <figcaption><b><i>Megaceros giganteus</i></b></figcaption>
-            </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668573/Museum%20Webpage/Vasum_hwqrtc.jpg", alt="image">
-                <figcaption><b><i>Vasum horridum</i></b></figcaption>
-            </figure>
-            <figure id="photo-solar" class="col-xs-4">
-                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682679469/Museum%20Webpage/Chetocops_kslp5l.jpg", alt="image">
-                <figcaption><b><i>Chetocops ferdinandi</i></b></figcaption>
-            </figure>
-        </div>
-        <p>Overall, the history of life on Earth has been characterized by a series of evolutionary changes that have resulted in an enormous diversity of organisms and ecological niches.</p>
-    <h3>Human evolution</h3>
-    <p>Human evolution refers to the evolutionary process by which modern humans (Homo sapiens) and their ancestral hominid species have emerged over time. The evolution of humans is a complex and ongoing process that has taken place over millions of years, and it involves various hominid species and their adaptations to changing environmental conditions. Here are some of the major stages of human evolution:</p>
-    <ul>
-        <li><strong>Australopithecus:</strong> This genus includes several species of bipedal hominids that lived between 4.2 and 2.9 million years ago. They had smaller brains than modern humans but were the first hominids to walk upright on two legs.</li>
-        <li><strong>Homo habilis:</strong> This species lived about 2.8 million years ago and is believed to have been the first hominid to use stone tools.</li>
-        <li><strong>Homo erectus:</strong> This species lived between 2 million and 100,000 years ago and had a larger brain than earlier hominids. They were the first hominids to leave Africa and colonize other parts of the world.</li>
-        <li><strong>Homo neanderthalensis:</strong> This species lived between 400,000 and 40,000 years ago and had a similar brain size to modern humans. They were adapted to living in cold environments and had a robust build.</li>
-        <li><strong>Homo sapiens:</strong> This is the species to which modern humans belong. They emerged in Africa about 300,000 years ago and spread to other parts of the world, gradually replacing other hominid species. They are characterized by their larger brain size, advanced culture, and complex social organization.</li>
-    </ul>
-    <p>Overall, the evolution of humans is a complex and ongoing process that involves the development of various adaptations, including the use of tools, the evolution of larger brains, and the emergence of advanced social behaviors. The study of human evolution helps us understand our origins and how we have become the species that we are today.</p>
-    <h1>Nyungwe National Park</h1>
-    <p>Nyungwe National Park is a protected area in southwestern Rwanda, located on the border with Burundi and the Democratic Republic of Congo. The park covers an area of over 1,000 square kilometers and is characterized by high altitude rainforest, grasslands, swamps, and bamboo forests. It is one of the oldest and most biologically diverse rainforests in Africa, with over 1,000 plant species, 13 primate species, and over 300 bird species.</p>
-    <div id="parks" class="row">
-      <figure class="text-center figure inline-block">
-          <img id="nyungwe-park" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684750797/Museum%20Webpage/Nyungwe_National_park_hwt2ct.jpg", alt="image">
-          <figcaption><b>Nyungwe National Park</b></figcaption>
-      </figure>
-  </div>
-  <p>One of the main attractions of Nyungwe National Park is its population of chimpanzees, which are a critically endangered species. Visitors can go on guided treks to observe these primates in their natural habitat. The park is also home to over 300 species of birds, making it a popular destination for birdwatchers.</p>
-  <div id="birds">
-    <div id="solar" class="row">
-    <figure id="photo-solar" class="col-xs-4">
-        <img src="https://www.topafricanews.com/wp-content/uploads/2022/10/NYUNGWE-1.jpg", alt="image">
-        <figcaption><b>Long tailed Chimpanzees</b></figcaption>
-    </figure>
-    <figure id="photo-solar" class="col-xs-4">
-        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/a1/96/49/caption.jpg?w=1200&h=-1&s=1", alt="image">
-        <figcaption><b>Canopy Walk Adventure in Nyungwe Forest National Park</b></figcaption>
-    </figure>
-    <figure id="photo-solar" class="col-xs-4">
-        <img id="birds" src="https://www.surfbirds.com/community-blogs/birdspecies/files/2017/10/birding-nyungwe.jpg", alt="image">
+          <figure id="photo-solar" class="col-xs-4">
+              <img src="https://www.akageranationalparkrwanda.org/wp-content/uploads/2022/08/rwanda-gorilla-tours.jpg", alt="image">
+              <figcaption><b>Gorilla trekking</b></figcaption>
+          </figure>
+          <figure id="photo-solar" class="col-xs-4">
+              <img src="https://www.nyungweforestnationalpark.org/wp-content/uploads/2020/02/gtvnp-750x450.jpg", alt="image">
+              <figcaption><b>Gorilla trekking</b></figcaption>
+          </figure>
+          <figure id="photo-solar" class="col-xs-4">
+              <img src="https://www.explorerwandatours.com/wp-content/uploads/2019/11/Goldecns-750x450.jpg", alt="image">
+              <figcaption><b>Golden Monkey</b></figcaption>
+          </figure>
+          </div>
+        
+        <p><strong><i>Nyungwe National Park:</i></strong>is the largest mountain rainforest of Africa with a surface of 101.500 ha, Nyugwe has more than 1,068 plant species, 140 orchid species, 310 bird species, 96 mammals such as owl monkey, blue monkey, greey cheeked mangabey, Olive baboon, L'Hoest's monkey endemic to the Albertine Rift, the famous biggest group of colobus monkeys and chimpanzees</p>
+        <div id="parks" class="row">
+          <figure class="text-center figure inline-block">
+              <img id="nyungwe-park" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684750797/Museum%20Webpage/Nyungwe_National_park_hwt2ct.jpg", alt="image">
+              <figcaption><b>Nyungwe National Park</b></figcaption>
+          </figure>
+      </div>
+        <h6><b>History</b></h6>
+        <p>Important to Rwanda and the world for its biodiversity, beauty, and natural resources, today Nyungwe is officially recognized as a protected area. Nyungwe forest is hundreds of thousands of years old. People's presence in Nyungwe dates back at least 50,000 years.</p>
+       <ul>
+        <li><b>1903:</b></b>  Colonial Crown Land Nyungwe is declared a forest reserve, first by the German colonial government then by the Belgians, with restrictions on clearing. Protection is not consistently enforced.</li>
+        <li><b>1958-1973:</b>Forest Lost Nyungwe is reduced by over 150 km2 due to fires, woodcutting, hunting of animals, and small-scale agriculture.</li>
+        <li><b>1969: </b>Elephants still number in the hundreds in Nyungwe.</li>
+        <li><b>1974:</b>The last buffalo is killed in Nyungwe by hunters.</li>
+        <li><b>1984:</b>Nyungwe is divided into areas that allow for sustainable use and harvesting of timber. The Government of Rwanda develops a plan for a buffer zone that can still be seen today.</li>
+        <li><b>1984:</b>Wildlife Revealed Biodiversity surveys conducted by the Wildlife Conservation Society (WCS) with GoR document colobus in groups of up to 400 members—an unheard of phenomenon.</li>
+        <li><b>1987:</b>Trail system begins to be formed at Uwinka.</li>
+        <li><b>1994:</b>Genocide against Tutsi devastate the country and destroy many of the research and tourist facilities in Uwinka. Most senior staff is forced to flee, but many junior staff members at Nyungwe stayed on to protect the park.</li>
+        <li><b>1995:</b>The Park begins to rebuild, but security and stability are still uncertain.</li>
+        <li><b>1999:</b>The last elephant in Nyungwe is killed in the swamp by poachers.</li>
+        <li><b>2005:</b>Officially Protected</li>
+       </ul>
+
+       <div id="birds">
+        <div id="solar" class="row">
+        <figure id="photo-solar" class="col-xs-4">
+            <img src="https://www.topafricanews.com/wp-content/uploads/2022/10/NYUNGWE-1.jpg", alt="image">
+            <figcaption><b>Long tailed Chimpanzees</b></figcaption>
         </figure>
-        </div>
-        <div id="solar" class="row">
-          <figure id="photo-solar" class="col-xs-4">
-            <img id="birds" src="https://www.nyungweforestnationalpark.org/wp-content/uploads/2019/06/Birding-in-Nyungwe-750x450.jpg", alt="image">
-          </figure>
-          <figure id="photo-solar" class="col-xs-4">
-            <img id="birds" src="https://www.silverbackgorillatours.com/wp-content/uploads/2018/12/birding-in-nyungwe-forest.jpg", alt="image">
-          </figure>
-          <figure id="photo-solar" class="col-xs-4">
-            <img id="birds" src="https://wildlifetours-rwanda.com/storage/2023/03/birding-in-Kibale-National-Park-768x460.jpg", alt="image">
-          </figure>
-        </div>
-
-        <div id="solar" class="row">
-          <figure id="photo-solar" class="col-xs-4">
-            <img id="birds" src="https://www.gorillasafaris-tours.com/wp-content/uploads/2015/07/Birds-in-nyungwe-forest-national-park_600x360.jpg", alt="image">
-          </figure>
-          <figure id="photo-solar" class="col-xs-4">
-            <img id="birds" src="https://acaciasafari.co.ug/wp-content/uploads/2020/08/African-paradise-flycatcher.jpg", alt="image">
-          </figure>
-          <figure id="photo-solar" class="col-xs-4">
-            <img id="birds" src="https://images.squarespace-cdn.com/content/58b3f7f5e58c62561f62dc27/1489134778400-9QXR1E4T7FIWRMN11YFA/?format=1000w&content-type=image%2Fjpeg", alt="image">
-          </figure>
-        </div>
-
-        <div id="solar" class="row">
-          <figure id="photo-solar" class="col-xs-4">
-            <img id="birds" src="https://www.visitrwanda.com/wp-content/uploads/fly-images/3878/Grauer_s-Rush-Warbler-1920x1280.jpg", alt="image">
-          </figure>
-          <figure id="photo-solar" class="col-xs-4">
-            <img id="birds" src="https://africanbirdingtrips.com/wp-content/uploads/2021/12/Birding-in-Nyungwe-Forest-National-Park.jpg", alt="image">
-          </figure>
-        </div>
-  </div>
+        <figure id="photo-solar" class="col-xs-4">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/a1/96/49/caption.jpg?w=1200&h=-1&s=1", alt="image">
+            <figcaption><b>Canopy Walk Adventure in Nyungwe Forest National Park</b></figcaption>
+        </figure>
+        <figure id="photo-solar" class="col-xs-4">
+            <img id="birds" src="https://www.surfbirds.com/community-blogs/birdspecies/files/2017/10/birding-nyungwe.jpg", alt="image">
+            </figure>
+            </div>
+            <div id="solar" class="row">
+              <figure id="photo-solar" class="col-xs-4">
+                <img id="birds" src="https://www.nyungweforestnationalpark.org/wp-content/uploads/2019/06/Birding-in-Nyungwe-750x450.jpg", alt="image">
+              </figure>
+              <figure id="photo-solar" class="col-xs-4">
+                <img id="birds" src="https://www.silverbackgorillatours.com/wp-content/uploads/2018/12/birding-in-nyungwe-forest.jpg", alt="image">
+              </figure>
+              <figure id="photo-solar" class="col-xs-4">
+                <img id="birds" src="https://wildlifetours-rwanda.com/storage/2023/03/birding-in-Kibale-National-Park-768x460.jpg", alt="image">
+              </figure>
+            </div>
     
-</div>
-<p>In addition to its wildlife, Nyungwe National Park is also known for its beautiful landscapes, which include dense forests, bamboo thickets, and waterfalls. The park has a number of hiking trails, ranging from easy walks to challenging multi-day treks.</p>    
+            <div id="solar" class="row">
+              <figure id="photo-solar" class="col-xs-4">
+                <img id="birds" src="https://www.gorillasafaris-tours.com/wp-content/uploads/2015/07/Birds-in-nyungwe-forest-national-park_600x360.jpg", alt="image">
+              </figure>
+              <figure id="photo-solar" class="col-xs-4">
+                <img id="birds" src="https://acaciasafari.co.ug/wp-content/uploads/2020/08/African-paradise-flycatcher.jpg", alt="image">
+              </figure>
+              <figure id="photo-solar" class="col-xs-4">
+                <img id="birds" src="https://images.squarespace-cdn.com/content/58b3f7f5e58c62561f62dc27/1489134778400-9QXR1E4T7FIWRMN11YFA/?format=1000w&content-type=image%2Fjpeg", alt="image">
+              </figure>
+            </div>
+    
+            <div id="solar" class="row">
+              <figure id="photo-solar" class="col-xs-4">
+                <img id="birds" src="https://www.visitrwanda.com/wp-content/uploads/fly-images/3878/Grauer_s-Rush-Warbler-1920x1280.jpg", alt="image">
+              </figure>
+              <figure id="photo-solar" class="col-xs-4">
+                <img id="birds" src="https://africanbirdingtrips.com/wp-content/uploads/2021/12/Birding-in-Nyungwe-Forest-National-Park.jpg", alt="image">
+              </figure>
+            </div>
+      </div> 
+    </div>
+    <p>Some plant pictures</p>
 
-<div id="solar" class="row nyungwe">
-  <figure id="photo-solar" class="col-xs-4">
-      <img src="https://journeysbydesign.com/wp-content/uploads/2017/01/crop1st-choice-12-960x647.jpg", alt="image">
-      <figcaption><b>Nyungwe dense forest</b></figcaption>
-  </figure>
-    <figure id="photo-solar" class="col-xs-4">
-        <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1685431355/Museum%20Webpage/waterfall-in-nyungwe-forest-min_yhclbx.jpg", alt="image">
-        <figcaption><b>Nyungwe Waterfall</b></figcaption>
-    </figure>
-    <figure id="photo-solar" class="col-xs-4">
-        <img src="https://www.nyungweforestnationalpark.org/wp-content/uploads/2022/01/Kamiranzovu-waterfall.jpg", alt="image">
-        <figcaption><b>Kamiranzovu Waterfall</b></figcaption>
-    </figure>
-</div>
-<p>Overall, Nyungwe National Park is a must-visit destination for nature lovers and adventure seekers visiting Rwanda.</p>
-<h1>Volcanoes National Park</h1>
-<p>Volcanoes National Park is a protected area located in the northern part of Rwanda, in central Africa. The park is situated on the border with the Democratic Republic of Congo and Uganda, and it is home to the endangered mountain gorillas.</p>
-<div id="parks" class="row">
-  <figure class="text-center figure inline-block">
-      <img id="nyungwe-park" src="https://www.visitrwanda.com/wp-content/uploads/fly-images/1650/Visit-Rwanda-Crater-Lake-Volcanoes-e1533416621808-1920x1267.jpg", alt="image">
-      <figcaption><b>Volcanoes National Park</b></figcaption>
-  </figure>
-</div>
-<p>Volcanoes National Park is famous for its mountain gorilla population, which is one of the largest in the world. The park also contains other wildlife species, such as golden monkeys, elephants, buffalo, and various bird species. Visitors can go on gorilla treks and golden monkey treks, which offer a unique opportunity to observe these rare and endangered animals in their natural habitat.</p>
-<div id="solar" class="row">
-<figure id="photo-solar" class="col-xs-4">
-    <img src="https://www.akageranationalparkrwanda.org/wp-content/uploads/2022/08/rwanda-gorilla-tours.jpg", alt="image">
-    <figcaption><b>Gorilla trekking</b></figcaption>
-</figure>
-<figure id="photo-solar" class="col-xs-4">
-    <img src="https://www.nyungweforestnationalpark.org/wp-content/uploads/2020/02/gtvnp-750x450.jpg", alt="image">
-    <figcaption><b>Gorilla trekking</b></figcaption>
-</figure>
-<figure id="photo-solar" class="col-xs-4">
-    <img src="https://www.explorerwandatours.com/wp-content/uploads/2019/11/Goldecns-750x450.jpg", alt="image">
-    <figcaption><b>Golden Monkey</b></figcaption>
-</figure>
-</div>
-<p>In addition to wildlife viewing, Volcanoes National Park offers various activities, such as hiking, mountain climbing, and cultural tours to visit the nearby communities. The park is a popular destination for tourists visiting Rwanda, and it is also a crucial conservation area for the protection of endangered species.</p>
-<h1>Akagera National Park</h1>
-<p>Akagera National Park is a national park located in eastern Rwanda, along the border with Tanzania. It covers an area of 1,122 square kilometers and is named after the Akagera River, which flows through the park. The park is home to a variety of wildlife, including elephants, lions, leopards, giraffes, zebras, and several species of antelope.</p>
-<p>The park was established in 1934 to protect the wildlife in the area, but it suffered significant declines in the 1990s due to the Rwandan Civil War and the influx of refugees into the park. However, in recent years, the park has undergone significant restoration efforts, including reintroducing animals that had been poached or displaced during the conflict.</p>
-<div class="text-center">
-  <figure>
-    <img id="akagera" src="https://www.africanparks.org/sites/default/files/2017-07/akagera.jpg", alt="image">
-    <figcaption><b>Akagera national park</b></figcaption>
-  </figure>
-</div>
-<p>The museum exhibits taxidermied animals found in Akagera National Park for display and further identification of the wildlife. Taxidermy has been practiced for centuries, and it is used for a variety of purposes, including scientific study, hunting trophies, and museum displays. The process of taxidermy typically involves removing the skin from the animal, cleaning and preserving it, and then stuffing it with materials such as cotton or foam. The skin is then mounted on a form or mannequin, and the final result is a lifelike representation of the animal that can be displayed or studied.</p>
-<div id="solar" class="row">
-<figure id="photo-solar" class="col-xs-4">
-    <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684058368/Photos/Zebra_eosqnf-min_cviopx.jpg", alt="image">
-    <figcaption><b>Zebra</b></figcaption>
-</figure>
-    <figure id="photo-solar" class="col-xs-4">
-        <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684060456/Photos/DSC08704-min_vshxan.jpg", alt="image">
-        <figcaption><b>Crocodile</b></figcaption>
-    </figure>
-<figure id="photo-solar" class="col-xs-4">
-    <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1684052518/Photos/Cheetah_knujzc-min_z9mvty.jpg", alt="image">
-    <figcaption><b>Cheetah</b></figcaption>
-</figure>
-</div>
-<div id="solar" class="row">
-<figure id="photo-solar" class="col-xs-4">
-    <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682668527/Museum%20Webpage/Springbok_oowgtn.jpg", alt="image">
-    <figcaption><b>Springbok</b></figcaption>
-</figure>
-    <figure id="photo-solar" class="col-xs-4">
-        <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682680691/Museum%20Webpage/Buffalo_maz7ww.jpg", alt="image">
-        <figcaption><b>Buffalo</b></figcaption>
-    </figure>
-<figure id="photo-solar" class="col-xs-4">
-    <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1682680765/Museum%20Webpage/Harnessed_bushbuck_qz5pwp.jpg", alt="image">
-    <figcaption><b>Harnessed Bushbuck</b></figcaption>
-</figure>
-</div>
-        </div>
+    <p><strong><i>Gishwati -Mukura National Park:</i></strong>covering an area of more than 3,400 ha, is rich in flora with 60 species of tree and fauna diversity such as chimpanzees, golden, blue and L'Hoest's monkeys, Duikers, Felis serval and African golden cat, around 232 bird species have been seen at Gishwati and 163 at Mukura.</p>
+
+    <p><strong><i>Akagera National Park:</i></strong>relatively warm and low-lying plains of Akagera comprise savannah, woodland, wetland and a dozen lakes. Covers a surface area of about 108,500 ha and inhabits more than 900 species of plants and 90 mammals such as buffalo, leopard, elephant, introduced lions and the introduced critically endangered black rhinos, more than 530 bird species.
+    </p>
+    <div class="text-center">
+      <figure>
+        <img id="akagera" src="https://www.africanparks.org/sites/default/files/2017-07/akagera.jpg", alt="image">
+        <figcaption><b>Akagera national park</b></figcaption>
+      </figure>
+    </div>
+
+    <h6><b>History</b></h6>
+    <ul>
+      <li><b>1934:</b>Establishment Akagera Natinal Park by the Belgian government.</li>
+      <li><b>1957:</b>Black Rhinos were introduced from Tanzania.</li>
+      <li><b>1984:</b>Last wild dog were seen.</li>
+      <li><b>1986:</b>Masai Giraffes were introduced from Kenya.</li>
+      <li><b>1997:</b>Akagera had reduced to nearly 50%.</li>
+      <li><b>2000s:</b>Last sighting of lions in Akagera.</li>
+      <li><b>2007:</b>Last sighting of black Rhinos.</li>
+      <li><b>2010:</b>Construction of a western boundary fence.</li>
+      <li><b>2015:</b>Seven lions from South Africa were reintroduced.</li>
+      <li><b>2017:</b>Reintroduction of 20 black Rhinoceroses from South Africa.</li>
+      <li><b>2018:</b>Aged 48, Mutware one of the oldest elephants in Akagera died.</li>
+      <li><b>2019:</b>Black rhinoceroses from Europe introduced.</li>
+    </ul>
+    
+    
+
+      <p>The protected areas of Rwanda have lost around 50% of their original surface area during the last 40 years.(Fabien Twagiramungu, 2006)</p>
+
+      <div class="row">
+        <fieldset class="well" id="overview">
+        <div class="col-xs-2"><b>Names of parks </b></div>
+        <div class="col-xs-2"><b>Surface in ha (at the time of its creation) </b></div>
+        <div class="col-xs-2"><b>Surface in hectares today</b></div>
+        <div class="col-xs-6"><b>Remarks </b></div>
+        </fieldset>
+
+        <fieldset class="well" id="overview">
+          <div class="col-xs-2">Akagera National Park</div>
+          <div class="col-xs-2">250000</div>
+          <div class="col-xs-2">137000</div>
+          <div class="col-xs-6">Created in 1934, it is the guarantee of the conservation of fauna and flora of the Eastern savannah ecosystem.</div>
+          </fieldset>
+
+          <fieldset class="well" id="overview">
+            <div class="col-xs-2">Volcanoes National Park </div>
+            <div class="col-xs-2">34, 000</div>
+            <div class="col-xs-2">16, 000</div>
+            <div class="col-xs-6">Created in 1925, it represents the last refuge of the natural flora of volcanic land and the fauna, which is specific to the volcanic ecosystems of the North.</div>
+            </fieldset>
+
+            <fieldset class="well" id="overview">
+              <div class="col-xs-2">Nyungwe National Park</div>
+              <div class="col-xs-2">-</div>
+              <div class="col-xs-2">102000</div>
+              <div class="col-xs-6">Created in 2005, it comprises also a small forest of Cyamudongo at 10 km Southwest of Nyungwe. It ensures the survival of the mountain fauna and flora of the Southwest of Rwanda.</div>
+              </fieldset>
+              
+              <fieldset class="well" id="overview">
+                <div class="col-xs-2">Gishwati-Mukura</div>
+                <div class="col-xs-2">21000 < 1981</br>3000 < 1960</div>
+                <div class="col-xs-2">3400</div>
+                <div class="col-xs-6">Created in 2016, currently the new national park is in rehabilitation and comprises a very rich flora and fauna species, with an endemic species l'hoest's monkey to the albertine rift.</div>
+                </fieldset>    
+        
+           </div>
+           
+           <h7><strong><i>Montain gorilla info:</i></strong></h7>
+           <p>Male Gorillas are capable of reproducing when they become “blackbacks” at 8-12 years of age. They are considered “silverbacks” at 12 years of age, and reach their full adult size at 15 years A full-grown male eastern gorilla typically weighs 140–205.5 kg and stands 1.7 m upright, Female menarche occurs at 6-7 years of age,. Average age of first parturition is 9.9 years. Females have a reproductive cycle of 28 days and are receptive for 1-4 days around the time of ovulation. Additionally, a female typically weighs 90–100 kg and stands 1.5 m tall. Females give birth every 3-4 years and generally produce 3-4 surviving offspring during their reproductive life span. Maximum life span is unknown, but it is certainly over 40 years.</p>
+
+           <p><b>Their diet:</b>Mountain gorillas eat large amounts of vegetation and spend about 30 percent of each day foraging for food. Mountain Gorillas consume roots, leaves, and stems of herbs, vines, and bark from trees, shrub-sized plants and bamboo shoots (TO CHECK FROM DFGFI)</p>
+
+           <h3 class="text-center"><strong>Stuffed animals</strong></h3>
+               
+           <h7><strong>Zebra</strong></h7>
+           <p>Zebra reach 125 cm to 160 cm in length. Their tails are about 45 cm. zebras weigh between 240 kg and 340 kg. Zebras are classed as no selective, bulk feeders of intermediate to tall grass of 6-35 cm and they are most active in early morning and late afternoon but during hot midday, they congregate in shades of tree. Zebra form a group of 4 to 12 individuals. Zebra live between 20 to 30 years but can reach when they are in zoos.</p>
+
+           <h7><b>Leopards (<i>Panthera pardus</i>)</b></h7> 
+            <p>have broad geographical distribution of the world’s cats and are found through the continent of Africa, Asia, and in the Far East. The leopard has typically cat-like structure with powerful muscular body, relatively short legs and long tails. The pelage (skin) is covered with series of distinctive, shapeless black rosette spots that differ from round, solid spots of cheetah. Adult leopard male have a mean body mass of 60 kg with maximum 90kg and females, a mean of 32 kg. The mean shoulder height of males is 70 cm and females 60cm. male can reach length, from nose to the tip of tail, of 290 cm. (Furstenburg, 2008)</p>
+
+           
+           <p><i><b>Their diet</b></i>: Leopards are opportunistic and eat any food source available. The natural diet depends upon the composition of prey in the area. Leopards are primarily nocturnal and most kills take place at night. They hunt alone, even female sub-adult young abandons them hunting. Leopards are solitary animals except when they pair during mating or when a female is accompanied by her cubs.(Furstenburg, 2008)</p>
+
+           <h7><strong>Cheetah</strong></h7>
+           <p>In Rwanda there are no species of <strong>Cheetah</strong> but they inhabits a variety of mostly arid habitats like dry forests, scrub forests, and savannahs. Films of cheetahs running show an acceleration from 0 to 80 km/h in just 3 strides, with the maximum speed of 110 km/h being attained in a few seconds.</p>
+
+           <p><strong>Life Cycle:</strong>The cheetah lives a normal animal life in the wild, and they can live from 10 to 12 years in the wild. Cheetahs live in many groups called coalitions. The males mark territories that would intercept the territories of the females. Coalitions will try their best to maintain territories to find females with who they will mate. The cheetah does not mate during a specific time of year and the gestation period last about 90-98 days for the female. The female cheetahs can have a litter of up to three cubs. The cheetah cubs live with their mother's for up to two years, and then the cubs are on their own. The first year, the cubs watch their mother and practice all of her hunting(Marker and Dickman 2012).</p>
+
+           <h7><strong>Vervet monkey</strong></h7>
+           <p>Vervet monkey grows to about 50cm tall and with a tail that is often longer than its body. They inhabit a wide range of habitats ranging from savanna, woodlands and forests. This makes them to be considered one of the highly successful African primates.</p>
+
+           <p><i><strong>Their Diet</strong></i>: Vervet monkeys’ foraging behaviors vary depending on the dietary composition in their geographic range, their abundancy and distribution (Hill, 2015;Patterson et al, 2018). Vervet monkeys are omnivores, mainly are vegetarians that they feed on wild fruits, flowers, leaves, seeds, seeds pods, roots, latex and tuber where they occasionally feed on invertebrates like grubs, termites, grasshoppers and larvae of insects but also feed on vertebrates like rodents, bird, reptile eggs. (McFarland et al., 2014).</p>
+          
+           <h7><strong>Spotnecked otter (<i>Lutra maculicollis</i>)</strong></h7>
+           <p> is widely distributed across sub Saharan Africa, This species is characterized by elongated cylindrical body (62-76cm for adults), tapering tails, short legs, dense brownish fur, individually unique mottling on the lips, throat or belly and webbed feet. Weight range from 3.8 to 6 kg. (Redsmith, 2014)</p>
+
+           <h7><strong>Impala (<i>Aepyceros melampus</i>)</strong></h7>
+           <p>is a medium-sized antelope with long, thin legs, slender body, and clear sexual dimorphism. Impala is endemic to Africa. Widespread in both eastern and southern parts of the continent from Kenya to South Africa savanna and woodland habitat close to water (Fritz & Bourgarel, 2018). Height and weight range, 75 -92cm,60 kg(53-76) for males and females 70-85 cm,45kg(40-530).</p>
+
+           <p><strong><i>Their Diet</i></strong>: Impala are mixed feeders, consuming both grasses and woody plants. The proportions of these foods in their diet vary greatly with season and location. Impala are gregarious, forming herds of various sizes depending on the season and quality of habitat.</p>
+
+           <h7><strong>Crocodile</strong></h7>
+           <p>The Nile crocodile is regarded as a long-lived species; reaching an average age of 45 years in the wild, with the average length to being five meters (Groombridge 1987).Additionally, they are oviparous. Weight: 600kg, Total length: 4m, Skull lengt: ½- 2/3 total length.</p>
+
+           <h7><strong>Isasu (<i>Redunca redunca</i>)</strong></h7>
+           <p>Common Reedbuck or Bohr Reedbuck is a medium sized, sandy coloured antelope in which the slender proportion of females contrast strongly to thick necked, hook horned males. Leaf shaped ears have sandy backs, but fronts are lined with dense hair. Reedbuck is endemic to Africa. Widely distributed in Eastern, central and western part of the continent. (Kingdom & Hoffman, 2016) Common Reedbuck are fresh grass grazers and their social structure is highly flexible and adjustable to the annual cycle of change in their grassy environment. IUCN categorizes Common Reedbuck as “least concern” but they are surely on the verge of extinction in Akagera National Park, their last known stronghold in Rwanda (Apio& wronski, 2011).</p>
+
+           <h7><strong>Grey crowned crane</strong></h7>
+           <p>Although considered as icons of Africa’s wetlands and savannahs, this species is a victim of its beauty and is hunted for the captive trade market (Morrison, 2015). The decline is also attributed to the loss of their wetland habitat which they depend on for food and reproduction (Kanyamibwa, 1996; Olupot, 2014; Morrison, 2015; Olupot, 2016). The Grey Crowned Crane is the only species of crane in Rwanda and despite being a symbol of wealth and longevity in Rwandan culture, as in other range countries, it faces increasing threats due to habitat reduction and a growing illegal trade (Harris & Mirande, 2013; Morrison, 2015). In Rwandan culture, the Grey Crowned Crane is a symbol of wealth and longevity, yet it faces increasing threats due to habitat reduction and illegal trade (Harris and Mirande 2013; Morrison 2015). These grey-crowned cranes require a given number of individuals for reproduction the reason why domesticated crane are prohibited for everyone. <b>Cultural value:</b> grey crowned crane was totem to Nyiginya clan.</p>
+
+           <h7><b>Impiri (Puff adder): The puff adder<i> (Bitis arietans)</i></b></h7>
+           <p>is a large extremely venomous snake found in semi -arid region of  sub-Saharan Africa and  Arabia. It is probably the most common and widespread African snake ( warrell et all).Puff adder has heavy ,stout body with short tail(tail is shorter in females than males). Adult lengths vary among populations, averaging 90-120 cm, with some individuals reaching length of 180 cm, girth up to 45 cm. </p>
+          
+           <h7><b>Urutoni, small-spotted Genet<i> (Genetta geetta feline)</i></b></h7>
+           <p>The Genet body's color is off-white to greyish and liberally covered with dark brown to black spots and bars. The tail is ringed with black and usually has a white tip.  The species tolerates a very wide range of habitats. It is nocturne and solitary and its diet is composed of a wide range of invertebrates, small rodents, birds, and reptiles. The genet was hunted for its skin used in ritual and traditional ceremonies.
+          </p>
+
+            <h7><b>Akayongwe, Bellette, Weasel<i> (Neogale africana)</i></b></h7>
+            <p>Weasels are considered small predators and they usually go after smaller prey including rabbits, squirrels, rats, and poultry. Weasels are good hunters and are able to go after and successfully take down prey bigger than themselves</p>
+
+            <h7><b>Igiharangu, Uruharangu, White-tailed mangoose<i> (Ichneumia albicauda)</i></b></h7>
+            <p>White-tailed mongoose is a very large mongoose up to 5,2 kg. It is primarily nocturnal and terrestrial. By day, they will rest in an abandoned burrow, termite mound, or in cavities under tree roots. They are opportunistic omnivores with a diet primarily consisting of insects, small mammals, reptiles, amphibians, birds, fruit, and berries.</p>
+           
+            <h7><b>Gafufuta, Four-toed hedgehog, African pygmy hedgehog<i> (Atelerix albiventris)</i></b></h7>
+            <p>It is a solitary, nocturnal animal and generally moves along the ground, but is capable of both climbing and swimming when the need arises. It is highly energetic, sometimes covering miles of ground in a single night as it forages for insects, grubs, snails, spiders, some plant matter, and even small vertebrates. It has a high tolerance for toxins and has been recorded to consume scorpions and even venomous snakes.</p>
+
+            <h7><strong>Birds</strong></h7>
+
+            <div class="row">
+              <div class="col-xs-3"> 
+                <img src="" alt="image">
+                <figcaption>Ikibiribiri , White-browed Coucal Centropus superciliosus</figcaption>
+                <img src="" alt="image">
+                <figcaption>Agashubangeri, Igishuhe, Petit canard a bec jaune, Yellow-billed Duck Anas undulata</figcaption>
+                <img src="" alt="image">
+                <figcaption>Isandi, Tisserin, Bertram’s Weaver Ploceus bertrandi</figcaption>
+              </div>
+              <div class="col-xs-3"> 
+                <img src="" alt="image">
+                <figcaption>Inyamanza, African Pied Wagtail,
+                  Motacilla aguimp</figcaption>
+                  <img src="" alt="image">
+                  <figcaption>Igugu, African Mourning Dove, Tourterelle Streptopelia decipiens</figcaption>
+                    <img src="" alt="image">
+                    <figcaption>Iringa, Ochropus, Green Sandpiper Tringa ochropus</figcaption>
+                    <img src="" alt="image">
+                    <figcaption>Rufous-tailed Weaver Histurgops ruficauda</figcaption>
+              </div>
+              <div class="col-xs-3"> 
+                <img src="" alt="image">
+                <figcaption>Murobafi, Martin-pêcheur pie, Pied Kingfisher Ceryle rudis</figcaption>
+                  <img src="" alt="image">
+                <figcaption>Inuma, Pigeon, African Green-Pigeon Treron calva</figcaption>
+                  <img src="" alt="image">
+                <figcaption>Inkurakura, Vanneau, Long-toed Lapwing Vanellus crassirostris</figcaption>
+                <img src="" alt="image">
+                <figcaption>Inkotsa, Cape Starling Lamprotornis nitens</figcaption>
+              </div>
+              <div class="col-xs-3"> 
+                <img src="" alt="image">
+                <figcaption>Icyiyoni,  Pied Crow
+                  Corvus albus</figcaption>
+                  <img src="" alt="image">
+                <figcaption>Bare-faced Go-away-bird
+                  Corythaixoides personata</figcaption>
+                  <img src="" alt="image">
+                <figcaption>Eastern Grey Plantain-eater Crinifer zonurus</figcaption>
+              </div>
+            </div>
+
+            <h4 class="text-center"><strong>Threats to biodiversity</strong></h4>
+            <p>With the highest population density in Africa, coupled with its dependence on agriculture, the major threats to the biodiversity and genetic resources in Rwanda are mainly linked to population pressure and the problem of land scarcity. Other threats to the biodiversity are linked to human activities such as loss of habitat by conversion of natural habitats, mining, agriculture and the introduction of alien species, example, <i>Lantana camara</i> introduced as an ornamental plant, and has become a weed in some areas and a habitat for tsetse flies.
+              Water hyacinth <i>Eichhornea crassipes</i>, introduced also as an ornamental plant and it has invaded lakes in Rwanda from Muhazi to Rweru from the River Nyabarongo, and even reached Lake Victoria through Akagera River. (MINITERE, 2003), marbled lungfish introduced in lake Muhazi and is considered as invasive.</p>
+
+              <h4 class="text-center"><strong>Opportunities provided by biodiversity</strong></h4>
+              <p>There are a multiple benefits from biodiversity in the areas of agriculture, science, medicine, industrial, ecological, leisure, cultural and aesthetic. The benefits from biodiversity include also some benefits that are obtained from natural ecosystem processes such as air quality, climate moderation (global, regional and local CO2 sequestration), water purification, disease control, biological pest control, pollination and prevention of erosion. Through domestication and direct harvesting from the wild, Rwandans derive food, medicines and a wealth of other products from biodiversity and genetic resources. Nature based tourism is one of the fastest growing industry sector; Rwandan tourism is mainly based on visits in national park, contributing significantly millions of dollars to the country GDP.</p>
+           
 
         <div role="region" aria-labelledby="medicines" id="medicines">
           <h2 class="text-center">Medicinal plants' botanical garden</h2>
