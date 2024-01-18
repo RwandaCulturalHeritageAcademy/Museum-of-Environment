@@ -4,364 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-  <style>
-    body {
-  background-color: rgb(216, 226, 207)
-}
-#container {
-  display:flex;
-  height: 180px;
-  margin-top: -20px;
-  z-index: 1;
-}
-#container nav h1 {
-  margin-bottom: -15px;
-}
-#container nav h2 {
-  margin-bottom: -15px;
-}
-
-#content ul{
-  display: flex;
-  justify-content: space-evenly;
-  height: 20px;
-  margin-top: 20px;
-}
-#content ul li {
-  list-style-type: none;
-  font-weight: 900;
-  padding-right: 1.5em;
-}
-#content ul li a {
-  color: rgb(5, 46, 5);
-  text-decoration: none;
-}
-#content ul li a:hover {
-  color: rgb(12, 38, 2);
-}
-
-header {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: xx-large;
-  font-weight: bolder;
-}
-nav h1, h2, h3 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 900;
-  font-size: 2rem;
-}
-h1 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  color: green;
-}
-h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 3em;
-}
-#titlee {
-  font-size: 22px;
-}
-#columns {
-  display: flex;
-}
-p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: large;
-}
-#stal {
-  width: 70%;
-  margin: 0 auto;
-  background-color: rgb(199, 184, 160);
-  border-radius: 10px;
-}
-li {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: large;
-}
-.container-fluid {
-  margin: 10px 30px;
-}
-
-#photo-solar img{
-  height: 320px;
-  width: 480px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin: 2em 0 0 0;
-}
-.letter::first-letter {
-  font-size: 30px;
-}
-.letter{
-  margin-top: 20px;
-}
-#letter {
-  margin-top: 20px;
-}
-#little-down {
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-#europe {
-  margin-top: 22px;
-}
-figcaption {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-#solar {
-  margin-bottom: 30px;
-  padding-bottom: 35px;
-  display: flex;
-}
-#solar > #photo-solar {
-  padding-right: -15px;
-}
-
-#weather {
-  background-color: rgb(30, 1, 1);
-  color: white;
-  font-size: 2.5rem;
-  width: 50%;
-  border-radius: 30%;
-  height: relative;
-}
-#font {
-  font-size: 3rem;
-}
-h7 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: larger;
-}
-#minerology {
-  background-color: rgb(62, 46, 6);
-  width: 70%;
-}
-#jewerly {
-  color: white;
-}
-#center {
-  margin: 0 30px 0 30em;
-}
-#overview {
-  background-color: rgba(0, 128, 0, 0.327);
-  border-radius: 10px;
-}
-
-#photo-solar .rotate {
-  transform: rotate(-90deg);
-  height: 480px;
-  width: 320px;
-  margin-left: 79px; 
-  margin-top: -48px;
-}
-#photo-solar #fig {
-  margin-top: -73px;
-}
-#satellite figure img {
-  object-fit: cover;
-  width: 300px;
-  height: 400px;
-  margin-top: 30px;
-}
-#landscape figure img {
-  width: 800px;
-  height: 440px;
-  object-fit: cover;
-}
-#landscape-1 figure img {
-  width: 800px;
-  height: 430px;
-  object-fit: cover;
-}
-.waste {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#waste-recycle {
-  height: 250px;
-  width: 400px;
-  object-fit: cover;
-  padding: 10px;
-  border-radius: 30px;
-}
-.row #gishwati {
-  width: 450px;
-  height: 300px;
-  object-fit: cover;
-}
-.row .col-xs-6 #gishwati {
-  width: 700px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 25px;
-  padding: 2em 0 2em 0;
-}
-#parks #nyungwe-park {
-  width: 900px;
-  height: 450px;
-  object-fit: cover;
-}
-#parks {
-  padding-bottom: 2em;
-}
-#solar{
-  margin-bottom: 0px;
-}
-#solar #photo-solar {
-  width: 500px;
-  height: 320px;
-  margin: 0px 0px 0px 50px;
-  object-fit: cover;
-}
-.nyungwe {
-  padding-bottom: 40px;
-}
-#medicine .garden {
-  width: 400px;
-  height: 200;
-  object-fit: cover;
-}
-#akagera {
-  width: 900px;
-  height: 450px;
-  object-fit: cover;
-}
-
-footer {
-  background-color: rgb(13, 34, 13);
-  height: 12rem;
-  margin: 0px -45px -10px -45px;
-  
-}
-footer header {
-  margin-bottom: -20px;
-}
-footer h1 {
-  font-size: 25px;
-  margin-bottom: -5px;
-}
-footer p{
-  margin-bottom: -5px;
-}
-@media only screen and (max-width: 600px) {
-  #container {
-    display: block;
-    width: 400px;
-    margin-bottom: 60px;
-  }
-  #first-header {
-    width: 400px;
-    display: flex;
-    margin-bottom: -20px;
-  }
-  #first-header nav h1{
-    font-size: 18px;
-  }
-  #first-header nav h3 {
-    text-align: center;
-    font-size: 20px;
-  }
-  #first-header nav h2 {
-    text-align: center;
-  }
-  
-  main {
-    max-width: 370px;
-    margin-left: 15px;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 22px;
-  }
-  #solar {
-    display: flex;
-  }
-  #photo-solar img{
-    height: 70px;
-    width: 120px;
-    margin-left: -50px;
-    padding-right: 0px;
-  }
-  #solar #photo-solar {
-    margin-right: -30px;
-  }
-  figcaption {
-    font-size: 10px;
-  }
-  #solar #photo-solar .rotate {
-    margin-right: -18px;
-    margin-left: -26px;
-  }
-  #solar #photo-solar .except {
-    margin-left: -50px;
-  }
-  #satellite {
-    margin-top: -33em;
-  }
-  #landscape-1 .Wimshurst {
-    width: 25em;
-    height: 20em;
-  }
-  #satellite #stlt {
-    padding-top: 33em;
-  }
-  
-
-
-
-  
-  .well nav .text-primary, .well nav h2, .well nav h3 {
-    font-size: 0.3em;
-  }
-  .well #content header {
-    font-size: 15px;
-    margin-left: -35px;
-  }
-  .well #content ul {
-    display: flex;
-    margin-left: -55px;
-  }
-  .well #content ul li {
-    font-size: 8px;
-    margin-left: 5px;
-  }
-  p {
-    font-size: 15px;
-  }
-  .row {
-    display: flex;
-  }
-  
-  #photo-solar .rotate {
-    width: 70px;
-    height: 120px;
-    margin: -400px 0 0 25px;
-  }
-  #photo-solar #fig {
-    margin: -170px 0 0 0px;
-    margin-bottom: -100px;
-  }
-  #photo-solar .except {
-    width: 120px;
-    height: 70px;
-    margin: -400px 0 0 0px;
-  }
-  #photo-solar #meteorite {
-    margin: -180px 0 0 0px;
-    width: 80px;
-    margin-bottom: -100px;
-  }
-  #landscape figure img {
-    width: 25em;
-    height: 20em;
-  }
-}
-  </style>
-  <title>Document</title>
+  <link rel="stylesheet" href="museum.css">
+  <title>Museum of Environment Exhibition</title>
 
 </head>
 <body>
@@ -1806,7 +1450,7 @@ footer p{
                   the worst disposal option. It consumes lots of
                   lands, pollutes the air with greenhouse gases
                   and contaminates the groundwater.</p>
-                <p><b>B - Waste to energy:</b>The process turns the nonrecyclable waste into secure energy. It is an
+                <p><b>B - Waste to energy:</b>The process turns the non-recyclable waste into secure energy. It is an
                   alternative to landfills as the trash is used to
                   provide electricity, heat or biogas.</p>
               </div>
@@ -1865,10 +1509,7 @@ footer p{
               authorization, in accordance with the
               guidelines issued by the institution in
               charge of environmental protection.</p>
-              <p>According to this law, manufacturers or
-                retailers, for example, are required to
-                put mechanisms in place to collect and
-                segregate used plastics for recycling.</p>
+              <p>According to this law, manufacturers or retailers, for example, are required to put mechanisms in place to collect and segregate used plastics for recycling.</p>
 
                 <div id="landscape">
                   <figure class="text-center">
@@ -2145,83 +1786,67 @@ footer p{
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755094/Photos/dsc03964_53180935895_oa_hmxjuw.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Peat</br>Gishoma, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755105/Photos/dsc03985_53180997873_ox_d6higt.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Poudingue</br>Rutete, Bugesera, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755098/Photos/dsc03959_53180936210_ol_jkypik.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Lake sediment</br>Rusizi, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755100/Photos/dsc03974_53179908387_oo_kp0y3q.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Shore breach</br>Rubavu, Rwanda</b></figcaption>
             </figure>
           </div>
 
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755089/Photos/dsc03967_53180498871_ok_q29h94.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Travertin</br>Masangano, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755088/Photos/dsc03981_53180935115_oo_skijis.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Silicious schist</br>Nyange, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755067/Photos/dsc03976_53180998323_ot_w7lye0.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Arcose</br>Migongo, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755058/Photos/dsc03960_53180691479_ok_pbqphe.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Chert</br>Nganzu, Rwanda</b></figcaption>
             </figure>
           </div>
 
           <div class="waste">
+            
             <figure>
-              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755052/Photos/dsc03956_53179909207_ok_z7hy0c.jpg" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755110/Photos/dsc03998_53180689579_oq_m1m9fr.jpg" alt="image">
+              <figcaption><b>Gres, Quartzite</br>Migingo, Rwanda</b></figcaption>
             </figure>
             <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755110/Photos/dsc03989_53179907742_oiw_eyrzr4.jpg" alt="image">
+              <figcaption><b>Gres</br>Nyange, Rwanda</b></figcaption>
             </figure>
             <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755198/Photos/dsc03993_53180689764_om_z7n04e.jpg" alt="image">
+              <figcaption><b>Conglomerate</br>Gahini, Rwanda</b></figcaption>
             </figure>
             <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755118/Photos/dsc03970_53180935645_ok_z7eab4.jpg" alt="image">
+              <figcaption><b>Limestone schist</br>Kaliba, Nyamasheke Rwanda</b></figcaption>
             </figure>
           </div>
 
-          <div class="waste">
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-          </div>
+          
           <h3 class="text-center"><b>Metamorphic Rocks</b></h3>
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755339/Photos/dsc04068_53180653269_oY_kclh4m.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Norite</br>Rusumo Rwanda</b></figcaption>
             </figure>
 
             <figure>
@@ -2236,7 +1861,7 @@ footer p{
 
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755311/Photos/dsc04053_53180964018_oq_rnbphn.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Pelitic cornea</br>Akagera National Park, Rwanda</b></figcaption>
             </figure>
             </div>
             <div class="waste">
@@ -2247,51 +1872,56 @@ footer p{
 
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755303/Photos/dsc04057_53180463071_oe_smglrm.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Garnet cornea</br>Mwama, Rwanda</b></figcaption>
             </figure>
 
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755300/Photos/dsc04046_53180658479_oq_cw77lj.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Eyelet gneiss</br>Mara, Rwanda</b></figcaption>
             </figure>
 
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755296/Photos/dsc04043_53180966643_ow_rau5o7.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Migmatite</br>Shari, Huye, Rwanda</b></figcaption>
             </figure>
             </div>
 
             <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755271/Photos/dsc04037_53180660914_ow_cxnqbe.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Gneiss</br>GE Gabiro, Rwanda</b></figcaption>
             </figure>
 
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755263/Photos/dsc04035_53180661219_op_fpcisb.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Amphibolite</br>Migongo, Rwanda</b></figcaption>
             </figure>
 
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755248/Photos/dsc04017_53180995523_oa_y9l32b.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Sercite Schist</br>Gatumba, Muramba, Rwanda</b></figcaption>
             </figure>
 
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755247/Photos/dsc04020_53179904637_oa_gpg58o.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Green Schist</br>Nyange, Rwanda</b></figcaption>
             </figure>
             </div>
 
             <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755235/Photos/dsc04009_53180496741_on_aveqzq.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Micaschist</br>Kabaye, Rwanda</b></figcaption>
             </figure>
 
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755222/Photos/dsc04006_53180842273_ol_zdr35t.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Pyritic Schist</br>Nyungwe, Rwanda</b></figcaption>
+            </figure>
+
+            <figure>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700755052/Photos/dsc03956_53179909207_ok_z7hy0c.jpg" alt="image">
+              <figcaption><b>Quartzite mal classe</br>Nyamata, Rwanda</b></figcaption>
             </figure>
           </div>
           </div>
@@ -2300,38 +1930,34 @@ footer p{
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816194/Photos/dsc04102_53180628719_ov_tvzplo.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Granite</br>Kibuye, Cyangugu, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816176/Photos/dsc04093_53180636349_om_jdaspi.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Granite a biotite</br>Ruhengeri, Gisenyi, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816177/Photos/dsc04082_53180455346_oq_gyarcs.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Aplite</br>Muhanga, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816174/Photos/dsc04076_53180957058_ov_twf3tk.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Graphite granite</br>Mara, Rwanda</b></figcaption>
             </figure>
           </div>
 
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816161/Photos/dsc04085_53179862917_or_sglaba.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Migmatite</br>Shari, Butare, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816146/Photos/dsc04096_53180632374_ou_yvlkib.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Granite</br>Gatumba, Muramba, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816251/Photos/dsc04089_53180447366_ok_bistlb.jpg" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Granite</br>NE Nyundo, Rwanda</b></figcaption>
             </figure>
           </div>
 
@@ -2340,76 +1966,76 @@ footer p{
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816532/Photos/dsc04600_53181117690_oq_cqnqsm.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Olivine Basalt</br>Olivine, Rwanda-Uganda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816531/Photos/dsc04618_53180871079_oq_xdkj5g.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Pumice</br>Au Pied de Nyiragongo</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816520/Photos/dsc04597_53180088307_os_mdebrp.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Basalt</br>Katabuvuga, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816519/Photos/dsc04622_53181117215_oq_mvsffw.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Perlite</br>Mikeno</b></figcaption>
             </figure>
           </div>
 
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816515/Photos/dsc04615_53181178773_oe_jto5zk.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Latite</br>Sabyinyo, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816507/Photos/dsc04611_53180871219_ow_vswqqv.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Alcali trachyte</br>Musanze, Rubavu, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816491/Photos/dsc04608_53180088157_oq_ydz5ht.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Trachyte</br>Kalisimbi coulee a Ruhengeri, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816491/Photos/dsc04589_53181179463_ox_odqxwx.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Kivite (Leucitebasanite)</br>Nyundo, Rwanda</b></figcaption>
             </figure>
           </div>
 
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816491/Photos/dsc04604_53180348826_ow_ypuyib.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Obsidian</br>Mikeno</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816464/Photos/dsc04594_53181179293_ox_lvnimg.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Volcanic Bomb</br>Musanze, Rubavu, Nyabihu, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816458/Photos/dsc04573_53180872149_oW_b0nigk.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Leucitite a olivine</br>Muhabura, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816456/Photos/dsc04577_53181179733_oe_nrjfk8.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Melite a Nepheline</br>Rubavu, Rwanda</b></figcaption>
             </figure>
           </div>
 
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816454/Photos/dsc04585_53180871809_oX_lvj3vg.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Banakite (Phonolite)</br>Karisimbi, Busogo, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816453/Photos/dsc04564_53181180013_on_s6vl9a.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Leucitenephelinite a melilite</br>Mt Goma, RDC</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816451/Photos/dsc04581_53181118210_ox_e01zep.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Etindite</br>Leucitenephelinite, Mt Goma</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816445/Photos/dsc04561_53180872339_ov_in5xre.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Absarokike (Leucitebasanite)</br>Karisimbi, Rwanda</b></figcaption>
             </figure>
           </div>
 
@@ -2547,116 +2173,90 @@ footer p{
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816337/Photos/dsc04171_53180799615_oq_mcniv8.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Quartz fume</br>Gisenyi, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816320/Photos/dsc04174_53180799410_of_pqwkmp.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Beryl</br>Gatumba, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816308/Photos/dsc04145_53180821185_oc_l3xpu7.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Opalized Quartz</br>Nyanzu, Rwanda</b></figcaption>
             </figure>
             <figure>
-              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816308/Photos/dsc04192_53180358616_om_zln0xw.jpg" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816205/Photos/dsc04121_53180607799_or_iwpckf.jpg" alt="image">
+              <figcaption><b>Topaze</br>Gihingwa, Rwanda</b></figcaption>
             </figure>
+            
           </div>  
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816306/Photos/dsc04182_53180860568_oe_olrsd4.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Cristaux de Quartz</br>Bugarama, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816290/Photos/dsc04168_53180800315_ok_hnutry.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Brazilianite</br>Buranga, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816266/Photos/dsc04162_53180864108_od_qnf1vb.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Rutile</br>Rutongo, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816266/Photos/dsc04153_53180813545_oq_jhzoxc.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Amethyste</br>Muyunzwe, Rwanda</b></figcaption>
             </figure>
           </div>  
 
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816261/Photos/dsc04139_53180583309_oc_ylzw5z.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Cassiterite</br>Rutsiro, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816260/Photos/dsc04165_53180779105_ok_zuem1c.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Corindon</br>Karago, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816249/Photos/dsc04159_53180556899_ow_fdiitd.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Garnet</br>Rusurwa, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816241/Photos/dsc04135_53180900053_on_m5jyq5.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Cassiterite</br>Rutongo, Rwanda</b></figcaption>
             </figure>
           </div>
 
-          <div id="waste">
+          <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816236/Photos/dsc04131_53180906218_ol_k9f5fn.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Gold</br>Nyungwe, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816230/Photos/dsc04126_53180848720_ox_thmaky.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Opal</br>Mara, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816214/Photos/dsc04115_53179832187_of_no5uof.jpg" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816205/Photos/dsc04121_53180607799_or_iwpckf.jpg" alt="image">
-              <figcaption></figcaption>
-            </figure>
-          </div>
-
-          <div id="waste">
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
+              <figcaption><b>Topaze</br>Angleterre</b></figcaption>
+            </figure>        
           </div>
           
 
           <h3 class="text-center"><b>Cassiterite</b></h3>
 
-          <div id="waste">
+          <div class="waste">
             <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816308/Photos/dsc04192_53180358616_om_zln0xw.jpg" alt="image">
+              <figcaption><b>Cassiterite</br>Gitima, Rwanda</b></figcaption>
             </figure>
             <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816347/Photos/dsc04199_53180548964_ob_rzsvwn.jpg" alt="image">
+              <figcaption><b>Cassiterite</br>Bisesero, Rwanda</b></figcaption>
             </figure>
             <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816409/Photos/dsc04204_53180856608_ok_q94eud.jpg" alt="image">
+              <figcaption><b>Cassiterite</br>Akagera National Park</b></figcaption>
             </figure>
           </div>
 
@@ -2664,172 +2264,31 @@ footer p{
           <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816371/Photos/dsc04446_53180852973_ow_tnfxt5.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Amblygonite</br>Buranga, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816380/Photos/dsc04223_53180544944_or_pgfswr.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Lepidolite</br>Nyarigamba, Rwanda</b></figcaption>
             </figure>
             <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816342/Photos/dsc04221_53180353556_od_mejdx0.jpg" alt="image">
+              <figcaption><b>Spodumene</br>Mwaka, Rwanda</b></figcaption>
             </figure>
           </div>
 
           <h3 class="text-center"><b>Tungsten minerals</b></h3>
-          <div id="waste">
+          <div class="waste">
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816380/Photos/dsc04459_53180351836_oe_yfl3bv.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Antoinite</br>Bugarama, Rwanda</b></figcaption>
             </figure>
             <figure>
               <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816381/Photos/dsc04462_53180852003_ow_d5dvra.jpg" alt="image">
-              <figcaption></figcaption>
+              <figcaption><b>Antoinite</br>Bugarama, Rwanda</b></figcaption>
             </figure>
             <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-          </div>
-
-          <div id="waste">
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-          </div>
-
-          <div id="waste">
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-          </div>
-
-          <div id="waste">
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-          </div>
-
-          <div id="waste">
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-          </div>
-
-          <div id="waste">
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-          </div>
-
-          <div id="waste">
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-          </div>
-
-          <div id="waste">
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
-            </figure>
-            <figure>
-              <img id="waste-recycle" src="" alt="image">
-              <figcaption></figcaption>
+              <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816423/Photos/dsc04466_53180778060_oe_ocvrn8.jpg" alt="image">
+              <figcaption><b>Wolframite</br>Rwanda</b></figcaption>
             </figure>
           </div>
 
@@ -2940,10 +2399,17 @@ footer p{
                 <figcaption></figcaption> 
               </figure>
               <figure>
-                <img id="waste-recycle" src="" alt="image">
+                <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816440/Photos/dsc04549_53180679001_ox_vpmr5l.jpg" alt="image">
                 <figcaption></figcaption> 
               </figure>
-            </div>  
+            </div>
+              <div class="waste">
+                <figure>
+                  <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700816432/Photos/dsc04513_53180339941_of_jipd2z.jpg" alt="image">
+                  <figcaption></figcaption> 
+                </figure>
+              </div>
+                
             <h3 class="text-center"><b>Masangano Fossil Collection</b></h3>
             <div class="waste">
               <figure>
@@ -3199,15 +2665,39 @@ footer p{
            <h3 class="text-center"><strong>Stuffed animals</strong></h3>
                
            <h7><strong>Zebra</strong></h7>
+
+           <div id="landscape">
+            <figure class="text-center">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700473713/Photos/dsc03885_53180696904_o_kcbkrq.jpg", alt="image">
+                <figcaption><b>Zebra</b></figcaption>
+            </figure>
+        </div>
+
            <p>Zebra reach 125 cm to 160 cm in length. Their tails are about 45 cm. zebras weigh between 240 kg and 340 kg. Zebras are classed as no selective, bulk feeders of intermediate to tall grass of 6-35 cm and they are most active in early morning and late afternoon but during hot midday, they congregate in shades of tree. Zebra form a group of 4 to 12 individuals. Zebra live between 20 to 30 years but can reach when they are in zoos.</p>
 
            <h7><b>Leopards (<i>Panthera pardus</i>)</b></h7> 
+
+           <div id="landscape">
+            <figure class="text-center">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700473431/Photos/dsc03844_53180510006_o_dopbey.jpg", alt="image">
+                <figcaption><b>Leopard</b></figcaption>
+            </figure>
+        </div>
+
             <p>have broad geographical distribution of the world’s cats and are found through the continent of Africa, Asia, and in the Far East. The leopard has typically cat-like structure with powerful muscular body, relatively short legs and long tails. The pelage (skin) is covered with series of distinctive, shapeless black rosette spots that differ from round, solid spots of cheetah. Adult leopard male have a mean body mass of 60 kg with maximum 90kg and females, a mean of 32 kg. The mean shoulder height of males is 70 cm and females 60cm. male can reach length, from nose to the tip of tail, of 290 cm. (Furstenburg, 2008)</p>
 
            
            <p><i><b>Their diet</b></i>: Leopards are opportunistic and eat any food source available. The natural diet depends upon the composition of prey in the area. Leopards are primarily nocturnal and most kills take place at night. They hunt alone, even female sub-adult young abandons them hunting. Leopards are solitary animals except when they pair during mating or when a female is accompanied by her cubs.(Furstenburg, 2008)</p>
 
            <h7><strong>Cheetah</strong></h7>
+
+           <div id="landscape">
+            <figure class="text-center">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700473660/Photos/dsc03875_53181005843_o_f0esac.jpg", alt="image">
+                <figcaption><b>Cheetah</b></figcaption>
+            </figure>
+        </div>
+
            <p>In Rwanda there are no species of <strong>Cheetah</strong> but they inhabits a variety of mostly arid habitats like dry forests, scrub forests, and savannahs. Films of cheetahs running show an acceleration from 0 to 80 km/h in just 3 strides, with the maximum speed of 110 km/h being attained in a few seconds.</p>
 
            <p><strong>Life Cycle:</strong>The cheetah lives a normal animal life in the wild, and they can live from 10 to 12 years in the wild. Cheetahs live in many groups called coalitions. The males mark territories that would intercept the territories of the females. Coalitions will try their best to maintain territories to find females with who they will mate. The cheetah does not mate during a specific time of year and the gestation period last about 90-98 days for the female. The female cheetahs can have a litter of up to three cubs. The cheetah cubs live with their mother's for up to two years, and then the cubs are on their own. The first year, the cubs watch their mother and practice all of her hunting(Marker and Dickman 2012).</p>
@@ -3218,23 +2708,72 @@ footer p{
            <p><i><strong>Their Diet</strong></i>: Vervet monkeys’ foraging behaviors vary depending on the dietary composition in their geographic range, their abundancy and distribution (Hill, 2015;Patterson et al, 2018). Vervet monkeys are omnivores, mainly are vegetarians that they feed on wild fruits, flowers, leaves, seeds, seeds pods, roots, latex and tuber where they occasionally feed on invertebrates like grubs, termites, grasshoppers and larvae of insects but also feed on vertebrates like rodents, bird, reptile eggs. (McFarland et al., 2014).</p>
           
            <h7><strong>Spotnecked otter (<i>Lutra maculicollis</i>)</strong></h7>
+
+           <div id="landscape">
+            <figure class="text-center">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700473766/Photos/dsc03877_53181005598_o_s3ayep.jpg", alt="image">
+                <figcaption><b>Otter</b></figcaption>
+            </figure>
+        </div>
+
            <p> is widely distributed across sub Saharan Africa, This species is characterized by elongated cylindrical body (62-76cm for adults), tapering tails, short legs, dense brownish fur, individually unique mottling on the lips, throat or belly and webbed feet. Weight range from 3.8 to 6 kg. (Redsmith, 2014)</p>
 
            <h7><strong>Impala (<i>Aepyceros melampus</i>)</strong></h7>
+
+           <div id="landscape">
+            <figure class="text-center">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1700473488/Photos/dsc03848_53180701569_o_akcxem.jpg", alt="image">
+                <figcaption><b>Impala</b></figcaption>
+            </figure>
+        </div>
+
            <p>is a medium-sized antelope with long, thin legs, slender body, and clear sexual dimorphism. Impala is endemic to Africa. Widespread in both eastern and southern parts of the continent from Kenya to South Africa savanna and woodland habitat close to water (Fritz & Bourgarel, 2018). Height and weight range, 75 -92cm,60 kg(53-76) for males and females 70-85 cm,45kg(40-530).</p>
 
            <p><strong><i>Their Diet</i></strong>: Impala are mixed feeders, consuming both grasses and woody plants. The proportions of these foods in their diet vary greatly with season and location. Impala are gregarious, forming herds of various sizes depending on the season and quality of habitat.</p>
 
            <h7><strong>Crocodile</strong></h7>
+
+           <div id="landscape-1" class="row">
+            <div class="col-md-6">
+              <figure>
+                <img class="Wimshurst" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611306/dsc03819_53180704889_o_prqt9z.jpg", alt="image">
+                <figcaption><b>Crocodile</b></figcaption>
+            </figure>
+            </div>
+  
+            <div class="col-md-6">
+              <figure>
+                <img class="Wimshurst" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611305/dsc03814_53181013338_o_mulsbu.jpg", alt="image">
+                <figcaption><b>Crocodile skeleton</b></figcaption>
+            </figure>
+            </div>
+            </div>
+
            <p>The Nile crocodile is regarded as a long-lived species; reaching an average age of 45 years in the wild, with the average length to being five meters (Groombridge 1987).Additionally, they are oviparous. Weight: 600kg, Total length: 4m, Skull lengt: ½- 2/3 total length.</p>
 
            <h7><strong>Isasu (<i>Redunca redunca</i>)</strong></h7>
+
+           <div id="landscape">
+            <figure class="text-center">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611316/dsc03803_53180706119_o_nb1may.jpg", alt="image">
+                <figcaption><b>Isasu</b></figcaption>
+            </figure>
+        </div>
+
            <p>Common Reedbuck or Bohr Reedbuck is a medium sized, sandy coloured antelope in which the slender proportion of females contrast strongly to thick necked, hook horned males. Leaf shaped ears have sandy backs, but fronts are lined with dense hair. Reedbuck is endemic to Africa. Widely distributed in Eastern, central and western part of the continent. (Kingdom & Hoffman, 2016) Common Reedbuck are fresh grass grazers and their social structure is highly flexible and adjustable to the annual cycle of change in their grassy environment. IUCN categorizes Common Reedbuck as “least concern” but they are surely on the verge of extinction in Akagera National Park, their last known stronghold in Rwanda (Apio& wronski, 2011).</p>
 
            <h7><strong>Grey crowned crane</strong></h7>
            <p>Although considered as icons of Africa’s wetlands and savannahs, this species is a victim of its beauty and is hunted for the captive trade market (Morrison, 2015). The decline is also attributed to the loss of their wetland habitat which they depend on for food and reproduction (Kanyamibwa, 1996; Olupot, 2014; Morrison, 2015; Olupot, 2016). The Grey Crowned Crane is the only species of crane in Rwanda and despite being a symbol of wealth and longevity in Rwandan culture, as in other range countries, it faces increasing threats due to habitat reduction and a growing illegal trade (Harris & Mirande, 2013; Morrison, 2015). In Rwandan culture, the Grey Crowned Crane is a symbol of wealth and longevity, yet it faces increasing threats due to habitat reduction and illegal trade (Harris and Mirande 2013; Morrison 2015). These grey-crowned cranes require a given number of individuals for reproduction the reason why domesticated crane are prohibited for everyone. <b>Cultural value:</b> grey crowned crane was totem to Nyiginya clan.</p>
 
            <h7><b>Impiri (Puff adder): The puff adder<i> (Bitis arietans)</i></b></h7>
+
+           <div id="landscape">
+            <figure class="text-center">
+                <img src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611329/dsc03858_53179917922_o_wnwb0v.jpg", alt="image">
+                <figcaption><b>Impiri</b></figcaption>
+            </figure>
+        </div>
+
            <p>is a large extremely venomous snake found in semi -arid region of  sub-Saharan Africa and  Arabia. It is probably the most common and widespread African snake ( warrell et all).Puff adder has heavy ,stout body with short tail(tail is shorter in females than males). Adult lengths vary among populations, averaging 90-120 cm, with some individuals reaching length of 180 cm, girth up to 45 cm. </p>
           
            <h7><b>Urutoni, small-spotted Genet<i> (Genetta geetta feline)</i></b></h7>
@@ -3308,10 +2847,49 @@ footer p{
           </div>
         <div class="text-center">
             <figure>
-                <img id="akagera" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1685428846/Museum%20Webpage/DSC08806-min_l8u7jt.jpg", alt="image">
+                <img id="akagera" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611395/1a1a4397_53181115783_o_dxfnog.jpg", alt="image">
             </figure>
             <figcaption><b>Botanical garden of traditional medicinal plant</b></figcaption>
         </div>
+
+        <div class="waste">
+          <figure>
+            <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611252/1a1a4261_53181151448_o_opbsvw.jpg" alt="image">
+            <figcaption><b>Plantago (Imbatama)</b></figcaption>
+          </figure>
+          <figure>
+            <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611234/1a1a4258_53180061232_o_uygawu.jpg" alt="image">
+            <figcaption><b>Ikiboga</b></figcaption>
+          </figure>
+          <figure>
+            <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611229/1a1a4296_53180643931_o_ddhcli.jpg" alt="image">
+            <figcaption><b></b></figcaption>
+          </figure>
+          <figure>
+            <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611224/1a1a4267_53180649456_o_ywfk8v.jpg" alt="image">
+            <figcaption><b>Kalanchoe (Ikinetenete)</b></figcaption>
+          </figure>
+          
+        </div>  
+        <div class="waste">
+          <figure>
+            <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611223/1a1a4265_53180842634_o_g24z5i.jpg" alt="image">
+            <figcaption><b>Umwangange</b></figcaption>
+          </figure>
+          <figure>
+            <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611217/1a1a4288_53181085585_o_emzzoj.jpg" alt="image">
+            <figcaption><b>Urukararambwe</b></figcaption>
+          </figure>
+          <figure>
+            <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611214/1a1a4281_53181086385_o_vzizio.jpg" alt="image">
+            <figcaption><b>Umuhati</b></figcaption>
+          </figure>
+          <figure>
+            <img id="waste-recycle" src="https://res.cloudinary.com/dmtykjulc/image/upload/v1705611197/1a1a4278_53181086975_o_s8nubq.jpg" alt="image">
+            <figcaption><b>Umuhurura</b></figcaption>
+          </figure>
+        </div>  
+
         <div>
           <ul>
             <li><b>Igisura <i>(Urtica massaica)</i></b>: The leaves of Urtica massaica have been used to treat a variety of ailments, including arthritis, rheumatism, and joint pain. In addition, the leaves of Urtica massaica have been used to treat anemia and to boost the immune system.</li>
