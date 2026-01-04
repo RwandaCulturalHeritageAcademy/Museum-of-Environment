@@ -6,6 +6,7 @@
 
 *{box-sizing:border-box}
 html,body{height:100%}
+html, body { overflow-x: hidden; }
 body {
   background-color: var(--bg);
   margin:0;
@@ -56,13 +57,14 @@ p, li, figcaption{font-family: Cambria, Georgia, 'Times New Roman', serif; font-
 /* Responsive images: keep proportions */
 img, figure img{max-width:100%; height:auto; display:block}
 
-#photo-solar img{border-radius:10px; object-fit:cover; margin:1rem 0 0 0}
+.photo-solar img{border-radius:10px; object-fit:cover; margin:1rem 0 0 0}
+
+.photo-solar{display:flex;flex-direction:column;align-items:center}
 
 .letter::first-letter{font-size:30px}
 .letter, #letter, #little-down, #europe{margin-top:20px}
-
-#solar{display:flex;flex-direction:column;gap:1rem;margin:0;padding:0}
-#solar > #photo-solar{padding:0}
+.solar{display:flex;flex-direction:column;gap:1rem;margin:0;padding:0}
+.solar > .photo-solar{padding:0}
 
 #weather{background-color:rgb(30,1,1); color:#fff; font-size:1.25rem; border-radius:0.75rem; padding:.5rem}
 #font{font-size:1.25rem}
@@ -74,8 +76,8 @@ img, figure img{max-width:100%; height:auto; display:block}
 #overview{background-color:rgba(0,128,0,0.327); border-radius:10px; padding:1rem}
 
 /* Rotated image handled responsively */
-#photo-solar .rotate{transform:rotate(-90deg); max-width:320px; width:50%; height:auto}
-#photo-solar #fig{margin-top:0}
+.photo-solar .rotate{transform:rotate(-90deg); max-width:320px; width:50%; height:auto; transform-origin:center center; display:block}
+.photo-solar .figcap{margin-top:0; text-align:center}
 
 #satellite figure img{max-width:300px}
 #landscape figure img, #landscape-1 figure img{max-width:100%; height:auto}
@@ -101,9 +103,9 @@ footer p{margin:0}
   #container{flex-direction:row; align-items:flex-start}
   #columns{flex-direction:row}
   main{max-width:80%}
-  #solar{flex-direction:row; align-items:flex-start}
-  #photo-solar{flex:0 0 45%}
-  #photo-solar img{max-width:100%; height:auto}
+  .solar{flex-direction:row; align-items:flex-start}
+  .photo-solar{flex:1 1 30%; max-width:33%}
+  .photo-solar img{max-width:100%; height:auto}
   #satellite figure img{max-width:300px}
   .well #content ul{display:flex}
 }
@@ -114,7 +116,7 @@ footer p{margin:0}
   #columns{gap:2rem}
   h1{font-size:clamp(1.8rem,2.5vw,3rem)}
   h2{font-size:clamp(1.2rem,2vw,2.25rem)}
-  #photo-solar{flex:0 0 40%}
+  .photo-solar{flex:1 1 30%; max-width:33%}
   #landscape figure img{max-width:800px}
   #landscape-1 figure img{max-width:800px}
   #parks #nyungwe-park, #akagera{max-width:900px}
@@ -122,3 +124,11 @@ footer p{margin:0}
 
 /* Fix some legacy selectors that used invalid or missing units */
 #medicine .garden{height:auto}
+
+/* Small screens: avoid rotated images causing layout overflow */
+@media (max-width:600px){
+  .photo-solar .rotate{transform:none; width:120px; max-width:40%; margin:0 auto; display:block}
+  /* ensure large landscape images scale down */
+  #landscape figure img, #landscape-1 figure img, #parks #nyungwe-park, #akagera{max-width:100%; height:auto}
+}
+
